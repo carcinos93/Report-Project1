@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ConexionCLIN">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=CLINSVNB03\SQLEXPRESS2012;Initial Catalog=CLINERP</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>ea7e4d05-d005-45ac-b4b7-24b34ba3b84d</DataSourceID>
+</RptDataSource>

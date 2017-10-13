@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>Local</DataSourceReference>
+      <CommandText>SELECT        NOMBRE_COMPANIA, ALIAS, NOMBRE_GERENTE, NOMBRE_CONTADOR, NIT, REGISTRO_FISCAL, NOMBRE_AUDITOR, LOGO, DIRECCION, NOMBRE_REPRESENTANTE, NOMBRE_AUXILIAR,TELEFONO1
+FROM            [AS].COMPANIA</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="NOMBRE_COMPANIA">
+        <DataField>NOMBRE_COMPANIA</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ALIAS">
+        <DataField>ALIAS</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="NOMBRE_GERENTE">
+        <DataField>NOMBRE_GERENTE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="NOMBRE_CONTADOR">
+        <DataField>NOMBRE_CONTADOR</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="NIT">
+        <DataField>NIT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="REGISTRO_FISCAL">
+        <DataField>REGISTRO_FISCAL</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="NOMBRE_AUDITOR">
+        <DataField>NOMBRE_AUDITOR</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LOGO">
+        <DataField>LOGO</DataField>
+        <rd:TypeName>System.Byte[]</rd:TypeName>
+      </Field>
+      <Field Name="DIRECCION">
+        <DataField>DIRECCION</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="NOMBRE_REPRESENTANTE">
+        <DataField>NOMBRE_REPRESENTANTE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="NOMBRE_AUXILIAR">
+        <DataField>NOMBRE_AUXILIAR</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TELEFONO1">
+        <DataField>TELEFONO1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

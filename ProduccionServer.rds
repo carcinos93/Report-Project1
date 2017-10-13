@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ProduccionServer">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=10.10.0.17;Initial Catalog=CLINERP</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>a737c2cf-107a-4267-bb38-66c929a24552</DataSourceID>
+</RptDataSource>
