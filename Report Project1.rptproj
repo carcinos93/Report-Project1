@@ -19,6 +19,10 @@
   </DataSets>
   <Reports>
     <ProjectItem>
+      <Name>AML_ENVIOS_UIF.rdl</Name>
+      <FullPath>AML_ENVIOS_UIF.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>DECLARACION_JURADA_AP.rdl</Name>
       <FullPath>DECLARACION_JURADA_AP.rdl</FullPath>
     </ProjectItem>
