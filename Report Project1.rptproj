@@ -19,8 +19,8 @@
   </DataSets>
   <Reports>
     <ProjectItem>
-      <Name>AML_ENVIOS_UIF.rdl</Name>
-      <FullPath>AML_ENVIOS_UIF.rdl</FullPath>
+      <Name>AML_HISTORIAL_UIF.rdl</Name>
+      <FullPath>AML_HISTORIAL_UIF.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DECLARACION_JURADA_AP.rdl</Name>
@@ -65,6 +65,18 @@
     <ProjectItem>
       <Name>UIF_MEN_OTROMEDIO.rdl</Name>
       <FullPath>UIF_MEN_OTROMEDIO.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>rangos_subreporte.rdl</Name>
+      <FullPath>rangos_subreporte.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ficha integral.rdl</Name>
+      <FullPath>Ficha integral.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Copy of FICHA_CLIENTE_AP.rdl</Name>
+      <FullPath>Copy of FICHA_CLIENTE_AP.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
