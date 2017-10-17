@@ -587,8 +587,8 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>39.66212cm</Top>
-                <Left>0.05343cm</Left>
+                <Top>40.87226cm</Top>
+                <Left>0.00002cm</Left>
                 <Height>0.95579cm</Height>
                 <Width>20.48702cm</Width>
                 <Style>
@@ -1904,7 +1904,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>DSFICHA</DataSetName>
-                <Left>0.02708cm</Left>
+                <Left>0.0271cm</Left>
                 <Height>9cm</Height>
                 <Width>20.53657cm</Width>
                 <ZIndex>1</ZIndex>
@@ -3525,7 +3525,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                 </TablixRowHierarchy>
                 <DataSetName>DSFICHA</DataSetName>
                 <Top>9.07056cm</Top>
-                <Left>0.02708cm</Left>
+                <Left>0.0271cm</Left>
                 <Height>8.88479cm</Height>
                 <Width>20.51337cm</Width>
                 <ZIndex>2</ZIndex>
@@ -3962,6 +3962,9 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                     </TablixMember>
                     <TablixMember>
                       <Group Name="Details" />
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
                     </TablixMember>
                   </TablixMembers>
                 </TablixRowHierarchy>
@@ -3977,8 +3980,9 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </Filter>
                 </Filters>
                 <Top>17.99063cm</Top>
+                <Left>0.00002cm</Left>
                 <Height>1.8cm</Height>
-                <Width>20.54045cm</Width>
+                <Width>20.54044cm</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
@@ -4413,6 +4417,9 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                     </TablixMember>
                     <TablixMember>
                       <Group Name="Details2" />
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
                     </TablixMember>
                   </TablixMembers>
                 </TablixRowHierarchy>
@@ -4427,9 +4434,9 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                     </FilterValues>
                   </Filter>
                 </Filters>
-                <Top>19.8259cm</Top>
+                <Top>19.75cm</Top>
                 <Height>1.8cm</Height>
-                <Width>20.54045cm</Width>
+                <Width>20.54044cm</Width>
                 <ZIndex>4</ZIndex>
                 <Style>
                   <Border>
@@ -4758,7 +4765,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                   <DataSetName>DSDUMMY</DataSetName>
                                   <Left>0.05343cm</Left>
                                   <Height>0.81167cm</Height>
-                                  <Width>20.48702cm</Width>
+                                  <Width>20.48704cm</Width>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -4906,14 +4913,20 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>DSDUMMY</DataSetName>
-                <Top>21.73174cm</Top>
+                <Top>21.58cm</Top>
+                <Left>0.00002cm</Left>
                 <Height>2.51374cm</Height>
-                <Width>20.54045cm</Width>
+                <Width>20.54047cm</Width>
                 <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
+                  <TopBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>1pt</Width>
+                  </TopBorder>
                   <LeftBorder>
                     <Color>Black</Color>
                     <Style>Solid</Style>
@@ -6900,7 +6913,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                   <DataSetName>DSDUMMY</DataSetName>
                                   <Left>0.00001cm</Left>
                                   <Height>9.87473cm</Height>
-                                  <Width>10.29499cm</Width>
+                                  <Width>10.295cm</Width>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -7050,7 +7063,8 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                 </TablixRowHierarchy>
                 <KeepTogether>true</KeepTogether>
                 <DataSetName>DSDUMMY</DataSetName>
-                <Top>24.28076cm</Top>
+                <Top>24.18cm</Top>
+                <Left>0.00002cm</Left>
                 <Height>12.03552cm</Height>
                 <Width>20.59cm</Width>
                 <ZIndex>6</ZIndex>
@@ -7063,8 +7077,8 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>3.59517cm</Top>
-            <Height>40.61791cm</Height>
-            <Width>20.59cm</Width>
+            <Height>41.82805cm</Height>
+            <Width>20.59002cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -7076,7 +7090,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
             <Value>=First(Fields!LOGO.Value, "DataSet2")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Sizing>FitProportional</Sizing>
-            <Left>0.29115cm</Left>
+            <Left>0.29117cm</Left>
             <Height>2.39394cm</Height>
             <Width>6.19111cm</Width>
             <ZIndex>1</ZIndex>
@@ -7174,7 +7188,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox48</rd:DefaultName>
-            <Left>6.62337cm</Left>
+            <Left>6.62339cm</Left>
             <Height>2.87019cm</Height>
             <Width>9.20768cm</Width>
             <ZIndex>2</ZIndex>
@@ -7225,7 +7239,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>ExecutionTime</rd:DefaultName>
-            <Left>6.30215in</Left>
+            <Left>6.30216in</Left>
             <Height>0.33333in</Height>
             <Width>1.78464in</Width>
             <ZIndex>3</ZIndex>
@@ -7240,10 +7254,10 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>17.40672in</Height>
+        <Height>17.89368in</Height>
         <Style />
       </Body>
-      <Width>20.59cm</Width>
+      <Width>20.59002cm</Width>
       <Page>
         <PageHeight>27.94cm</PageHeight>
         <PageWidth>21.59cm</PageWidth>
