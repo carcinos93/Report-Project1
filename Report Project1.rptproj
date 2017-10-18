@@ -23,10 +23,6 @@
       <FullPath>AML_HISTORIAL_UIF.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>FICHA_PROVEEDOR_FABRIL.rdl</Name>
-      <FullPath>FICHA_PROVEEDOR_FABRIL.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>DECLARACION_JURADA_AP.rdl</Name>
       <FullPath>DECLARACION_JURADA_AP.rdl</FullPath>
     </ProjectItem>
@@ -41,6 +37,10 @@
     <ProjectItem>
       <Name>Ficha_PEPAP.rdl</Name>
       <FullPath>Ficha_PEPAP.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>FICHA_PROVEEDOR_FABRIL.rdl</Name>
+      <FullPath>FICHA_PROVEEDOR_FABRIL.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Pagos Proyectado.rdl</Name>
@@ -77,6 +77,10 @@
     <ProjectItem>
       <Name>UIF_MEN_OTROMEDIO.rdl</Name>
       <FullPath>UIF_MEN_OTROMEDIO.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>FACTURA_RANGO.rdl</Name>
+      <FullPath>FACTURA_RANGO.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
