@@ -172,8 +172,16 @@
           <DataField>REPRESEN_NOMBRE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="NOMBRES">
+          <DataField>NOMBRES</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="REPRESEN_GENERO">
           <DataField>REPRESEN_GENERO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="APELLIDOS">
+          <DataField>APELLIDOS</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="REPRESEN_DEPARTAMENTO">
@@ -1676,8 +1684,7 @@
                               <rd:DefaultName>Textbox13</rd:DefaultName>
                               <Style>
                                 <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>Solid</Style>
+                                  <Style>None</Style>
                                 </Border>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
@@ -1707,7 +1714,7 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>Nombres(s)</Value>
+                                          <Value>Nombres(s):</Value>
                                           <Style />
                                         </TextRun>
                                       </TextRuns>
@@ -1717,7 +1724,7 @@
                                   <rd:DefaultName>Textbox3</rd:DefaultName>
                                   <Left>0.01826cm</Left>
                                   <Height>0.6cm</Height>
-                                  <Width>2.5cm</Width>
+                                  <Width>2.07667cm</Width>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -1735,7 +1742,7 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value />
+                                          <Value>=First(Fields!NOMBRES.Value)</Value>
                                           <Style />
                                         </TextRun>
                                       </TextRuns>
@@ -1743,10 +1750,80 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox3</rd:DefaultName>
-                                  <Left>2.62451cm</Left>
+                                  <Left>2.27132cm</Left>
                                   <Height>0.6cm</Height>
-                                  <Width>9.93479cm</Width>
+                                  <Width>7.26216cm</Width>
                                   <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox7">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!NOMBRES.Value)</Value>
+                                          <Style />
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox3</rd:DefaultName>
+                                  <Top>0.03927cm</Top>
+                                  <Left>11.54479cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>8.96858cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox9">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Apellidos:</Value>
+                                          <Style />
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox3</rd:DefaultName>
+                                  <Top>0.03927cm</Top>
+                                  <Left>9.70986cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>1.65854cm</Width>
+                                  <ZIndex>3</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
