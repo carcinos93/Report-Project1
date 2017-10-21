@@ -90,9 +90,6 @@
           <QueryParameter Name="@CFECHA_PROCESO">
             <Value>=Now()</Value>
           </QueryParameter>
-          <QueryParameter Name="@CTIPO_INFORME">
-            <Value>="5"</Value>
-          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>AML.AML_REPORTE_MENSUAL_OTROS</CommandText>

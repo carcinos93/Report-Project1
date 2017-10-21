@@ -31,9 +31,6 @@
           <QueryParameter Name="@CFECHA_PROCESO">
             <Value>=Now()</Value>
           </QueryParameter>
-          <QueryParameter Name="@CTIPO_INFORME">
-            <Value>="4"</Value>
-          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>AML.AML_REPORTE_DIARIO_ELECTRO</CommandText>
@@ -8841,7 +8838,7 @@
                 <Top>47.56891cm</Top>
                 <Left>0.05292cm</Left>
                 <Height>2.73458cm</Height>
-                <Width>17.45639cm</Width>
+                <Width>17.4564cm</Width>
                 <ZIndex>5</ZIndex>
                 <Visibility>
                   <Hidden>true</Hidden>
