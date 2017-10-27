@@ -2,9 +2,10 @@
 <SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
   <DataSet Name="">
     <Query>
-      <DataSourceReference>Local</DataSourceReference>
-      <CommandText>SELECT        NOMBRE_COMPANIA, ALIAS, NOMBRE_GERENTE, NOMBRE_CONTADOR, NIT, REGISTRO_FISCAL, NOMBRE_AUDITOR, LOGO, DIRECCION, NOMBRE_REPRESENTANTE, NOMBRE_AUXILIAR,TELEFONO1
-FROM            [AS].COMPANIA</CommandText>
+      <DataSourceReference>ConexionCLIN</DataSourceReference>
+      <CommandText>SELECT        NOMBRE_COMPANIA, ALIAS, NOMBRE_GERENTE, NOMBRE_CONTADOR, NIT, REGISTRO_FISCAL, NOMBRE_AUDITOR, LOGO, DIRECCION, NOMBRE_REPRESENTANTE, NOMBRE_AUXILIAR,TELEFONO1, div2.NOMBRE_ZONA as DEPARTAMENTO 
+FROM            [AS].COMPANIA
+left outer join [as].DIVISION_GEOGRAFICA2 AS div2 on div2.CODIGO_GEO2 = COMPANIA.DIVISION_GEOGRAFICA2</CommandText>
     </Query>
     <Fields>
       <Field Name="NOMBRE_COMPANIA">
@@ -53,6 +54,10 @@ FROM            [AS].COMPANIA</CommandText>
       </Field>
       <Field Name="TELEFONO1">
         <DataField>TELEFONO1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DEPARTAMENTO">
+        <DataField>DEPARTAMENTO</DataField>
         <rd:TypeName>System.String</rd:TypeName>
       </Field>
     </Fields>
