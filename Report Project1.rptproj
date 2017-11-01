@@ -23,8 +23,24 @@
       <FullPath>AML_HISTORIAL_UIF.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>AML_TRANSACCIONES_ACUMU.rdl</Name>
+      <FullPath>AML_TRANSACCIONES_ACUMU.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AML_TRANSACCIONES_ALERTAS.rdl</Name>
+      <FullPath>AML_TRANSACCIONES_ALERTAS.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>DECLARACION_JURADA_AP.rdl</Name>
       <FullPath>DECLARACION_JURADA_AP.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DECLARACION_JURADA_TRANSAC.rdl</Name>
+      <FullPath>DECLARACION_JURADA_TRANSAC.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>FACTURA_RANGO.rdl</Name>
+      <FullPath>FACTURA_RANGO.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Ficha integral.rdl</Name>
@@ -79,8 +95,8 @@
       <FullPath>UIF_MEN_OTROMEDIO.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>FACTURA_RANGO.rdl</Name>
-      <FullPath>FACTURA_RANGO.rdl</FullPath>
+      <Name>DECLARACION_JURADA_ACUMU.rdl</Name>
+      <FullPath>DECLARACION_JURADA_ACUMU.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -90,10 +106,10 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
-        <TargetServerURL>http://127.0.0.1/ReportServer</TargetServerURL>
-        <TargetFolder>Report Project1</TargetFolder>
-        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
-        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetServerURL>http://192.168.10.71/ReportServer</TargetServerURL>
+        <TargetFolder>Reportes CLIN</TargetFolder>
+        <TargetDataSourceFolder>Orígenes de datos</TargetDataSourceFolder>
+        <TargetDatasetFolder>Conjuntos de datos</TargetDatasetFolder>
         <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
         <StartItem>Report1.rdl</StartItem>
       </Options>
