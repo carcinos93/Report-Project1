@@ -336,7 +336,7 @@ SELECT 2</CommandText>
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>*****************************************************************************************************************************************************</Value>
+                        <Value>****************************************************************************************************************************************************</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -344,9 +344,9 @@ SELECT 2</CommandText>
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox14</rd:DefaultName>
-                <Left>0.49758cm</Left>
+                <Left>0.07736cm</Left>
                 <Height>1.89646cm</Height>
-                <Width>20.51337cm</Width>
+                <Width>20.38611cm</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -407,27 +407,27 @@ SELECT 2</CommandText>
                 <TablixBody>
                   <TablixColumns>
                     <TablixColumn>
-                      <Width>2.81799cm</Width>
+                      <Width>2.35938cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>3.05562cm</Width>
+                      <Width>2.77805cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>3.24083cm</Width>
+                      <Width>2.13776cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>3.57465cm</Width>
+                      <Width>3.221cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>2.85081cm</Width>
+                      <Width>2.20857cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>2.5cm</Width>
+                      <Width>6.4889cm</Width>
                     </TablixColumn>
                   </TablixColumns>
                   <TablixRows>
                     <TablixRow>
-                      <Height>0.6cm</Height>
+                      <Height>0.66146cm</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -615,33 +615,73 @@ SELECT 2</CommandText>
                         </TablixCell>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="Textbox12">
-                              <CanGrow>true</CanGrow>
+                            <Rectangle Name="Rectangle25">
+                              <ReportItems>
+                                <Textbox Name="Textbox184">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Especifique:</Value>
+                                          <Style />
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox48</rd:DefaultName>
+                                  <Height>0.66146cm</Height>
+                                  <Width>2.13cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox186">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style />
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox49</rd:DefaultName>
+                                  <Top>0.02715cm</Top>
+                                  <Left>2.27111cm</Left>
+                                  <Height>0.5909cm</Height>
+                                  <Width>4.21779cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value />
-                                      <Style>
-                                        <FontSize>12pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox12</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
                               </Style>
-                            </Textbox>
+                            </Rectangle>
                           </CellContents>
                         </TablixCell>
                       </TablixCells>
@@ -664,10 +704,10 @@ SELECT 2</CommandText>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>DSDUMMY</DataSetName>
-                <Top>3.17479cm</Top>
+                <Top>4.20647cm</Top>
                 <Left>1.26981cm</Left>
-                <Height>0.6cm</Height>
-                <Width>18.0399cm</Width>
+                <Height>0.66146cm</Height>
+                <Width>19.19366cm</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
@@ -3317,7 +3357,7 @@ SELECT 2</CommandText>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>DSFICHA</DataSetName>
-                <Top>4.07389cm</Top>
+                <Top>5.66139cm</Top>
                 <Left>0.00954cm</Left>
                 <Height>13.0941cm</Height>
                 <Width>21.06325cm</Width>
@@ -3518,7 +3558,7 @@ SELECT 2</CommandText>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>DSFICHA</DataSetName>
-                <Top>21.72462cm</Top>
+                <Top>23.31212cm</Top>
                 <Left>0.0278cm</Left>
                 <Height>2.86014cm</Height>
                 <Width>21.07279cm</Width>
@@ -4911,7 +4951,7 @@ SELECT 2</CommandText>
                 </TablixRowHierarchy>
                 <KeepTogether>true</KeepTogether>
                 <DataSetName>DSDUMMY</DataSetName>
-                <Top>24.65532cm</Top>
+                <Top>26.56032cm</Top>
                 <Left>0.07736cm</Left>
                 <Height>5.49646cm</Height>
                 <Width>20.99544cm</Width>
@@ -5008,7 +5048,7 @@ SELECT 2</CommandText>
                   </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>30.61208cm</Top>
+                <Top>32.83458cm</Top>
                 <Left>5.8414cm</Left>
                 <Height>2.20509cm</Height>
                 <Width>9.38046cm</Width>
@@ -7427,7 +7467,7 @@ Cuando sea distinto al Propietario:</Value>
                     </Style>
                   </Textbox>
                 </ReportItems>
-                <Top>33.27458cm</Top>
+                <Top>35.49708cm</Top>
                 <Height>28.75128cm</Height>
                 <Width>21.07279cm</Width>
                 <ZIndex>7</ZIndex>
@@ -8217,7 +8257,7 @@ Cuando sea distinto al Propietario:</Value>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>dslistadummy</DataSetName>
-                <Top>17.56838cm</Top>
+                <Top>19.15588cm</Top>
                 <Left>0.0278cm</Left>
                 <Height>3.94626cm</Height>
                 <Width>21.07279cm</Width>
@@ -8228,9 +8268,101 @@ Cuando sea distinto al Propietario:</Value>
                   </Border>
                 </Style>
               </Tablix>
+              <Textbox Name="Textbox188">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>***************************************************************************************************************************************************</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox188</rd:DefaultName>
+                <Top>2.68107cm</Top>
+                <Left>0.07736cm</Left>
+                <Height>0.49254cm</Height>
+                <Width>20.88753cm</Width>
+                <ZIndex>9</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox189">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Favor especificar el tipo de venta que realizará:</Value>
+                        <Style>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox189</rd:DefaultName>
+                <Top>3.46536cm</Top>
+                <Left>0.07736cm</Left>
+                <Height>0.6cm</Height>
+                <Width>9.18615cm</Width>
+                <ZIndex>10</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox190">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>***************************************************************************************************************************************************</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox188</rd:DefaultName>
+                <Top>4.97377cm</Top>
+                <Left>0.07736cm</Left>
+                <Height>0.49254cm</Height>
+                <Width>20.88753cm</Width>
+                <ZIndex>11</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
             </ReportItems>
             <Top>2.67297cm</Top>
-            <Height>62.02586cm</Height>
+            <Height>64.24836cm</Height>
             <Width>21.10059cm</Width>
             <Style>
               <Border>
@@ -8406,7 +8538,7 @@ Cuando sea distinto al Propietario:</Value>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>25.47198in</Height>
+        <Height>26.34698in</Height>
         <Style />
       </Body>
       <Width>21.10059cm</Width>
