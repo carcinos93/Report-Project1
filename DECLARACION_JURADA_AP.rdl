@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource1">
-      <DataSourceReference>Local</DataSourceReference>
+      <DataSourceReference>ConexionCLIN</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>5c50bd8d-208d-4804-8d6d-bb4d4cd8d741</rd:DataSourceID>
     </DataSource>
@@ -163,8 +163,19 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
             <Value>=Parameters!CODIGO_CLIENTE.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>AML.R_FICHA_DECLARACION_JURADA</CommandText>
+        <CommandText>SELECT 
+		CLIENTE.NOMBRE_COMPLETO,
+		ACTIVIDAD_ECONOMICA.NOMBRE_ACTIVIDAD AS ACTIVIDAD,
+		CLIENTE.CODIGO_ACTIVIDAD,
+		CLIENTE.DIRECCION,
+		CLIENTE.CARGO,
+		CLIENTE.ES_EMPRESA,
+		EMPRESA.NOMBRE_EMPRESA,
+		CLIENTE.PROMEDIO_INGRESOS
+	FROM FA.CLIENTE
+	LEFT OUTER JOIN [AS].ACTIVIDAD_ECONOMICA ON FA.CLIENTE.CODIGO_ACTIVIDAD = [AS].ACTIVIDAD_ECONOMICA.CODIGO_ACTIVIDAD
+	LEFT OUTER JOIN [AS].EMPRESA ON FA.CLIENTE.CODIGO_EMPRESA = [AS].EMPRESA.CODIGO_EMPRESA
+	WHERE FA.CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
       </Query>
       <Fields>
         <Field Name="NOMBRE_COMPLETO">
@@ -231,23 +242,7 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                         </Style>
                       </TextRun>
                       <TextRun>
-                        <Value>,declaramos (declaro) bajo juramento, que sometemos (someto) todos los actos que realicemos (realice) a través de cualquier operación que implique recepción, entrega o transferencia de  fondos de cualquier tipo por pago de préstamos  u otorgamiento de créditos bajo cualquier modalidad</Value>
-                        <Style>
-                          <FontStyle>Normal</FontStyle>
-                          <FontFamily>Century Gothic</FontFamily>
-                          <FontWeight>Normal</FontWeight>
-                          <TextDecoration>None</TextDecoration>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>General</TextAlign>
-                    </Style>
-                  </Paragraph>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>con </Value>
+                        <Value>, declaramos (declaro) bajo juramento, que sometemos (someto) todos los actos que realicemos (realice) a través de cualquier operación que implique recepción, entrega o transferencia de  fondos de cualquier tipo por pago de préstamos  u otorgamiento de créditos bajo cualquier modalidad con </Value>
                         <Style>
                           <FontStyle>Normal</FontStyle>
                           <FontFamily>Century Gothic</FontFamily>
@@ -281,9 +276,9 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox2</rd:DefaultName>
-                <Left>0.00001cm</Left>
+                <Left>0.05344cm</Left>
                 <Height>2.39917cm</Height>
-                <Width>19.39333cm</Width>
+                <Width>20.53656cm</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -298,28 +293,28 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                 <TablixBody>
                   <TablixColumns>
                     <TablixColumn>
-                      <Width>7.46617cm</Width>
+                      <Width>7.60907cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>2.13206cm</Width>
+                      <Width>2.27496cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>0.6568cm</Width>
+                      <Width>0.7997cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>2.50227cm</Width>
+                      <Width>2.64517cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>0.80914cm</Width>
+                      <Width>0.95204cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>3.27617cm</Width>
+                      <Width>3.41907cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>0.60388cm</Width>
+                      <Width>0.74678cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>1.94685cm</Width>
+                      <Width>2.08975cm</Width>
                     </TablixColumn>
                   </TablixColumns>
                   <TablixRows>
@@ -372,6 +367,8 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                                   <Width>1pt</Width>
                                 </BottomBorder>
                                 <LeftBorder>
+                                  <Color>Black</Color>
+                                  <Style>Solid</Style>
                                   <Width>1pt</Width>
                                 </LeftBorder>
                                 <RightBorder>
@@ -955,7 +952,7 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                                       </Style>
                                     </TextRun>
                                     <TextRun>
-                                      <Value>=Fields!CARGO.Value</Value>
+                                      <Value>=Iif(Fields!ES_EMPRESA.Value = "0",  Fields!CARGO.Value,"")</Value>
                                       <Style>
                                         <FontStyle>Normal</FontStyle>
                                         <FontFamily>Century Gothic</FontFamily>
@@ -1148,16 +1145,15 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                               <rd:DefaultName>Textbox61</rd:DefaultName>
                               <Style>
                                 <Border>
-                                  <Style>Solid</Style>
-                                </Border>
-                                <BottomBorder>
                                   <Style>None</Style>
-                                </BottomBorder>
+                                </Border>
                                 <LeftBorder>
+                                  <Color>Black</Color>
                                   <Style>Solid</Style>
                                   <Width>1pt</Width>
                                 </LeftBorder>
                                 <RightBorder>
+                                  <Color>Black</Color>
                                   <Style>Solid</Style>
                                   <Width>1pt</Width>
                                 </RightBorder>
@@ -1207,9 +1203,10 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>DSFICHA</DataSetName>
-                <Top>7.37478cm</Top>
+                <Top>6.73978cm</Top>
+                <Left>0.05343cm</Left>
                 <Height>7.06688cm</Height>
-                <Width>19.39334cm</Width>
+                <Width>20.53654cm</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -1221,7 +1218,7 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                 <TablixBody>
                   <TablixColumns>
                     <TablixColumn>
-                      <Width>6.46444cm</Width>
+                      <Width>6.84552cm</Width>
                     </TablixColumn>
                   </TablixColumns>
                   <TablixRows>
@@ -1234,13 +1231,13 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>0.56763cm</Width>
+                                    <Width>0.69466cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>5.18159cm</Width>
+                                    <Width>5.30862cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>0.71522cm</Width>
+                                    <Width>0.84225cm</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
@@ -1326,6 +1323,11 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                                                 <Border>
                                                   <Style>Solid</Style>
                                                 </Border>
+                                                <BottomBorder>
+                                                  <Color>Black</Color>
+                                                  <Style>Solid</Style>
+                                                  <Width>1pt</Width>
+                                                </BottomBorder>
                                                 <PaddingLeft>2pt</PaddingLeft>
                                                 <PaddingRight>2pt</PaddingRight>
                                                 <PaddingTop>2pt</PaddingTop>
@@ -1457,9 +1459,10 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>DS_RANGOS</DataSetName>
-                <Top>14.44166cm</Top>
+                <Top>13.80666cm</Top>
+                <Left>0.05343cm</Left>
                 <Height>0.70083cm</Height>
-                <Width>6.46444cm</Width>
+                <Width>6.84552cm</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
@@ -1524,9 +1527,10 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox85</rd:DefaultName>
-                <Top>15.4352cm</Top>
+                <Top>15.1177cm</Top>
+                <Left>0.05343cm</Left>
                 <Height>1.5525cm</Height>
-                <Width>19.39333cm</Width>
+                <Width>20.53657cm</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
@@ -1621,7 +1625,8 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                   </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>18.04958cm</Top>
+                <Top>17.73208cm</Top>
+                <Left>0.05343cm</Left>
                 <Height>1.25646cm</Height>
                 <Width>19.39333cm</Width>
                 <ZIndex>4</ZIndex>
@@ -1635,15 +1640,15 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                 <TablixBody>
                   <TablixColumns>
                     <TablixColumn>
-                      <Width>0.93896cm</Width>
+                      <Width>1.51058cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>18.45437cm</Width>
+                      <Width>19.02599cm</Width>
                     </TablixColumn>
                   </TablixColumns>
                   <TablixRows>
                     <TablixRow>
-                      <Height>3.40458cm</Height>
+                      <Height>2.90187cm</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -1683,49 +1688,7 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>Todos los valores o bienes que entreguemos (entregue) o recibamos (reciba) provenientes de financiamiento, en inversión o en garantía tendrán un origen y destino, que de ninguna manera</Value>
-                                      <Style>
-                                        <FontStyle>Normal</FontStyle>
-                                        <FontFamily>Century Gothic</FontFamily>
-                                        <FontWeight>Normal</FontWeight>
-                                        <TextDecoration>None</TextDecoration>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>estarán relacionados con el delito de Lavado de Dinero y Activos, descritos en el artículo 6 de la</Value>
-                                      <Style>
-                                        <FontStyle>Normal</FontStyle>
-                                        <FontFamily>Century Gothic</FontFamily>
-                                        <FontWeight>Normal</FontWeight>
-                                        <TextDecoration>None</TextDecoration>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>Ley Contra el Lavado de Dinero o ningún otro tipo de actividad ilícita, así mismo no admitiremos (admitiré) que terceros efectúen pagos o depósitos en su cuentas a nuestro (mi) favor con fondos provenientes de actividades ilícitas y permitiré además cualquier procedimiento de investigación</Value>
-                                      <Style>
-                                        <FontStyle>Normal</FontStyle>
-                                        <FontFamily>Century Gothic</FontFamily>
-                                        <FontWeight>Normal</FontWeight>
-                                        <TextDecoration>None</TextDecoration>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>por parte de las autoridades correspondientes.</Value>
+                                      <Value>Todos los valores o bienes que entreguemos (entregue) o recibamos (reciba) provenientes de financiamiento, en inversión o en garantía tendrán un origen y destino, que de ninguna manera estarán relacionados con el delito de Lavado de Dinero y Activos, descritos en el artículo 6 de la Ley Contra el Lavado de Dinero o ningún otro tipo de actividad ilícita, así mismo no admitiremos (admitiré) que terceros efectúen pagos o depósitos en su cuentas a nuestro (mi) favor con fondos provenientes de actividades ilícitas y permitiré además cualquier procedimiento de investigación por parte de las autoridades correspondientes.</Value>
                                       <Style>
                                         <FontStyle>Normal</FontStyle>
                                         <FontFamily>Century Gothic</FontFamily>
@@ -1836,9 +1799,9 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                 </TablixRowHierarchy>
                 <DataSetName>DSDUMMY</DataSetName>
                 <Top>2.46973cm</Top>
-                <Left>0.00001cm</Left>
-                <Height>4.50729cm</Height>
-                <Width>19.39333cm</Width>
+                <Left>0.05344cm</Left>
+                <Height>4.00458cm</Height>
+                <Width>20.53657cm</Width>
                 <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
@@ -1848,10 +1811,9 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
               </Tablix>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>3.59516cm</Top>
-            <Left>1.05515cm</Left>
-            <Height>19.30604cm</Height>
-            <Width>19.39335cm</Width>
+            <Top>3.59517cm</Top>
+            <Height>18.98854cm</Height>
+            <Width>20.59001cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1962,7 +1924,7 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
             <rd:DefaultName>Textbox48</rd:DefaultName>
             <Left>6.33222cm</Left>
             <Height>2.87019cm</Height>
-            <Width>9.86914cm</Width>
+            <Width>9.20768cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -2011,9 +1973,9 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>ExecutionTime</rd:DefaultName>
-            <Left>6.37849in</Left>
+            <Left>6.18752in</Left>
             <Height>0.33333in</Height>
-            <Width>1.5471in</Width>
+            <Width>1.91878in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -2026,17 +1988,17 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>9.01622in</Height>
+        <Height>8.89122in</Height>
         <Style />
       </Body>
-      <Width>21.59cm</Width>
+      <Width>20.59001cm</Width>
       <Page>
         <PageHeight>27.94cm</PageHeight>
         <PageWidth>21.59cm</PageWidth>
-        <LeftMargin>0cm</LeftMargin>
-        <RightMargin>0cm</RightMargin>
-        <TopMargin>0cm</TopMargin>
-        <BottomMargin>0cm</BottomMargin>
+        <LeftMargin>0.5cm</LeftMargin>
+        <RightMargin>0.5cm</RightMargin>
+        <TopMargin>1.5cm</TopMargin>
+        <BottomMargin>1.5cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
@@ -2045,6 +2007,11 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
   <ReportParameters>
     <ReportParameter Name="CODIGO_CLIENTE">
       <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="00199198-7"</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>CODIGO CLIENTE</Prompt>
     </ReportParameter>
   </ReportParameters>
