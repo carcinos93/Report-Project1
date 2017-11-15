@@ -156,13 +156,13 @@
           <DataField>PROCESADO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="MONTO_TRANSACCION">
-          <DataField>MONTO_TRANSACCION</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="MONTO_TRANSACCION_INGRESO">
+          <DataField>MONTO_TRANSACCION_INGRESO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="VALOR_TRANSACCION">
-          <DataField>VALOR_TRANSACCION</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="MONTO_TRANSACCION_EGRESO">
+          <DataField>MONTO_TRANSACCION_EGRESO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
       <Filters>
@@ -436,7 +436,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>Monto transacción</Value>
+                                                        <Value>Monto Ingreso</Value>
                                                         <Style>
                                                           <FontSize>9pt</FontSize>
                                                           <FontWeight>Bold</FontWeight>
@@ -469,7 +469,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>Valor</Value>
+                                                        <Value>Monto Egreso</Value>
                                                         <Style>
                                                           <FontSize>9pt</FontSize>
                                                           <FontWeight>Bold</FontWeight>
@@ -833,14 +833,14 @@
                                           </TablixCell>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="Textbox6">
+                                              <Textbox Name="MONTO_TRANSACCION_INGRESO">
                                                 <CanGrow>true</CanGrow>
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Cdbl(Code.valorUrl(Fields!TRAMA.Value,Fields!MONTO_TRANSACCION.Value))</Value>
+                                                        <Value>=Fields!MONTO_TRANSACCION_INGRESO.Value</Value>
                                                         <Style>
                                                           <FontSize>8pt</FontSize>
                                                           <Format>#,0.00;(#,0.00)</Format>
@@ -850,7 +850,7 @@
                                                     <Style />
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Textbox6</rd:DefaultName>
+                                                <rd:DefaultName>MONTO_TRANSACCION_INGRESO</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Color>LightGrey</Color>
@@ -866,14 +866,14 @@
                                           </TablixCell>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="Textbox11">
+                                              <Textbox Name="MONTO_TRANSACCION_EGRESO">
                                                 <CanGrow>true</CanGrow>
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Cdbl(Code.valorUrl(Fields!TRAMA.Value,Fields!VALOR_TRANSACCION.Value))</Value>
+                                                        <Value>=Fields!MONTO_TRANSACCION_EGRESO.Value</Value>
                                                         <Style>
                                                           <FontSize>8pt</FontSize>
                                                           <Format>#,0.00;(#,0.00)</Format>
@@ -883,7 +883,7 @@
                                                     <Style />
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Textbox11</rd:DefaultName>
+                                                <rd:DefaultName>MONTO_TRANSACCION_EGRESO</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Color>LightGrey</Color>
