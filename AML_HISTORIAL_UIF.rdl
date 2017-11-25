@@ -1340,7 +1340,7 @@
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>11pt</FontSize>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>
@@ -1354,11 +1354,29 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>PBX:</Value>
+                    <Value>=First(Fields!DIRECCION.Value, "DataSet2")</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>11pt</FontSize>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Format>dd/MM/yyyy</Format>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>PBX:  </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>
@@ -1369,7 +1387,7 @@
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>11pt</FontSize>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>
