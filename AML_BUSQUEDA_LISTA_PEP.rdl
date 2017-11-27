@@ -571,7 +571,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>0.53494cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -646,7 +646,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>0.53494cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -727,7 +727,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>0.53494cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -808,7 +808,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>0.53494cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -883,7 +883,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>0.53494cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -958,7 +958,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>0.53494cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1053,7 +1053,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
             <DataSetName>DSDUMMY</DataSetName>
             <Top>5.1562cm</Top>
             <Left>0.40795cm</Left>
-            <Height>3.6cm</Height>
+            <Height>3.20964cm</Height>
             <Width>25.40974cm</Width>
             <ZIndex>5</ZIndex>
             <Style>
@@ -1105,7 +1105,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>4.06104cm</Height>
+                  <Height>3.73573cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1120,7 +1120,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
-                                    <Height>0.6cm</Height>
+                                    <Height>0.53494cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1162,7 +1162,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.6cm</Height>
+                                    <Height>0.53494cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1204,7 +1204,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.6cm</Height>
+                                    <Height>0.53494cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1246,7 +1246,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.6cm</Height>
+                                    <Height>0.53494cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1288,7 +1288,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.6cm</Height>
+                                    <Height>0.53494cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1330,7 +1330,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.6cm</Height>
+                                    <Height>0.53494cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1397,7 +1397,8 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                   </TablixMember>
                                 </TablixMembers>
                               </TablixRowHierarchy>
-                              <Height>3.6cm</Height>
+                              <KeepTogether>true</KeepTogether>
+                              <Height>3.20964cm</Height>
                               <Width>25.40974cm</Width>
                               <Style>
                                 <Border>
@@ -1406,7 +1407,6 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                               </Style>
                             </Tablix>
                           </ReportItems>
-                          <KeepTogether>true</KeepTogether>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1438,7 +1438,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
             <DataSetName>DSRELACIONES</DataSetName>
             <Top>10.68599cm</Top>
             <Left>0.40795cm</Left>
-            <Height>4.06104cm</Height>
+            <Height>3.73573cm</Height>
             <Width>25.40974cm</Width>
             <ZIndex>7</ZIndex>
             <Style>
@@ -1454,7 +1454,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>3 - DESCRIPCION DE LA RELACION</Value>
+                    <Value>3 - DESCRIPCION DE LA RELACION:</Value>
                     <Style>
                       <FontFamily>Century Gothic</FontFamily>
                       <FontWeight>Bold</FontWeight>
@@ -1465,7 +1465,7 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>15.26942cm</Top>
+            <Top>14.95192cm</Top>
             <Left>0.40795cm</Left>
             <Height>0.93486cm</Height>
             <Width>25.40974cm</Width>
@@ -1481,7 +1481,81 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Tablix Name="Tablix2">
+          <Textbox Name="Textbox7">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>4-PRODUCTOS O SERVICIOS RELACIONADOS:</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Century Gothic</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox2</rd:DefaultName>
+            <Top>16.6589cm</Top>
+            <Left>0.40795cm</Left>
+            <Height>0.93486cm</Height>
+            <Width>25.40974cm</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox19">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>5- DESCRIPCION DE COINCIDENCIAS:</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Century Gothic</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox2</rd:DefaultName>
+            <Top>18.32578cm</Top>
+            <Left>0.40795cm</Left>
+            <Height>0.93486cm</Height>
+            <Width>25.40974cm</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Tablix Name="Tablix5">
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
@@ -1490,32 +1564,40 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>0.94018cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox8">
+                        <Textbox Name="Textbox20">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="OFAC: " &amp; code.Defecto(Sum(IIf(Fields!LISTA.Value = "OFAC", 1, 0),"DSLISTA"), 0)</Value>
+                                  <Value>6- OBSERVACIONES:</Value>
                                   <Style>
+                                    <FontStyle>Normal</FontStyle>
                                     <FontFamily>Century Gothic</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox8</rd:DefaultName>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <ZIndex>12</ZIndex>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BottomBorder>
+                              <Style>None</Style>
+                            </BottomBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1527,85 +1609,11 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>1.39375cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox23">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>="INTERPOL: " &amp; Code.Defecto(Sum(IIf(Fields!LISTA.Value = "INTERPOL", 1, 0),"DSLISTA"),0)</Value>
-                                  <Style>
-                                    <FontFamily>Century Gothic</FontFamily>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox23</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.6cm</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox24">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>="PEP LOCALES: " &amp; Code.Defecto(Sum(IIf(Fields!LISTA.Value = "PEP", 1, 0),"DSLISTA"),0)</Value>
-                                  <Style>
-                                    <FontFamily>Century Gothic</FontFamily>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox24</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.6cm</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox25">
+                        <Textbox Name="Textbox31">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1613,20 +1621,37 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Century Gothic</FontFamily>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox25</rd:DefaultName>
+                          <rd:DefaultName>Textbox31</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>None</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1647,34 +1672,279 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="Details2" />
+                  <Group Name="Detalles" />
                   <TablixMembers>
-                    <TablixMember />
-                    <TablixMember />
                     <TablixMember />
                     <TablixMember />
                   </TablixMembers>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
+            <KeepTogether>true</KeepTogether>
             <DataSetName>DSDUMMY</DataSetName>
-            <Top>16.61266cm</Top>
+            <Top>22.68159cm</Top>
             <Left>0.40795cm</Left>
-            <Height>2.4cm</Height>
+            <Height>2.33393cm</Height>
             <Width>25.40974cm</Width>
-            <ZIndex>9</ZIndex>
+            <ZIndex>11</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
+          <Rectangle Name="Rectangle2">
+            <ReportItems>
+              <Tablix Name="Tablix2">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>25.40974cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox8">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>="OFAC: " &amp; code.Defecto(Sum(IIf(Fields!LISTA.Value = "OFAC", 1, 0),"DSLISTA"), 0)</Value>
+                                      <Style>
+                                        <FontFamily>Century Gothic</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox8</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox23">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>="INTERPOL: " &amp; Code.Defecto(Sum(IIf(Fields!LISTA.Value = "INTERPOL", 1, 0),"DSLISTA"),0)</Value>
+                                      <Style>
+                                        <FontFamily>Century Gothic</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox23</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox24">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>="PEP LOCALES: " &amp; Code.Defecto(Sum(IIf(Fields!LISTA.Value = "PEP", 1, 0),"DSLISTA"),0)</Value>
+                                      <Style>
+                                        <FontFamily>Century Gothic</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox24</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox25">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>="OTRAS LISTAS: " &amp; Code.Defecto(Sum(IIf(Not Code.Existe(Fields!LISTA.Value, "PEP","INTERPOL","OFAC"), 1, 0),"DSLISTA"),0)</Value>
+                                      <Style>
+                                        <FontFamily>Century Gothic</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox25</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details2" />
+                      <TablixMembers>
+                        <TablixMember />
+                        <TablixMember />
+                        <TablixMember />
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <KeepTogether>true</KeepTogether>
+                <DataSetName>DSDUMMY</DataSetName>
+                <Left>0cm</Left>
+                <Height>2.4cm</Height>
+                <Width>25.40974cm</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>19.65537cm</Top>
+            <Left>0.40795cm</Left>
+            <Height>2.43207cm</Height>
+            <Width>25.40974cm</Width>
+            <ZIndex>12</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
         </ReportItems>
-        <Height>8.89122in</Height>
+        <Height>9.84863in</Height>
         <Style />
       </Body>
       <Width>26.22564cm</Width>
       <Page>
+        <PageFooter>
+          <Height>1.19221cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox32">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>INFORME DE CUMPLIMIENTO/ DEBIDA DILIGENCIA AMPLIADA</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Bodoni MT Condensed</FontFamily>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#212121</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox32</rd:DefaultName>
+              <Top>0.10084cm</Top>
+              <Height>1.09137cm</Height>
+              <Width>26.22563cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
         <PageHeight>27.94cm</PageHeight>
         <PageWidth>27.72564cm</PageWidth>
         <LeftMargin>0.75cm</LeftMargin>
