@@ -1451,7 +1451,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>FAVOR ESPECIFIQUE EN CASO DE HABER MARCADO CASILLA OTROS MEDIOS:</Value>
+                        <Value>NOTA: AL MARCAR EFECTIVO O CHEQUE SE ENTIENDE LAS OPERACIONES REALIZADAS EN VENTANILLA DEL BANCO Y EN EL CASO DE OTROS MEDIOS SE REFIERE CUANDO EL CLIENTE CANCELA EN CUENTAS CORRIENTES A NOMBRE DEL PRIMER BANCO EN OTROS BANCOS.</Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -1464,48 +1464,13 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
                 <Top>7.41578cm</Top>
-                <Left>0.42333cm</Left>
+                <Left>0.04782cm</Left>
                 <Height>0.9cm</Height>
-                <Width>6.78201cm</Width>
+                <Width>28.27468cm</Width>
                 <ZIndex>14</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
-                  </Border>
-                  <VerticalAlign>Middle</VerticalAlign>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox43">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value />
-                        <MarkupType>HTML</MarkupType>
-                        <Style>
-                          <FontWeight>Normal</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox6</rd:DefaultName>
-                <Top>7.41578cm</Top>
-                <Left>7.89454cm</Left>
-                <Height>0.9cm</Height>
-                <Width>20.23729cm</Width>
-                <ZIndex>15</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                    <Width>0.5pt</Width>
                   </Border>
                   <VerticalAlign>Middle</VerticalAlign>
                   <PaddingLeft>2pt</PaddingLeft>
@@ -1536,7 +1501,7 @@
                 <Left>12.72204cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
-                <ZIndex>16</ZIndex>
+                <ZIndex>15</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -1571,7 +1536,7 @@
                 <Left>15.87776cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
-                <ZIndex>17</ZIndex>
+                <ZIndex>16</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -1607,7 +1572,7 @@
                 <Left>16.90764cm</Left>
                 <Height>0.9cm</Height>
                 <Width>1.73143cm</Width>
-                <ZIndex>18</ZIndex>
+                <ZIndex>17</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1641,7 +1606,7 @@
                 <Left>18.78018cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
-                <ZIndex>19</ZIndex>
+                <ZIndex>18</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -1678,7 +1643,7 @@
                 <Left>8.47009cm</Left>
                 <Height>0.9cm</Height>
                 <Width>1.87279cm</Width>
-                <ZIndex>20</ZIndex>
+                <ZIndex>19</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1712,7 +1677,7 @@
                 <Left>4.86367cm</Left>
                 <Height>0.9cm</Height>
                 <Width>3.46531cm</Width>
-                <ZIndex>21</ZIndex>
+                <ZIndex>20</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -1748,7 +1713,7 @@
                 <Left>1.1332cm</Left>
                 <Height>0.9cm</Height>
                 <Width>4.22476cm</Width>
-                <ZIndex>22</ZIndex>
+                <ZIndex>21</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1782,7 +1747,7 @@
                 <Left>5.68194cm</Left>
                 <Height>0.9cm</Height>
                 <Width>3.46531cm</Width>
-                <ZIndex>23</ZIndex>
+                <ZIndex>22</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -1818,7 +1783,7 @@
                 <Left>9.85729cm</Left>
                 <Height>0.9cm</Height>
                 <Width>4.65193cm</Width>
-                <ZIndex>24</ZIndex>
+                <ZIndex>23</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1853,7 +1818,7 @@
                 <Left>14.91848cm</Left>
                 <Height>0.9cm</Height>
                 <Width>1.49527cm</Width>
-                <ZIndex>25</ZIndex>
+                <ZIndex>24</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1888,7 +1853,7 @@
                 <Left>17.79932cm</Left>
                 <Height>0.9cm</Height>
                 <Width>1.92503cm</Width>
-                <ZIndex>26</ZIndex>
+                <ZIndex>25</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1922,7 +1887,7 @@
                 <Left>16.74502cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
-                <ZIndex>27</ZIndex>
+                <ZIndex>26</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -1957,7 +1922,7 @@
                 <Left>19.90074cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
-                <ZIndex>28</ZIndex>
+                <ZIndex>27</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -1993,7 +1958,7 @@
                 <Left>1.1332cm</Left>
                 <Height>0.9cm</Height>
                 <Width>3.22198cm</Width>
-                <ZIndex>29</ZIndex>
+                <ZIndex>28</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2028,7 +1993,7 @@
                 <Left>5.16713cm</Left>
                 <Height>0.9cm</Height>
                 <Width>1.96055cm</Width>
-                <ZIndex>30</ZIndex>
+                <ZIndex>29</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2062,7 +2027,7 @@
                 <Left>7.31117cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
-                <ZIndex>31</ZIndex>
+                <ZIndex>30</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -2098,7 +2063,7 @@
                 <Left>8.67982cm</Left>
                 <Height>0.9cm</Height>
                 <Width>1.96055cm</Width>
-                <ZIndex>32</ZIndex>
+                <ZIndex>31</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2132,7 +2097,7 @@
                 <Left>10.82386cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
-                <ZIndex>33</ZIndex>
+                <ZIndex>32</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -2168,7 +2133,7 @@
                 <Left>11.76954cm</Left>
                 <Height>0.9cm</Height>
                 <Width>2.27005cm</Width>
-                <ZIndex>34</ZIndex>
+                <ZIndex>33</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2202,7 +2167,7 @@
                 <Left>14.22308cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
-                <ZIndex>35</ZIndex>
+                <ZIndex>34</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -2238,7 +2203,7 @@
                 <Left>15.10686cm</Left>
                 <Height>0.9cm</Height>
                 <Width>2.98953cm</Width>
-                <ZIndex>36</ZIndex>
+                <ZIndex>35</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2272,7 +2237,7 @@
                 <Left>18.27278cm</Left>
                 <Height>0.9cm</Height>
                 <Width>9.85905cm</Width>
-                <ZIndex>37</ZIndex>
+                <ZIndex>36</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -2343,15 +2308,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Por este medio, en cumplimiento del instructivo emitido por la Unidad de Investigación de la Fiscalía General de la República, para la prevención del Lavado de Dinero y de Activos en las instituciones bancarias; BAJO JURAMENTO DECLARO: Que la información anterior y la que he proporcionado a </Value>
-                        <Style />
-                      </TextRun>
-                      <TextRun>
-                        <Value>=First(Fields!NOMBRE_COMPANIA.Value, "DataSet2")</Value>
-                        <Style />
-                      </TextRun>
-                      <TextRun>
-                        <Value> y que forma parte de mi expediente o del expediente de mi representada en su caso,  es fidedigna y que las transacciones efectuadas en la cuenta de operaciones pasivas no proceden, ni serán utilizadas con la finalidad de favorecer ningún tipo de actividad ilegal, contempladas en la Ley Contra el Lavado de Dinero y Activos. Además declaro que me someto a cualquier tipo de investigación necesaria para establecer la procedencia de los fondos de mi persona o de mi representada en su caso.</Value>
+                        <Value>Por la presente declaro que los datos antes descritos son verdaderos y que el pago que realizo, proviene de  actividades enteramente lícitas, por consiguiente, dichos fondos no se encuentran relacionados bajo ninguna circunstancia con hechos o actividades criminales relacionadas con el narcotráfico y delitos conexos en el lavado de dinero y otros activos, tampoco con situaciones en contra de la Ley Contra el Lavado de Dinero y Activos de la República de El Salvador. Además declaro que me someto a cualquier tipo de investigación necesaria para establecer la procedencia de los fondos de mi representada. Por último declaro que este formulario ha sido completado por mi y/o en mi presencia y que la información proporcionada es verdadera.</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -2376,7 +2333,7 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>26.69034cm</Top>
+            <Top>24.49569cm</Top>
             <Left>0.1695cm</Left>
             <Height>3.29532cm</Height>
             <Width>28.54549cm</Width>
@@ -2588,7 +2545,7 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>30.29919cm</Top>
+            <Top>28.07669cm</Top>
             <Left>0.1695cm</Left>
             <Height>2.34237cm</Height>
             <Width>28.38626cm</Width>
@@ -2616,7 +2573,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox267</rd:DefaultName>
-            <Top>32.73739cm</Top>
+            <Top>32.10239cm</Top>
             <Left>0.1695cm</Left>
             <Height>0.91294cm</Height>
             <Width>28.33844cm</Width>
@@ -2640,7 +2597,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>ORIGEN DE FONDOS</Value>
+                        <Value>ORIGEN DE FONDOS CON LOS CUALES NOS CANCELA EL PRESTAMO ANTICIPADO,  PRESTAMO SANEADO O COBRO JUDICIAL </Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
                           <Color>White</Color>
@@ -2674,7 +2631,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>SALARIOS</Value>
+                        <Value>COMISIONES, BONIFICACION, INDEMNIZACIONES RECIBIDAS</Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -2687,7 +2644,7 @@
                 <Top>0.99531cm</Top>
                 <Left>0.43928cm</Left>
                 <Height>0.9cm</Height>
-                <Width>1.77055cm</Width>
+                <Width>5.15722cm</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -2719,7 +2676,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>2.28039cm</Left>
+                <Left>5.77289cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
                 <ZIndex>2</ZIndex>
@@ -2742,7 +2699,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>NEGOCIO PROPIO</Value>
+                        <Value>REMESAS </Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -2753,9 +2710,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>4.216cm</Left>
+                <Left>6.756cm</Left>
                 <Height>0.9cm</Height>
-                <Width>3.00528cm</Width>
+                <Width>1.98222cm</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
@@ -2787,7 +2744,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>7.32711cm</Left>
+                <Left>8.91461cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.46361cm</Width>
                 <ZIndex>4</ZIndex>
@@ -2810,7 +2767,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>PENSION</Value>
+                        <Value>DIVIDENDOS </Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -2821,9 +2778,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>9.06397cm</Left>
+                <Left>9.88048cm</Left>
                 <Height>0.9cm</Height>
-                <Width>1.67cm</Width>
+                <Width>2.27005cm</Width>
                 <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
@@ -2855,7 +2812,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>10.8398cm</Left>
+                <Left>12.4273cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
                 <ZIndex>6</ZIndex>
@@ -2878,7 +2835,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>REMESAS</Value>
+                        <Value>HERENCIA</Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -2889,9 +2846,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>12.78988cm</Left>
+                <Left>13.42488cm</Left>
                 <Height>0.9cm</Height>
-                <Width>1.73528cm</Width>
+                <Width>1.97493cm</Width>
                 <ZIndex>7</ZIndex>
                 <Style>
                   <Border>
@@ -2923,7 +2880,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>14.63099cm</Left>
+                <Left>15.58349cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
                 <ZIndex>8</ZIndex>
@@ -2946,7 +2903,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>DIVIDENDOS</Value>
+                        <Value>REFINANCIAMIENTO EN PRIMER BANCO</Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -2957,9 +2914,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>16.44736cm</Left>
+                <Left>16.77793cm</Left>
                 <Height>0.9cm</Height>
-                <Width>2.29972cm</Width>
+                <Width>3.55665cm</Width>
                 <ZIndex>9</ZIndex>
                 <Style>
                   <Border>
@@ -2991,7 +2948,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>18.92347cm</Left>
+                <Left>20.51097cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
                 <ZIndex>10</ZIndex>
@@ -3014,7 +2971,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>HERENCIA</Value>
+                        <Value>REFINANCIAMIENTO EN OTROS BANCOS </Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -3025,9 +2982,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>20.82654cm</Left>
+                <Left>21.47407cm</Left>
                 <Height>0.9cm</Height>
-                <Width>2.03514cm</Width>
+                <Width>3.37683cm</Width>
                 <ZIndex>11</ZIndex>
                 <Style>
                   <Border>
@@ -3059,7 +3016,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>22.98516cm</Left>
+                <Left>24.89016cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
                 <ZIndex>12</ZIndex>
@@ -3093,7 +3050,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>24.82627cm</Left>
+                <Left>26.2595cm</Left>
                 <Height>0.9cm</Height>
                 <Width>1.45306cm</Width>
                 <ZIndex>13</ZIndex>
@@ -3127,80 +3084,10 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>0.99531cm</Top>
-                <Left>26.38516cm</Left>
+                <Left>27.81839cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
                 <ZIndex>14</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                    <Width>0.5pt</Width>
-                  </Border>
-                  <VerticalAlign>Middle</VerticalAlign>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox20">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>FAVOR ESPECIFIQUE:</Value>
-                        <Style>
-                          <FontSize>9pt</FontSize>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Center</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>2.51848cm</Top>
-                <Left>0.43927cm</Left>
-                <Height>1.2cm</Height>
-                <Width>3.61613cm</Width>
-                <ZIndex>15</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <VerticalAlign>Middle</VerticalAlign>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox21">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value />
-                        <MarkupType>HTML</MarkupType>
-                        <Style>
-                          <FontWeight>Normal</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox6</rd:DefaultName>
-                <Top>2.51848cm</Top>
-                <Left>4.25379cm</Left>
-                <Height>1.2cm</Height>
-                <Width>24.22794cm</Width>
-                <ZIndex>16</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -3217,7 +3104,7 @@
             <KeepTogether>true</KeepTogether>
             <Top>16.96168cm</Top>
             <Left>0.1695cm</Left>
-            <Height>3.88355cm</Height>
+            <Height>2.35175cm</Height>
             <Width>28.49767cm</Width>
             <ZIndex>9</ZIndex>
             <Style>
@@ -3235,7 +3122,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>FAVOR DETALLE DOCUMENTACION ADJUNTA QUE AMPARA LA PROCEDENCIA DE LOS FONDOS </Value>
+                        <Value>FAVOR DETALLE DOCUMENTACION ADJUNTA QUE AMPARA LA PROCEDENCIA DE LOS FONDOS CON LOS CUALES NOS CANCELA DE FORMA ANTICIPADA, PRESTAMO SANEADO O COBRO JUDICIAL </Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
                           <Color>White</Color>
@@ -3249,7 +3136,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox7</rd:DefaultName>
                 <Left>0.03188cm</Left>
-                <Height>0.62675cm</Height>
+                <Height>1.04451cm</Height>
                 <Width>28.48173cm</Width>
                 <Style>
                   <Border>
@@ -3270,7 +3157,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>CONSTANCIA  DE SALARIOS</Value>
+                        <Value>BOLETAS DE PAGO COMISIONES, BONIFICACION, INDEMNIZACIONES RECIBIDAS </Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -3282,10 +3169,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>0.85669cm</Top>
-                <Left>0.42333cm</Left>
-                <Height>0.9cm</Height>
-                <Width>3.89405cm</Width>
+                <Top>1.55296cm</Top>
+                <Left>0.10583cm</Left>
+                <Height>1.35258cm</Height>
+                <Width>5.50355cm</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -3316,8 +3203,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
-                <Top>0.85669cm</Top>
-                <Left>4.53157cm</Left>
+                <Top>1.77925cm</Top>
+                <Left>5.80157cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
                 <ZIndex>2</ZIndex>
@@ -3340,7 +3227,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>CARNEO CONSTANCIA DE PENSION</Value>
+                        <Value>CONSTANCIA DE DIVIDENDOS</Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -3352,10 +3239,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>2.09988cm</Top>
-                <Left>0.46113cm</Left>
+                <Top>1.77925cm</Top>
+                <Left>11.36558cm</Left>
                 <Height>0.9cm</Height>
-                <Width>3.89405cm</Width>
+                <Width>2.82614cm</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
@@ -3386,8 +3273,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
-                <Top>2.09988cm</Top>
-                <Left>4.53157cm</Left>
+                <Top>1.77925cm</Top>
+                <Left>14.3854cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
                 <ZIndex>4</ZIndex>
@@ -3403,42 +3290,6 @@
                   <PaddingBottom>2pt</PaddingBottom>
                 </Style>
               </Textbox>
-              <Textbox Name="Textbox29">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>EN CASO DE NEGOCIO PROPIO:</Value>
-                        <Style>
-                          <FontSize>9pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Center</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>0.85669cm</Top>
-                <Left>6.13367cm</Left>
-                <Height>0.9cm</Height>
-                <Width>5.55822cm</Width>
-                <ZIndex>5</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <VerticalAlign>Middle</VerticalAlign>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
               <Textbox Name="Textbox30">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
@@ -3446,7 +3297,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>ULTIMAS TRES REMESAS RECIBIDAS</Value>
+                        <Value>OTROS</Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -3458,11 +3309,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>2.09988cm</Top>
-                <Left>7.6991cm</Left>
+                <Top>1.77925cm</Top>
+                <Left>26.27201cm</Left>
                 <Height>0.9cm</Height>
-                <Width>3.89405cm</Width>
-                <ZIndex>6</ZIndex>
+                <Width>1.44815cm</Width>
+                <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -3492,81 +3343,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
-                <Top>2.09988cm</Top>
-                <Left>11.76954cm</Left>
+                <Top>1.77925cm</Top>
+                <Left>27.80245cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
-                <ZIndex>7</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                    <Width>0.5pt</Width>
-                  </Border>
-                  <VerticalAlign>Middle</VerticalAlign>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox31">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>CONSTANCIA DE LIQUIDACION DE DIVIDENDOS</Value>
-                        <Style>
-                          <FontSize>9pt</FontSize>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Center</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>2.09988cm</Top>
-                <Left>14.72904cm</Left>
-                <Height>0.9cm</Height>
-                <Width>4.84655cm</Width>
-                <ZIndex>8</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <VerticalAlign>Middle</VerticalAlign>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox85">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value />
-                        <MarkupType>HTML</MarkupType>
-                        <Style>
-                          <FontWeight>Normal</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox6</rd:DefaultName>
-                <Top>2.09988cm</Top>
-                <Left>19.75198cm</Left>
-                <Height>0.9cm</Height>
-                <Width>0.53599cm</Width>
-                <ZIndex>9</ZIndex>
+                <ZIndex>6</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -3586,7 +3367,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>ULTIMAS DOS DECLARACIONES DE RENTA</Value>
+                        <Value>COMPROBANTE DE REMESAS </Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -3598,11 +3379,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>0.85669cm</Top>
-                <Left>12.2015cm</Left>
+                <Top>1.77925cm</Top>
+                <Left>6.804cm</Left>
                 <Height>0.9cm</Height>
-                <Width>7.10059cm</Width>
-                <ZIndex>10</ZIndex>
+                <Width>3.29099cm</Width>
+                <ZIndex>7</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -3632,81 +3413,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
-                <Top>0.85669cm</Top>
-                <Left>19.44694cm</Left>
+                <Top>1.77925cm</Top>
+                <Left>10.23944cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
-                <ZIndex>11</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                    <Width>0.5pt</Width>
-                  </Border>
-                  <VerticalAlign>Middle</VerticalAlign>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox33">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>DECLARATORIA DE HEREDERO</Value>
-                        <Style>
-                          <FontSize>9pt</FontSize>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Center</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>2.09988cm</Top>
-                <Left>22.62194cm</Left>
-                <Height>0.9cm</Height>
-                <Width>3.43302cm</Width>
-                <ZIndex>12</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <VerticalAlign>Middle</VerticalAlign>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox87">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value />
-                        <MarkupType>HTML</MarkupType>
-                        <Style>
-                          <FontWeight>Normal</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox6</rd:DefaultName>
-                <Top>2.09988cm</Top>
-                <Left>26.23135cm</Left>
-                <Height>0.9cm</Height>
-                <Width>0.53599cm</Width>
-                <ZIndex>13</ZIndex>
+                <ZIndex>8</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -3726,7 +3437,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>ULTIMAS TRES DECLARACIONES DE IVA</Value>
+                        <Value>DECLARATORIA DE HEREDERO</Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -3738,11 +3449,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>0.85669cm</Top>
-                <Left>21.20941cm</Left>
+                <Top>1.77925cm</Top>
+                <Left>15.49441cm</Left>
                 <Height>0.9cm</Height>
-                <Width>6.44819cm</Width>
-                <ZIndex>14</ZIndex>
+                <Width>3.18676cm</Width>
+                <ZIndex>9</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -3772,11 +3483,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
-                <Top>0.80314cm</Top>
-                <Left>27.9298cm</Left>
+                <Top>1.77925cm</Top>
+                <Left>18.84233cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.53599cm</Width>
-                <ZIndex>15</ZIndex>
+                <ZIndex>10</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -3796,7 +3507,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>FAVOR DETALLE CUALQUIER OTRA DOCUMENTACION QUE SOPORTE LA PROCEDENCIA DE LOS FONDOS</Value>
+                        <Value>EN CASO DE HABER MARCADO LA CASILLA OTROS, FAVOR ESPECIFIQUE QUE TIPO DE DOCUMENTO </Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -3808,11 +3519,11 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
-                <Top>3.82239cm</Top>
-                <Left>0.42334cm</Left>
+                <Top>3.56616cm</Top>
+                <Left>0.10583cm</Left>
                 <Height>1.2cm</Height>
-                <Width>9.25756cm</Width>
-                <ZIndex>16</ZIndex>
+                <Width>9.25645cm</Width>
+                <ZIndex>11</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -3842,11 +3553,81 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
-                <Top>3.82239cm</Top>
-                <Left>9.85729cm</Left>
+                <Top>3.56616cm</Top>
+                <Left>9.53979cm</Left>
                 <Height>1.2cm</Height>
-                <Width>18.6085cm</Width>
-                <ZIndex>17</ZIndex>
+                <Width>18.926cm</Width>
+                <ZIndex>12</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                    <Width>0.5pt</Width>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox43">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>CARTA DE APROBACION DE CREDITO OTORGADOS  EN OTROS BANCOS </Value>
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox5</rd:DefaultName>
+                <Top>1.50074cm</Top>
+                <Left>19.8581cm</Left>
+                <Height>1.45702cm</Height>
+                <Width>4.97686cm</Width>
+                <ZIndex>13</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox89">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <MarkupType>HTML</MarkupType>
+                        <Style>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox6</rd:DefaultName>
+                <Top>1.77925cm</Top>
+                <Left>24.90003cm</Left>
+                <Height>0.9cm</Height>
+                <Width>0.53599cm</Width>
+                <ZIndex>14</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -3861,9 +3642,9 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>20.98634cm</Top>
+            <Top>19.45454cm</Top>
             <Left>0.18544cm</Left>
-            <Height>5.52761cm</Height>
+            <Height>4.97059cm</Height>
             <Width>28.52955cm</Width>
             <ZIndex>10</ZIndex>
             <Style>
@@ -3873,7 +3654,7 @@
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>13.24816in</Height>
+        <Height>12.99816in</Height>
         <Style />
       </Body>
       <Width>28.71499cm</Width>
