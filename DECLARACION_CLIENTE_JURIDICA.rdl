@@ -614,7 +614,7 @@ union all select 5  </CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>="FORMULARIO - DECLARACION JURADA - " &amp;  UCase(Parameters!TIPO.Label)</Value>
+                    <Value>="FORMULARIO - CONOZCA A SU CLIENTE - PERSONA JURIDICA"</Value>
                     <MarkupType>HTML</MarkupType>
                     <Style>
                       <FontFamily>Segoe UI</FontFamily>
@@ -652,7 +652,7 @@ union all select 5  </CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=iif(Parameters!TIPO.Value = "T", "F-OC-DJTARJ-07", "F-OC-DJCRE-05")</Value>
+                    <Value>F-OC-CCPJOP-02</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -763,7 +763,7 @@ union all select 5  </CommandText>
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox6</rd:DefaultName>
-                    <Top>1.42875cm</Top>
+                    <Top>1.50222cm</Top>
                     <Left>6.67211cm</Left>
                     <Height>0.9cm</Height>
                     <Width>16.23483cm</Width>
@@ -864,7 +864,7 @@ union all select 5  </CommandText>
                     <Top>2.65208cm</Top>
                     <Left>15.47454cm</Left>
                     <Height>0.97862cm</Height>
-                    <Width>7.4324cm</Width>
+                    <Width>7.68356cm</Width>
                     <ZIndex>5</ZIndex>
                     <Style>
                       <Border>
@@ -912,103 +912,6 @@ union all select 5  </CommandText>
                       <PaddingBottom>2pt</PaddingBottom>
                     </Style>
                   </Textbox>
-                  <Textbox Name="Textbox12">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>NUMERO DEL PRODUCTO</Value>
-                            <Style />
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>3.76375cm</Top>
-                    <Left>0.00992cm</Left>
-                    <Height>1.01424cm</Height>
-                    <Width>2.49119cm</Width>
-                    <ZIndex>7</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <VerticalAlign>Middle</VerticalAlign>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox13">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value />
-                            <MarkupType>HTML</MarkupType>
-                            <Style>
-                              <FontWeight>Normal</FontWeight>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox6</rd:DefaultName>
-                    <Top>3.8427cm</Top>
-                    <Left>2.95333cm</Left>
-                    <Height>0.9cm</Height>
-                    <Width>3.92286cm</Width>
-                    <ZIndex>8</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>Solid</Style>
-                        <Width>0.5pt</Width>
-                      </Border>
-                      <VerticalAlign>Middle</VerticalAlign>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox14">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>PLAZO EN DIAS EN CASO DE DEPOSITO A PLAZO</Value>
-                            <Style />
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>3.80743cm</Top>
-                    <Left>6.96554cm</Left>
-                    <Height>0.93528cm</Height>
-                    <Width>4.50132cm</Width>
-                    <ZIndex>9</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <VerticalAlign>Middle</VerticalAlign>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
                   <Textbox Name="Textbox122">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
@@ -1028,7 +931,7 @@ union all select 5  </CommandText>
                     <Left>23.74031cm</Left>
                     <Height>0.9cm</Height>
                     <Width>1.66272cm</Width>
-                    <ZIndex>10</ZIndex>
+                    <ZIndex>7</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -1064,7 +967,7 @@ union all select 5  </CommandText>
                     <Left>28.1656cm</Left>
                     <Height>0.9cm</Height>
                     <Width>0.60824cm</Width>
-                    <ZIndex>11</ZIndex>
+                    <ZIndex>8</ZIndex>
                     <Style>
                       <Border>
                         <Style>Solid</Style>
@@ -1098,7 +1001,7 @@ union all select 5  </CommandText>
                     <Left>25.89647cm</Left>
                     <Height>0.9cm</Height>
                     <Width>1.8698cm</Width>
-                    <ZIndex>12</ZIndex>
+                    <ZIndex>9</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -1131,7 +1034,7 @@ union all select 5  </CommandText>
                     <Left>29.13205cm</Left>
                     <Height>0.9cm</Height>
                     <Width>2.40607cm</Width>
-                    <ZIndex>13</ZIndex>
+                    <ZIndex>10</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -1167,7 +1070,7 @@ union all select 5  </CommandText>
                     <Left>31.71451cm</Left>
                     <Height>0.9cm</Height>
                     <Width>0.60824cm</Width>
-                    <ZIndex>14</ZIndex>
+                    <ZIndex>11</ZIndex>
                     <Style>
                       <Border>
                         <Style>Solid</Style>
@@ -1199,7 +1102,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Left>0.4186cm</Left>
+                        <Top>0.02249in</Top>
+                        <Left>11.90797cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.52215cm</Width>
                         <Style>
@@ -1233,7 +1137,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Left>1.08186cm</Left>
+                        <Top>0.02249in</Top>
+                        <Left>12.57123cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.60824cm</Width>
                         <ZIndex>1</ZIndex>
@@ -1266,8 +1171,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>2.18399cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>13.67336cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.52215cm</Width>
                         <ZIndex>2</ZIndex>
@@ -1302,8 +1207,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>2.81197cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>14.30134cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.60824cm</Width>
                         <ZIndex>3</ZIndex>
@@ -1336,8 +1241,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>7.81626cm</Left>
+                        <Top>0.08358cm</Top>
+                        <Left>19.27917cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.76909cm</Width>
                         <ZIndex>4</ZIndex>
@@ -1372,8 +1277,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>8.78386cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>20.27323cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.60824cm</Width>
                         <ZIndex>5</ZIndex>
@@ -1406,8 +1311,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>3.9141cm</Left>
+                        <Top>0.08358cm</Top>
+                        <Left>15.37701cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.52215cm</Width>
                         <ZIndex>6</ZIndex>
@@ -1439,8 +1344,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>9.88599cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>21.37536cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.76909cm</Width>
                         <ZIndex>7</ZIndex>
@@ -1472,8 +1377,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>5.67815cm</Left>
+                        <Top>0.08358cm</Top>
+                        <Left>17.14106cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.76909cm</Width>
                         <ZIndex>8</ZIndex>
@@ -1508,8 +1413,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>4.61264cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>16.10201cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.60824cm</Width>
                         <ZIndex>9</ZIndex>
@@ -1544,10 +1449,10 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>11.9336cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>23.42297cm</Left>
                         <Height>0.9cm</Height>
-                        <Width>1.81475cm</Width>
+                        <Width>1.92058cm</Width>
                         <ZIndex>10</ZIndex>
                         <Style>
                           <Border>
@@ -1580,8 +1485,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>16.0914cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>27.58077cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.60824cm</Width>
                         <ZIndex>11</ZIndex>
@@ -1614,8 +1519,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>15.11521cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>26.60458cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.73381cm</Width>
                         <ZIndex>12</ZIndex>
@@ -1650,8 +1555,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>6.71413cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>18.2035cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.60824cm</Width>
                         <ZIndex>13</ZIndex>
@@ -1687,8 +1592,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>10.852cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>22.34137cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.60824cm</Width>
                         <ZIndex>14</ZIndex>
@@ -1724,8 +1629,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>13.92474cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>25.41411cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.60824cm</Width>
                         <ZIndex>15</ZIndex>
@@ -1760,10 +1665,10 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>17.19353cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>28.6829cm</Left>
                         <Height>0.9cm</Height>
-                        <Width>1.81475cm</Width>
+                        <Width>1.8257cm</Width>
                         <ZIndex>16</ZIndex>
                         <Style>
                           <Border>
@@ -1796,8 +1701,8 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Top>0.021cm</Top>
-                        <Left>19.15152cm</Left>
+                        <Top>0.05712cm</Top>
+                        <Left>30.61443cm</Left>
                         <Height>0.9cm</Height>
                         <Width>0.60824cm</Width>
                         <ZIndex>17</ZIndex>
@@ -1813,29 +1718,14 @@ union all select 5  </CommandText>
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
-                    </ReportItems>
-                    <KeepTogether>true</KeepTogether>
-                    <Top>3.80709cm</Top>
-                    <Left>11.56044cm</Left>
-                    <Height>0.97089cm</Height>
-                    <Width>20.71044cm</Width>
-                    <ZIndex>15</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                    </Style>
-                  </Rectangle>
-                  <Rectangle Name="Rectangle10">
-                    <ReportItems>
-                      <Textbox Name="Textbox15">
+                      <Textbox Name="Textbox12">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>¿LA PERSONA JURIDICA POSEE GIRO O APNFD?</Value>
+                                <Value>NUMERO DEL PRODUCTO</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
@@ -1843,9 +1733,11 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Left>0.04402cm</Left>
+                        <Top>0cm</Top>
+                        <Left>0cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>8.96823cm</Width>
+                        <Width>2.69111cm</Width>
+                        <ZIndex>18</ZIndex>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -1857,61 +1749,29 @@ union all select 5  </CommandText>
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
-                      <Textbox Name="Textbox145">
+                      <Textbox Name="Textbox13">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>SI</Value>
-                                <Style />
-                              </TextRun>
-                            </TextRuns>
-                            <Style />
-                          </Paragraph>
-                        </Paragraphs>
-                        <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Top>0.01298cm</Top>
-                        <Left>9.89925cm</Left>
-                        <Height>1.01424cm</Height>
-                        <Width>0.50176cm</Width>
-                        <ZIndex>1</ZIndex>
-                        <Style>
-                          <Border>
-                            <Style>None</Style>
-                          </Border>
-                          <VerticalAlign>Middle</VerticalAlign>
-                          <PaddingLeft>2pt</PaddingLeft>
-                          <PaddingRight>2pt</PaddingRight>
-                          <PaddingTop>2pt</PaddingTop>
-                          <PaddingBottom>2pt</PaddingBottom>
-                        </Style>
-                      </Textbox>
-                      <Textbox Name="Textbox146">
-                        <CanGrow>true</CanGrow>
-                        <KeepTogether>true</KeepTogether>
-                        <Paragraphs>
-                          <Paragraph>
-                            <TextRuns>
-                              <TextRun>
-                                <Value>=iif(Not Code.EsVacio(First(Fields!GIRO.Value, "dsFicha")), "X","")</Value>
+                                <Value />
                                 <MarkupType>HTML</MarkupType>
                                 <Style>
                                   <FontWeight>Normal</FontWeight>
                                 </Style>
                               </TextRun>
                             </TextRuns>
-                            <Style>
-                              <TextAlign>Center</TextAlign>
-                            </Style>
+                            <Style />
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Left>10.5774cm</Left>
-                        <Height>1.01424cm</Height>
-                        <Width>0.60824cm</Width>
-                        <ZIndex>2</ZIndex>
+                        <Top>0.05712cm</Top>
+                        <Left>2.8675cm</Left>
+                        <Height>0.9cm</Height>
+                        <Width>3.92286cm</Width>
+                        <ZIndex>19</ZIndex>
                         <Style>
                           <Border>
                             <Style>Solid</Style>
@@ -1924,14 +1784,14 @@ union all select 5  </CommandText>
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
-                      <Textbox Name="Textbox147">
+                      <Textbox Name="Textbox14">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>NO</Value>
+                                <Value>PLAZO EN DIAS EN CASO DE DEPOSITO A PLAZO</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
@@ -1939,10 +1799,11 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Left>11.49986cm</Left>
-                        <Height>1.01424cm</Height>
-                        <Width>0.66921cm</Width>
-                        <ZIndex>3</ZIndex>
+                        <Top>0.03948cm</Top>
+                        <Left>6.90617cm</Left>
+                        <Height>0.93528cm</Height>
+                        <Width>4.79764cm</Width>
+                        <ZIndex>20</ZIndex>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -1954,49 +1815,13 @@ union all select 5  </CommandText>
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
-                      <Textbox Name="Textbox148">
-                        <CanGrow>true</CanGrow>
-                        <KeepTogether>true</KeepTogether>
-                        <Paragraphs>
-                          <Paragraph>
-                            <TextRuns>
-                              <TextRun>
-                                <Value>=iif(Code.EsVacio(First(Fields!GIRO.Value, "dsFicha")), "X","")</Value>
-                                <MarkupType>HTML</MarkupType>
-                                <Style>
-                                  <FontWeight>Normal</FontWeight>
-                                </Style>
-                              </TextRun>
-                            </TextRuns>
-                            <Style>
-                              <TextAlign>Center</TextAlign>
-                            </Style>
-                          </Paragraph>
-                        </Paragraphs>
-                        <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Left>12.31018cm</Left>
-                        <Height>1.01424cm</Height>
-                        <Width>0.60824cm</Width>
-                        <ZIndex>4</ZIndex>
-                        <Style>
-                          <Border>
-                            <Style>Solid</Style>
-                            <Width>0.5pt</Width>
-                          </Border>
-                          <VerticalAlign>Middle</VerticalAlign>
-                          <PaddingLeft>2pt</PaddingLeft>
-                          <PaddingRight>2pt</PaddingRight>
-                          <PaddingTop>2pt</PaddingTop>
-                          <PaddingBottom>2pt</PaddingBottom>
-                        </Style>
-                      </Textbox>
                     </ReportItems>
                     <KeepTogether>true</KeepTogether>
-                    <Top>4.95437cm</Top>
-                    <Left>0.23182cm</Left>
-                    <Height>1.14768cm</Height>
-                    <Width>13.37209cm</Width>
-                    <ZIndex>16</ZIndex>
+                    <Top>3.74451cm</Top>
+                    <Left>0.09753cm</Left>
+                    <Height>1.0375cm</Height>
+                    <Width>32.26012cm</Width>
+                    <ZIndex>12</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -2020,7 +1845,7 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Left>0.04402cm</Left>
+                        <Left>16.24205cm</Left>
                         <Height>1.01424cm</Height>
                         <Width>5.83233cm</Width>
                         <Style>
@@ -2050,7 +1875,7 @@ union all select 5  </CommandText>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
                         <Top>0.01298cm</Top>
-                        <Left>7.99425cm</Left>
+                        <Left>24.19228cm</Left>
                         <Height>1.01424cm</Height>
                         <Width>0.50176cm</Width>
                         <ZIndex>1</ZIndex>
@@ -2085,7 +1910,7 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Left>8.6724cm</Left>
+                        <Left>24.87043cm</Left>
                         <Height>1.01424cm</Height>
                         <Width>0.60824cm</Width>
                         <ZIndex>2</ZIndex>
@@ -2116,7 +1941,7 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Left>9.91236cm</Left>
+                        <Left>26.11039cm</Left>
                         <Height>1.01424cm</Height>
                         <Width>0.66921cm</Width>
                         <ZIndex>3</ZIndex>
@@ -2151,7 +1976,7 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox6</rd:DefaultName>
-                        <Left>10.72268cm</Left>
+                        <Left>26.92071cm</Left>
                         <Height>1.01424cm</Height>
                         <Width>0.60824cm</Width>
                         <ZIndex>4</ZIndex>
@@ -2167,13 +1992,176 @@ union all select 5  </CommandText>
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
+                      <Textbox Name="Textbox15">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>¿LA PERSONA JURIDICA POSEE GIRO O APNFD?</Value>
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox5</rd:DefaultName>
+                        <Left>0.06226cm</Left>
+                        <Height>1.01424cm</Height>
+                        <Width>8.96823cm</Width>
+                        <ZIndex>5</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                          </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                      <Textbox Name="Textbox145">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>SI</Value>
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox5</rd:DefaultName>
+                        <Top>0cm</Top>
+                        <Left>9.91749cm</Left>
+                        <Height>1.01424cm</Height>
+                        <Width>0.50176cm</Width>
+                        <ZIndex>6</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                          </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                      <Textbox Name="Textbox146">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=iif(Not Code.EsVacio(First(Fields!GIRO.Value, "dsFicha")), "X","")</Value>
+                                <MarkupType>HTML</MarkupType>
+                                <Style>
+                                  <FontWeight>Normal</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox6</rd:DefaultName>
+                        <Left>10.59564cm</Left>
+                        <Height>1.01424cm</Height>
+                        <Width>0.60824cm</Width>
+                        <ZIndex>7</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                            <Width>0.5pt</Width>
+                          </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                      <Textbox Name="Textbox147">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>NO</Value>
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox5</rd:DefaultName>
+                        <Left>11.5181cm</Left>
+                        <Height>1.01424cm</Height>
+                        <Width>0.66921cm</Width>
+                        <ZIndex>8</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                          </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                      <Textbox Name="Textbox148">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=iif(Code.EsVacio(First(Fields!GIRO.Value, "dsFicha")), "X","")</Value>
+                                <MarkupType>HTML</MarkupType>
+                                <Style>
+                                  <FontWeight>Normal</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox6</rd:DefaultName>
+                        <Left>12.32842cm</Left>
+                        <Height>1.01424cm</Height>
+                        <Width>0.60824cm</Width>
+                        <ZIndex>9</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                            <Width>0.5pt</Width>
+                          </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
                     </ReportItems>
                     <KeepTogether>true</KeepTogether>
                     <Top>4.94139cm</Top>
-                    <Left>16.27213cm</Left>
+                    <Left>0.0741cm</Left>
                     <Height>1.14768cm</Height>
-                    <Width>11.91882cm</Width>
-                    <ZIndex>17</ZIndex>
+                    <Width>32.21782cm</Width>
+                    <ZIndex>13</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -2202,7 +2190,7 @@ union all select 5  </CommandText>
                         <Top>0.05712cm</Top>
                         <Left>0.20174cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>3.84356cm</Width>
+                        <Width>4.01525cm</Width>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -2234,7 +2222,7 @@ union all select 5  </CommandText>
                         <Top>0.05712cm</Top>
                         <Left>4.39338cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>2.55931cm</Width>
+                        <Width>2.70042cm</Width>
                         <ZIndex>1</ZIndex>
                         <Style>
                           <Border>
@@ -2302,7 +2290,7 @@ union all select 5  </CommandText>
                         <Top>0.11424cm</Top>
                         <Left>11.57751cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>1.9523cm</Width>
+                        <Width>2.12551cm</Width>
                         <ZIndex>3</ZIndex>
                         <Style>
                           <Border>
@@ -2370,7 +2358,7 @@ union all select 5  </CommandText>
                         <Top>0.10592cm</Top>
                         <Left>18.37487cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>2.11866cm</Width>
+                        <Width>2.22449cm</Width>
                         <ZIndex>5</ZIndex>
                         <Style>
                           <Border>
@@ -2438,7 +2426,7 @@ union all select 5  </CommandText>
                         <Top>0.10592cm</Top>
                         <Left>25.23594cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>2.11866cm</Width>
+                        <Width>2.18922cm</Width>
                         <ZIndex>7</ZIndex>
                         <Style>
                           <Border>
@@ -2492,7 +2480,7 @@ union all select 5  </CommandText>
                     <Left>0.0741cm</Left>
                     <Height>1.22608cm</Height>
                     <Width>32.24865cm</Width>
-                    <ZIndex>18</ZIndex>
+                    <ZIndex>14</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -2521,7 +2509,7 @@ union all select 5  </CommandText>
                         <Top>0.05712cm</Top>
                         <Left>0.03705cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>0.84065cm</Width>
+                        <Width>1.05953cm</Width>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -2588,7 +2576,7 @@ union all select 5  </CommandText>
                         <Top>0.11424cm</Top>
                         <Left>6.49751cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>1.22027cm</Width>
+                        <Width>1.25555cm</Width>
                         <ZIndex>2</ZIndex>
                         <Style>
                           <Border>
@@ -2656,7 +2644,7 @@ union all select 5  </CommandText>
                         <Top>0.10592cm</Top>
                         <Left>19.96237cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>2.78406cm</Width>
+                        <Width>2.95681cm</Width>
                         <ZIndex>4</ZIndex>
                         <Style>
                           <Border>
@@ -2724,7 +2712,7 @@ union all select 5  </CommandText>
                         <Top>0.11424cm</Top>
                         <Left>12.52496cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>2.79432cm</Width>
+                        <Width>3.03223cm</Width>
                         <ZIndex>6</ZIndex>
                         <Style>
                           <Border>
@@ -2792,7 +2780,7 @@ union all select 5  </CommandText>
                         <Top>0.10592cm</Top>
                         <Left>26.21516cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>2.78406cm</Width>
+                        <Width>2.96927cm</Width>
                         <ZIndex>8</ZIndex>
                         <Style>
                           <Border>
@@ -2846,7 +2834,7 @@ union all select 5  </CommandText>
                     <Left>0.03705cm</Left>
                     <Height>1.22608cm</Height>
                     <Width>32.2857cm</Width>
-                    <ZIndex>19</ZIndex>
+                    <ZIndex>15</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -2875,7 +2863,7 @@ union all select 5  </CommandText>
                         <Top>0.05712cm</Top>
                         <Left>0.03705cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>3.0726cm</Width>
+                        <Width>3.26439cm</Width>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -2942,7 +2930,7 @@ union all select 5  </CommandText>
                         <Top>0.05712cm</Top>
                         <Left>8.70702cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>2.71479cm</Width>
+                        <Width>2.80348cm</Width>
                         <ZIndex>2</ZIndex>
                         <Style>
                           <Border>
@@ -3010,7 +2998,7 @@ union all select 5  </CommandText>
                         <Top>0.05712cm</Top>
                         <Left>21.92949cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>3.20416cm</Width>
+                        <Width>3.25603cm</Width>
                         <ZIndex>4</ZIndex>
                         <Style>
                           <Border>
@@ -3078,7 +3066,7 @@ union all select 5  </CommandText>
                         <Top>0.05712cm</Top>
                         <Left>16.65246cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>1.28891cm</Width>
+                        <Width>1.43275cm</Width>
                         <ZIndex>6</ZIndex>
                         <Style>
                           <Border>
@@ -3131,7 +3119,7 @@ union all select 5  </CommandText>
                     <Top>9.24584cm</Top>
                     <Height>1.22608cm</Height>
                     <Width>32.44602cm</Width>
-                    <ZIndex>20</ZIndex>
+                    <ZIndex>16</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -3186,37 +3174,6 @@ union all select 5  </CommandText>
                       <PaddingBottom>2pt</PaddingBottom>
                     </Style>
                   </Textbox>
-                  <Textbox Name="Textbox16">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>NOMBRE DEL REPRESENTANTE LEGAL</Value>
-                            <Style />
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>0.80314cm</Top>
-                    <Left>0.19376cm</Left>
-                    <Height>1.04694cm</Height>
-                    <Width>6.95269cm</Width>
-                    <ZIndex>1</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <VerticalAlign>Middle</VerticalAlign>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
                   <Textbox Name="Textbox17">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
@@ -3236,76 +3193,10 @@ union all select 5  </CommandText>
                     </Paragraphs>
                     <rd:DefaultName>Textbox6</rd:DefaultName>
                     <Top>0.87661cm</Top>
-                    <Left>10.22678cm</Left>
+                    <Left>10.3456cm</Left>
                     <Height>0.9cm</Height>
-                    <Width>15.4217cm</Width>
-                    <ZIndex>2</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>Solid</Style>
-                        <Width>0.5pt</Width>
-                      </Border>
-                      <VerticalAlign>Middle</VerticalAlign>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox18">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>NACIONALIDAD</Value>
-                            <Style />
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>1.95818cm</Top>
-                    <Left>0.1673cm</Left>
-                    <Height>1.04694cm</Height>
-                    <Width>3.03555cm</Width>
-                    <ZIndex>3</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <VerticalAlign>Middle</VerticalAlign>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox19">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>=First(Fields!REPRESEN_NACIONALIDAD.Value, "dsFicha")</Value>
-                            <MarkupType>HTML</MarkupType>
-                            <Style>
-                              <FontWeight>Normal</FontWeight>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox6</rd:DefaultName>
-                    <Top>2.03165cm</Top>
-                    <Left>4.017cm</Left>
-                    <Height>0.9cm</Height>
-                    <Width>6.24307cm</Width>
-                    <ZIndex>4</ZIndex>
+                    <Width>15.30288cm</Width>
+                    <ZIndex>1</ZIndex>
                     <Style>
                       <Border>
                         <Style>Solid</Style>
@@ -3579,7 +3470,7 @@ union all select 5  </CommandText>
                         </TablixRowHierarchy>
                         <DataSetName>DSFAMILIAR</DataSetName>
                         <Top>0.07316cm</Top>
-                        <Left>2.82638cm</Left>
+                        <Left>3.06593cm</Left>
                         <Height>1.3025cm</Height>
                         <Width>5.19785cm</Width>
                         <Style>
@@ -3604,7 +3495,7 @@ union all select 5  </CommandText>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
                         <Top>0.04046cm</Top>
-                        <Left>0.02541cm</Left>
+                        <Left>0.26496cm</Left>
                         <Height>1.04694cm</Height>
                         <Width>2.65928cm</Width>
                         <ZIndex>1</ZIndex>
@@ -3637,6 +3528,7 @@ union all select 5  </CommandText>
                             </Paragraphs>
                             <rd:DefaultName>Textbox5</rd:DefaultName>
                             <Top>0.03528cm</Top>
+                            <Left>0.09431in</Left>
                             <Height>1.04694cm</Height>
                             <Width>4.78797cm</Width>
                             <Style>
@@ -3669,7 +3561,7 @@ union all select 5  </CommandText>
                             </Paragraphs>
                             <rd:DefaultName>Textbox6</rd:DefaultName>
                             <Top>0.10875cm</Top>
-                            <Left>4.88477cm</Left>
+                            <Left>5.44182cm</Left>
                             <Height>0.9cm</Height>
                             <Width>11.36934cm</Width>
                             <ZIndex>1</ZIndex>
@@ -3703,7 +3595,7 @@ union all select 5  </CommandText>
                             </Paragraphs>
                             <rd:DefaultName>Textbox5</rd:DefaultName>
                             <Top>0.03727cm</Top>
-                            <Left>17.58594cm</Left>
+                            <Left>17.82549cm</Left>
                             <Height>1.04694cm</Height>
                             <Width>2.09942cm</Width>
                             <ZIndex>2</ZIndex>
@@ -3737,7 +3629,7 @@ union all select 5  </CommandText>
                             </Paragraphs>
                             <rd:DefaultName>Textbox6</rd:DefaultName>
                             <Top>0.10875cm</Top>
-                            <Left>20.00309cm</Left>
+                            <Left>20.06602cm</Left>
                             <Height>0.9cm</Height>
                             <Width>1.38443cm</Width>
                             <ZIndex>3</ZIndex>
@@ -3754,10 +3646,9 @@ union all select 5  </CommandText>
                             </Style>
                           </Textbox>
                         </ReportItems>
-                        <KeepTogether>true</KeepTogether>
                         <Top>1.51677cm</Top>
                         <Height>1.08421cm</Height>
-                        <Width>21.38752cm</Width>
+                        <Width>21.62707cm</Width>
                         <ZIndex>2</ZIndex>
                         <Style>
                           <Border>
@@ -3768,10 +3659,10 @@ union all select 5  </CommandText>
                     </ReportItems>
                     <KeepTogether>true</KeepTogether>
                     <Top>1.91772cm</Top>
-                    <Left>10.97906cm</Left>
-                    <Height>2.60099cm</Height>
-                    <Width>21.38752cm</Width>
-                    <ZIndex>5</ZIndex>
+                    <Left>10.73951cm</Left>
+                    <Height>2.60098cm</Height>
+                    <Width>21.62707cm</Width>
+                    <ZIndex>2</ZIndex>
                     <Style>
                       <Border>
                         <Style>Solid</Style>
@@ -3800,7 +3691,7 @@ union all select 5  </CommandText>
                         <Top>0.11424cm</Top>
                         <Left>7.60054cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>0.90859cm</Width>
+                        <Width>0.93453cm</Width>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -3867,7 +3758,7 @@ union all select 5  </CommandText>
                         <Top>0.0976cm</Top>
                         <Left>21.92949cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>4.60919cm</Width>
+                        <Width>4.7959cm</Width>
                         <ZIndex>2</ZIndex>
                         <Style>
                           <Border>
@@ -3932,10 +3823,10 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Top>0.0976cm</Top>
+                        <Top>0.11424cm</Top>
                         <Left>14.11246cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>2.64736cm</Width>
+                        <Width>2.76578cm</Width>
                         <ZIndex>4</ZIndex>
                         <Style>
                           <Border>
@@ -4003,7 +3894,7 @@ union all select 5  </CommandText>
                         <Top>0.0976cm</Top>
                         <Left>0.46859cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>0.96317cm</Width>
+                        <Width>1.15691cm</Width>
                         <ZIndex>6</ZIndex>
                         <Style>
                           <Border>
@@ -4057,7 +3948,7 @@ union all select 5  </CommandText>
                     <Left>0.11721cm</Left>
                     <Height>1.22608cm</Height>
                     <Width>32.24937cm</Width>
-                    <ZIndex>6</ZIndex>
+                    <ZIndex>3</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -4086,7 +3977,7 @@ union all select 5  </CommandText>
                         <Top>0.05712cm</Top>
                         <Left>0.20174cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>4.40331cm</Width>
+                        <Width>4.33275cm</Width>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -4118,7 +4009,7 @@ union all select 5  </CommandText>
                         <Top>0.05712cm</Top>
                         <Left>4.71088cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>2.46131cm</Width>
+                        <Width>2.59459cm</Width>
                         <ZIndex>1</ZIndex>
                         <Style>
                           <Border>
@@ -4186,7 +4077,7 @@ union all select 5  </CommandText>
                         <Top>0.05712cm</Top>
                         <Left>11.89501cm</Left>
                         <Height>1.01424cm</Height>
-                        <Width>1.9523cm</Width>
+                        <Width>2.14689cm</Width>
                         <ZIndex>3</ZIndex>
                         <Style>
                           <Border>
@@ -4376,7 +4267,7 @@ union all select 5  </CommandText>
                     <Left>0.11721cm</Left>
                     <Height>1.22608cm</Height>
                     <Width>32.22346cm</Width>
-                    <ZIndex>7</ZIndex>
+                    <ZIndex>4</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -4591,147 +4482,16 @@ union all select 5  </CommandText>
                     </ReportItems>
                     <KeepTogether>true</KeepTogether>
                     <Top>9.00683cm</Top>
+                    <Left>0in</Left>
                     <Height>1.22608cm</Height>
                     <Width>32.44602cm</Width>
-                    <ZIndex>8</ZIndex>
+                    <ZIndex>5</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
                       </Border>
                     </Style>
                   </Rectangle>
-                  <Textbox Name="Textbox25">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>=First(Fields!REPRESEN_LUGARNAC.Value, "dsFicha")</Value>
-                            <MarkupType>HTML</MarkupType>
-                            <Style>
-                              <FontWeight>Normal</FontWeight>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox6</rd:DefaultName>
-                    <Top>3.25498cm</Top>
-                    <Left>4.90791cm</Left>
-                    <Height>0.9cm</Height>
-                    <Width>5.35216cm</Width>
-                    <ZIndex>9</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>Solid</Style>
-                        <Width>0.5pt</Width>
-                      </Border>
-                      <VerticalAlign>Middle</VerticalAlign>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox26">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>LUGAR DE NACIMIENTO</Value>
-                            <Style />
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>3.18151cm</Top>
-                    <Left>0.13792cm</Left>
-                    <Height>1.04694cm</Height>
-                    <Width>4.58434cm</Width>
-                    <ZIndex>10</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <VerticalAlign>Middle</VerticalAlign>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox27">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>=Format(First(Fields!REPRESEN_FECHANAC.Value, "dsFicha"),"dd/MM/yyyy")</Value>
-                            <MarkupType>HTML</MarkupType>
-                            <Style>
-                              <FontWeight>Normal</FontWeight>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox6</rd:DefaultName>
-                    <Top>4.47831cm</Top>
-                    <Left>4.90791cm</Left>
-                    <Height>0.9cm</Height>
-                    <Width>5.35216cm</Width>
-                    <ZIndex>11</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>Solid</Style>
-                        <Width>0.5pt</Width>
-                      </Border>
-                      <VerticalAlign>Middle</VerticalAlign>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox28">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>FECHA DE NACIMIENTO</Value>
-                            <Style />
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>4.40484cm</Top>
-                    <Left>0.13792cm</Left>
-                    <Height>1.04694cm</Height>
-                    <Width>4.58434cm</Width>
-                    <ZIndex>12</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <VerticalAlign>Middle</VerticalAlign>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
                   <Textbox Name="Textbox29">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
@@ -4751,7 +4511,7 @@ union all select 5  </CommandText>
                     <Left>0.03705cm</Left>
                     <Height>1.04694cm</Height>
                     <Width>6.49557cm</Width>
-                    <ZIndex>13</ZIndex>
+                    <ZIndex>6</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -4785,7 +4545,7 @@ union all select 5  </CommandText>
                     <Left>7.29889cm</Left>
                     <Height>0.9cm</Height>
                     <Width>25.04176cm</Width>
-                    <ZIndex>14</ZIndex>
+                    <ZIndex>7</ZIndex>
                     <Style>
                       <Border>
                         <Style>Solid</Style>
@@ -4817,7 +4577,7 @@ union all select 5  </CommandText>
                     <Left>0.02594cm</Left>
                     <Height>1.04694cm</Height>
                     <Width>8.62634cm</Width>
-                    <ZIndex>15</ZIndex>
+                    <ZIndex>8</ZIndex>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -4851,7 +4611,7 @@ union all select 5  </CommandText>
                     <Left>8.91968cm</Left>
                     <Height>0.9cm</Height>
                     <Width>23.42097cm</Width>
-                    <ZIndex>16</ZIndex>
+                    <ZIndex>9</ZIndex>
                     <Style>
                       <Border>
                         <Style>Solid</Style>
@@ -4864,6 +4624,249 @@ union all select 5  </CommandText>
                       <PaddingBottom>2pt</PaddingBottom>
                     </Style>
                   </Textbox>
+                  <Rectangle Name="Rectangle10">
+                    <ReportItems>
+                      <Textbox Name="Textbox16">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>NOMBRE DEL REPRESENTANTE LEGAL</Value>
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox5</rd:DefaultName>
+                        <Top>0.35219cm</Top>
+                        <Left>0.1029cm</Left>
+                        <Height>1.04694cm</Height>
+                        <Width>6.95269cm</Width>
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                          </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                      <Textbox Name="Textbox18">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>NACIONALIDAD</Value>
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox5</rd:DefaultName>
+                        <Top>1.50723cm</Top>
+                        <Left>0.07644cm</Left>
+                        <Height>1.04694cm</Height>
+                        <Width>3.03555cm</Width>
+                        <ZIndex>1</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                          </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                      <Textbox Name="Textbox19">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=First(Fields!REPRESEN_NACIONALIDAD.Value, "dsFicha")</Value>
+                                <MarkupType>HTML</MarkupType>
+                                <Style>
+                                  <FontWeight>Normal</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox6</rd:DefaultName>
+                        <Top>1.5807cm</Top>
+                        <Left>3.92614cm</Left>
+                        <Height>0.9cm</Height>
+                        <Width>6.24307cm</Width>
+                        <ZIndex>2</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                            <Width>0.5pt</Width>
+                          </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                      <Textbox Name="Textbox25">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=First(Fields!REPRESEN_LUGARNAC.Value, "dsFicha")</Value>
+                                <MarkupType>HTML</MarkupType>
+                                <Style>
+                                  <FontWeight>Normal</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox6</rd:DefaultName>
+                        <Top>2.80403cm</Top>
+                        <Left>4.81705cm</Left>
+                        <Height>0.9cm</Height>
+                        <Width>5.35216cm</Width>
+                        <ZIndex>3</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                            <Width>0.5pt</Width>
+                          </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                      <Textbox Name="Textbox26">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>LUGAR DE NACIMIENTO</Value>
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox5</rd:DefaultName>
+                        <Top>2.73056cm</Top>
+                        <Left>0.04706cm</Left>
+                        <Height>1.04694cm</Height>
+                        <Width>4.58434cm</Width>
+                        <ZIndex>4</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                          </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                      <Textbox Name="Textbox27">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Format(First(Fields!REPRESEN_FECHANAC.Value, "dsFicha"),"dd/MM/yyyy")</Value>
+                                <MarkupType>HTML</MarkupType>
+                                <Style>
+                                  <FontWeight>Normal</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox6</rd:DefaultName>
+                        <Top>4.02736cm</Top>
+                        <Left>4.81705cm</Left>
+                        <Height>0.9cm</Height>
+                        <Width>5.35216cm</Width>
+                        <ZIndex>5</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                            <Width>0.5pt</Width>
+                          </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                      <Textbox Name="Textbox28">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>FECHA DE NACIMIENTO</Value>
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox5</rd:DefaultName>
+                        <Top>3.95389cm</Top>
+                        <Left>0.04706cm</Left>
+                        <Height>1.04694cm</Height>
+                        <Width>4.58434cm</Width>
+                        <ZIndex>6</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                          </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </ReportItems>
+                    <KeepTogether>true</KeepTogether>
+                    <Top>0.68907cm</Top>
+                    <Left>0cm</Left>
+                    <Height>5.09764cm</Height>
+                    <Width>10.23977cm</Width>
+                    <ZIndex>10</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Rectangle>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
                 <Top>10.9208cm</Top>
@@ -4935,9 +4938,6 @@ union all select 5  </CommandText>
                     <Height>2.10199cm</Height>
                     <Width>32.48016cm</Width>
                     <ZIndex>1</ZIndex>
-                    <Visibility>
-                      <Hidden>=Not Parameters!TIPO.Value = "T"</Hidden>
-                    </Visibility>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -6642,7 +6642,11 @@ union all select 5  </CommandText>
                     <TablixRowHierarchy>
                       <TablixMembers>
                         <TablixMember>
-                          <Group Name="Details1" />
+                          <Group Name="Details1">
+                            <GroupExpressions>
+                              <GroupExpression>=Fields!dummy.Value</GroupExpression>
+                            </GroupExpressions>
+                          </Group>
                           <TablixMembers>
                             <TablixMember />
                             <TablixMember />
@@ -6654,6 +6658,15 @@ union all select 5  </CommandText>
                       </TablixMembers>
                     </TablixRowHierarchy>
                     <DataSetName>dsdummy</DataSetName>
+                    <Filters>
+                      <Filter>
+                        <FilterExpression>=Fields!dummy.Value</FilterExpression>
+                        <Operator>Equal</Operator>
+                        <FilterValues>
+                          <FilterValue>1</FilterValue>
+                        </FilterValues>
+                      </Filter>
+                    </Filters>
                     <Top>0.77406cm</Top>
                     <Height>9.93776cm</Height>
                     <Width>32.64724cm</Width>
@@ -7578,7 +7591,7 @@ union all select 5  </CommandText>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>¿EL REPRESENTANTE LEGAL, ACCIONISTA, DIRECTIVOS O ALTA GERENCIA DE LA PERSONA JURIDICA POSEE U OBTENTAN CARGO PUBLICO?</Value>
+                            <Value>¿EL REPRESENTANTE LEGAL, ACCIONISTA, DIRECTIVOS O ALTA GERENCIA DE LA PERSONA JURIDICA POSEE U OBSTENTAN CARGO PUBLICO?</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
@@ -8302,7 +8315,7 @@ union all select 5  </CommandText>
                     <Top>0.70847cm</Top>
                     <Left>0.00157cm</Left>
                     <Height>2.21122cm</Height>
-                    <Width>32.47238cm</Width>
+                    <Width>32.47239cm</Width>
                     <ZIndex>1</ZIndex>
                     <Style>
                       <Border>
@@ -8916,9 +8929,6 @@ union all select 5  </CommandText>
             <Height>56.11748cm</Height>
             <Width>32.64724cm</Width>
             <ZIndex>4</ZIndex>
-            <Visibility>
-              <Hidden>=Not Parameters!TIPO.Value = "T"</Hidden>
-            </Visibility>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -8957,27 +8967,12 @@ union all select 5  </CommandText>
       <DataType>String</DataType>
       <Prompt>CODIGO CLIENTE</Prompt>
     </ReportParameter>
-    <ReportParameter Name="TIPO">
-      <DataType>String</DataType>
-      <Prompt>TIPO</Prompt>
-      <ValidValues>
-        <ParameterValues>
-          <ParameterValue>
-            <Value>="T"</Value>
-            <Label>="Tarjeta de Credito"</Label>
-          </ParameterValue>
-          <ParameterValue>
-            <Value>="C"</Value>
-            <Label>="Creditos"</Label>
-          </ParameterValue>
-        </ParameterValues>
-      </ValidValues>
-    </ReportParameter>
   </ReportParameters>
   <Code>	public function EsVacio(ByVal valor as object) as boolean			
 		return string.IsNullOrEmpty(cstr(valor))
 	end function	</Code>
   <Language>es-SV</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>f7e83cf8-270b-4ea6-86b0-c58f40fc99d5</rd:ReportID>
 </Report>
