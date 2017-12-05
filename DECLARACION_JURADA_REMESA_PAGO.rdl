@@ -100,36 +100,16 @@
           <DataField>DIRECCION</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PRIMER_NOMBRE">
-          <DataField>PRIMER_NOMBRE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="ALIAS">
           <DataField>ALIAS</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="SEGUNDO_NOMBRE">
-          <DataField>SEGUNDO_NOMBRE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="APELLIDO1">
-          <DataField>APELLIDO1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DEPARTAMENTO">
           <DataField>DEPARTAMENTO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="APELLIDO2">
-          <DataField>APELLIDO2</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="MUNICIPIO">
           <DataField>MUNICIPIO</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="APELLIDO3">
-          <DataField>APELLIDO3</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="GENTILICIO">
@@ -159,6 +139,10 @@
         <Field Name="REGISTRO_FISCAL">
           <DataField>REGISTRO_FISCAL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENE_GIRO">
+          <DataField>TIENE_GIRO</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
         </Field>
         <Field Name="F_EMISIONDUI">
           <DataField>F_EMISIONDUI</DataField>
@@ -246,6 +230,10 @@
         </Field>
         <Field Name="GENERO">
           <DataField>GENERO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CODIGO_ESTADO_CIVIL">
+          <DataField>CODIGO_ESTADO_CIVIL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ESTADO_CIVIL">
@@ -593,7 +581,6 @@
                     </Paragraphs>
                     <rd:DefaultName>Textbox6</rd:DefaultName>
                     <Top>2.88706cm</Top>
-                    <Left>0cm</Left>
                     <Height>0.9cm</Height>
                     <Width>7.98114cm</Width>
                     <ZIndex>5</ZIndex>
@@ -629,7 +616,6 @@
                     </Paragraphs>
                     <rd:DefaultName>Textbox5</rd:DefaultName>
                     <Top>3.82234cm</Top>
-                    <Left>0cm</Left>
                     <Height>0.72361cm</Height>
                     <Width>3.21864cm</Width>
                     <ZIndex>6</ZIndex>
@@ -784,10 +770,430 @@
                       <PaddingBottom>2pt</PaddingBottom>
                     </Style>
                   </Textbox>
+                  <Textbox Name="Textbox12">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>4.94199cm</Top>
+                    <Left>0cm</Left>
+                    <Height>0.9cm</Height>
+                    <Width>7.98114cm</Width>
+                    <ZIndex>11</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox22">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Tipo de Documento</Value>
+                            <Style>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>5.87727cm</Top>
+                    <Left>0cm</Left>
+                    <Height>0.72361cm</Height>
+                    <Width>5.44114cm</Width>
+                    <ZIndex>12</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox13">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>4.94199cm</Top>
+                    <Left>8.36154cm</Left>
+                    <Height>0.9cm</Height>
+                    <Width>6.74642cm</Width>
+                    <ZIndex>13</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox23">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Número de Documento</Value>
+                            <Style>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>5.87727cm</Top>
+                    <Left>8.36154cm</Left>
+                    <Height>0.72361cm</Height>
+                    <Width>5.44114cm</Width>
+                    <ZIndex>14</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox14">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>4.94199cm</Top>
+                    <Left>15.91935cm</Left>
+                    <Height>0.9cm</Height>
+                    <Width>5.95267cm</Width>
+                    <ZIndex>15</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox24">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Fecha de vencimiento</Value>
+                            <Style>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>5.87727cm</Top>
+                    <Left>15.91935cm</Left>
+                    <Height>0.72361cm</Height>
+                    <Width>5.44114cm</Width>
+                    <ZIndex>16</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox15">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=First(Fields!GENTILICIO.Value, "DSFICHA")</Value>
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>7.06903cm</Top>
+                    <Left>0cm</Left>
+                    <Height>0.9cm</Height>
+                    <Width>7.98114cm</Width>
+                    <ZIndex>17</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox25">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Nacionalidad</Value>
+                            <Style>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>8.00431cm</Top>
+                    <Left>0cm</Left>
+                    <Height>0.72361cm</Height>
+                    <Width>5.44114cm</Width>
+                    <ZIndex>18</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox16">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=First(Fields!NIT.Value, "DSFICHA")</Value>
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>7.06903cm</Top>
+                    <Left>8.36154cm</Left>
+                    <Height>0.9cm</Height>
+                    <Width>6.74642cm</Width>
+                    <ZIndex>19</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox26">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>NIT</Value>
+                            <Style>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>8.00431cm</Top>
+                    <Left>8.36154cm</Left>
+                    <Height>0.72361cm</Height>
+                    <Width>5.44114cm</Width>
+                    <ZIndex>20</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox27">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=Format(First(Fields!FECHA_NACIMIENTO.Value, "DSFICHA"),"dd/MM/yyyy")</Value>
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>7.06903cm</Top>
+                    <Left>15.91935cm</Left>
+                    <Height>0.9cm</Height>
+                    <Width>5.95267cm</Width>
+                    <ZIndex>21</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox28">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Fecha de nacimiento</Value>
+                            <Style>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>8.03959cm</Top>
+                    <Left>15.91935cm</Left>
+                    <Height>0.72361cm</Height>
+                    <Width>5.44114cm</Width>
+                    <ZIndex>22</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
                 <Top>0.42885cm</Top>
-                <Height>5.35162cm</Height>
+                <Height>11.93404cm</Height>
                 <Width>22.4475cm</Width>
                 <Style>
                   <Border>
@@ -798,7 +1204,7 @@
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>3.59517cm</Top>
-            <Height>8.87039cm</Height>
+            <Height>12.36289cm</Height>
             <Width>22.4475cm</Width>
             <Style>
               <Border>
@@ -974,7 +1380,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>4.9077in</Height>
+        <Height>6.2827in</Height>
         <Style />
       </Body>
       <Width>22.4475cm</Width>
