@@ -6,7 +6,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>20.83245cm</Width>
+              <Width>20.85891cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -19,648 +19,465 @@
                       <ReportItems>
                         <Rectangle Name="Rectangle1">
                           <ReportItems>
-                            <Textbox Name="FECHA">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!FECHA_MOVIMIENTO.Value</Value>
-                                      <Style>
-                                        <FontFamily>Courier New</FontFamily>
-                                        <Format>d</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>FECHA</rd:DefaultName>
-                              <Top>4.09325cm</Top>
-                              <Left>2.81104cm</Left>
-                              <Height>0.47653cm</Height>
-                              <Width>3.34667cm</Width>
+                            <Rectangle Name="Rectangle5">
+                              <ReportItems>
+                                <Textbox Name="AbonoACapital">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>En este pago se recibió </Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Calibri</FontFamily>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                            <Color>#000000</Color>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=Fields!AbonoACapital.Value</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                            <Format>#,0.00;(#,0.00)</Format>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value xml:space="preserve"> </Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <Format>#,0.00;(#,0.00)</Format>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>por abono a capital. El saldo actual de su crédito es de </Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Calibri</FontFamily>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                            <Color>#000000</Color>
+                                          </Style>
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=Fields!SALDO.Value</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>Calibri</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <Format>#,0.00;(#,0.00)</Format>
+                                            <TextDecoration>None</TextDecoration>
+                                            <Color>#000000</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>AbonoACapital</rd:DefaultName>
+                                  <Top>0.00854in</Top>
+                                  <Left>0.75917in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>5.84375in</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>0.05pt</PaddingLeft>
+                                    <PaddingRight>0.05pt</PaddingRight>
+                                    <PaddingTop>0.05pt</PaddingTop>
+                                    <PaddingBottom>0.05pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="MONTOLETRAS">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!MONTOLETRAS.Value</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>MONTOLETRAS</rd:DefaultName>
+                                  <Top>0.69185in</Top>
+                                  <Left>0.53in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>5in</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="totalfactura2">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!totalfactura.Value</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                            <Format>#,0.00;(#,0.00)</Format>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>totalfactura</rd:DefaultName>
+                                  <Top>0.69185in</Top>
+                                  <Left>6.78508in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>1.125in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <Top>3.84715in</Top>
+                              <Left>0.01042in</Left>
+                              <Height>1.0121in</Height>
+                              <Width>8.20175in</Width>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
                               </Style>
-                            </Textbox>
-                            <Textbox Name="NOMBRE_CLIENTE">
-                              <CanGrow>true</CanGrow>
+                            </Rectangle>
+                            <Rectangle Name="Rectangle6">
+                              <ReportItems>
+                                <Tablix Name="Tablix2">
+                                  <TablixBody>
+                                    <TablixColumns>
+                                      <TablixColumn>
+                                        <Width>2.05196in</Width>
+                                      </TablixColumn>
+                                      <TablixColumn>
+                                        <Width>1.22396in</Width>
+                                      </TablixColumn>
+                                    </TablixColumns>
+                                    <TablixRows>
+                                      <TablixRow>
+                                        <Height>0.22396in</Height>
+                                        <TablixCells>
+                                          <TablixCell>
+                                            <CellContents>
+                                              <Textbox Name="DETALLE_CONCEPTO">
+                                                <CanGrow>true</CanGrow>
+                                                <KeepTogether>true</KeepTogether>
+                                                <Paragraphs>
+                                                  <Paragraph>
+                                                    <TextRuns>
+                                                      <TextRun>
+                                                        <Value>=Fields!DETALLE_CONCEPTO.Value</Value>
+                                                        <Style>
+                                                          <FontSize>8pt</FontSize>
+                                                        </Style>
+                                                      </TextRun>
+                                                    </TextRuns>
+                                                    <Style />
+                                                  </Paragraph>
+                                                </Paragraphs>
+                                                <rd:DefaultName>DETALLE_CONCEPTO</rd:DefaultName>
+                                                <Style>
+                                                  <Border>
+                                                    <Style>None</Style>
+                                                  </Border>
+                                                  <PaddingLeft>2pt</PaddingLeft>
+                                                  <PaddingRight>2pt</PaddingRight>
+                                                  <PaddingTop>2pt</PaddingTop>
+                                                  <PaddingBottom>2pt</PaddingBottom>
+                                                </Style>
+                                              </Textbox>
+                                            </CellContents>
+                                          </TablixCell>
+                                          <TablixCell>
+                                            <CellContents>
+                                              <Textbox Name="DETALLE_MONTO">
+                                                <CanGrow>true</CanGrow>
+                                                <KeepTogether>true</KeepTogether>
+                                                <Paragraphs>
+                                                  <Paragraph>
+                                                    <TextRuns>
+                                                      <TextRun>
+                                                        <Value>=Fields!DETALLE_MONTO.Value</Value>
+                                                        <Style>
+                                                          <FontSize>8pt</FontSize>
+                                                          <Format>#,0.00;(#,0.00)</Format>
+                                                        </Style>
+                                                      </TextRun>
+                                                    </TextRuns>
+                                                    <Style />
+                                                  </Paragraph>
+                                                </Paragraphs>
+                                                <rd:DefaultName>DETALLE_MONTO</rd:DefaultName>
+                                                <Style>
+                                                  <Border>
+                                                    <Style>None</Style>
+                                                  </Border>
+                                                  <PaddingLeft>2pt</PaddingLeft>
+                                                  <PaddingRight>2pt</PaddingRight>
+                                                  <PaddingTop>2pt</PaddingTop>
+                                                  <PaddingBottom>2pt</PaddingBottom>
+                                                </Style>
+                                              </Textbox>
+                                            </CellContents>
+                                          </TablixCell>
+                                        </TablixCells>
+                                      </TablixRow>
+                                    </TablixRows>
+                                  </TablixBody>
+                                  <TablixColumnHierarchy>
+                                    <TablixMembers>
+                                      <TablixMember />
+                                      <TablixMember />
+                                    </TablixMembers>
+                                  </TablixColumnHierarchy>
+                                  <TablixRowHierarchy>
+                                    <TablixMembers>
+                                      <TablixMember>
+                                        <Group Name="Details1" />
+                                      </TablixMember>
+                                    </TablixMembers>
+                                  </TablixRowHierarchy>
+                                  <DataSetName>DataSet1</DataSetName>
+                                  <Top>2.83625in</Top>
+                                  <Left>0.75917in</Left>
+                                  <Height>0.22396in</Height>
+                                  <Width>3.27592in</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </Tablix>
+                                <Textbox Name="totalfactura">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!totalfactura.Value</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                            <Format>#,0.00;(#,0.00)</Format>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>totalfactura</rd:DefaultName>
+                                  <Top>2.83625in</Top>
+                                  <Left>6.78508in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>1.125in</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="FECHA">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!FECHA_MOVIMIENTO.Value</Value>
+                                          <Style>
+                                            <FontFamily>Courier New</FontFamily>
+                                            <Format>d</Format>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>FECHA</rd:DefaultName>
+                                  <Top>4.09325cm</Top>
+                                  <Left>2.81104cm</Left>
+                                  <Height>0.47653cm</Height>
+                                  <Width>3.34667cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NOMBRE_CLIENTE">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!NOMBRE_COMPLETO.Value</Value>
+                                          <Style>
+                                            <FontFamily>Courier New</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NOMBRE_CLIENTE</rd:DefaultName>
+                                  <Top>4.55567cm</Top>
+                                  <Left>3.03329cm</Left>
+                                  <Height>0.46771cm</Height>
+                                  <Width>12.21236cm</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="DIRECCION">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!DIRECCION.Value</Value>
+                                          <Style>
+                                            <FontFamily>Courier New</FontFamily>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>DIRECCION</rd:DefaultName>
+                                  <Top>4.9828cm</Top>
+                                  <Left>3.03329cm</Left>
+                                  <Height>0.41832cm</Height>
+                                  <Width>16.74082cm</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NUMERO_NIT">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!NUMERO_NIT.Value</Value>
+                                          <Style>
+                                            <FontFamily>Courier New</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NUMERO_NIT</rd:DefaultName>
+                                  <Top>5.4999cm</Top>
+                                  <Left>2.24578cm</Left>
+                                  <Height>0.38833cm</Height>
+                                  <Width>7.65938cm</Width>
+                                  <ZIndex>5</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="CREDITO">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>="CREDITO No:" &amp; Fields!CREDITO.Value</Value>
+                                          <Style>
+                                            <FontFamily>Courier New</FontFamily>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>CREDITO</rd:DefaultName>
+                                  <Top>1.57167in</Top>
+                                  <Left>6.07167in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>1.59375in</Width>
+                                  <ZIndex>6</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!NOMBRE_COMPLETO.Value</Value>
-                                      <Style>
-                                        <FontFamily>Courier New</FontFamily>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>NOMBRE_CLIENTE</rd:DefaultName>
-                              <Top>4.55567cm</Top>
-                              <Left>3.03329cm</Left>
-                              <Height>0.46771cm</Height>
-                              <Width>12.21236cm</Width>
+                              <Left>0.01042in</Left>
+                              <Height>3.81402in</Height>
+                              <Width>8.20175in</Width>
                               <ZIndex>1</ZIndex>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
                               </Style>
-                            </Textbox>
-                            <Textbox Name="DIRECCION">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!DIRECCION.Value</Value>
-                                      <Style>
-                                        <FontFamily>Courier New</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>DIRECCION</rd:DefaultName>
-                              <Top>4.9828cm</Top>
-                              <Left>3.03329cm</Left>
-                              <Height>0.41832cm</Height>
-                              <Width>16.74082cm</Width>
-                              <ZIndex>2</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="NUMERO_NIT">
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!NUMERO_NIT.Value</Value>
-                                      <Style>
-                                        <FontFamily>Courier New</FontFamily>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>NUMERO_NIT</rd:DefaultName>
-                              <Top>5.4999cm</Top>
-                              <Left>2.24578cm</Left>
-                              <Height>0.38833cm</Height>
-                              <Width>7.65938cm</Width>
-                              <ZIndex>3</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="CREDITO">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>="CREDITO No:" &amp; Fields!CREDITO.Value</Value>
-                                      <Style>
-                                        <FontFamily>Courier New</FontFamily>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>CREDITO</rd:DefaultName>
-                              <Top>1.57167in</Top>
-                              <Left>6.07167in</Left>
-                              <Height>0.25in</Height>
-                              <Width>1.59375in</Width>
-                              <ZIndex>4</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Tablix Name="Tablix4">
-                              <TablixBody>
-                                <TablixColumns>
-                                  <TablixColumn>
-                                    <Width>1.22396in</Width>
-                                  </TablixColumn>
-                                </TablixColumns>
-                                <TablixRows>
-                                  <TablixRow>
-                                    <Height>0.22396in</Height>
-                                    <TablixCells>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Intereses_Corrientes1">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!Intereses_Corrientes.Value</Value>
-                                                    <Style>
-                                                      <FontSize>8pt</FontSize>
-                                                      <Format>#,0.00;(#,0.00)</Format>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Intereses_Corrientes1</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                    </TablixCells>
-                                  </TablixRow>
-                                  <TablixRow>
-                                    <Height>0.22396in</Height>
-                                    <TablixCells>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Intereses_Moratorios2">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!Intereses_Moratorios.Value</Value>
-                                                    <Style>
-                                                      <FontSize>8pt</FontSize>
-                                                      <Format>#,0.00;(#,0.00)</Format>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Intereses_Moratorios2</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                    </TablixCells>
-                                  </TablixRow>
-                                  <TablixRow>
-                                    <Height>0.22396in</Height>
-                                    <TablixCells>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Seguro_Vehículo">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!Seguro_Vehículo.Value</Value>
-                                                    <Style>
-                                                      <FontSize>8pt</FontSize>
-                                                      <Format>#,0.00;(#,0.00)</Format>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Seguro_Vehículo</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                    </TablixCells>
-                                  </TablixRow>
-                                  <TablixRow>
-                                    <Height>0.22396in</Height>
-                                    <TablixCells>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Seguro_de_Vida_sobre_Saldos">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!Seguro_de_Vida_sobre_Saldos.Value</Value>
-                                                    <Style>
-                                                      <FontSize>8pt</FontSize>
-                                                      <Format>#,0.00;(#,0.00)</Format>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Seguro_de_Vida_sobre_Saldos</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                    </TablixCells>
-                                  </TablixRow>
-                                </TablixRows>
-                              </TablixBody>
-                              <TablixColumnHierarchy>
-                                <TablixMembers>
-                                  <TablixMember />
-                                </TablixMembers>
-                              </TablixColumnHierarchy>
-                              <TablixRowHierarchy>
-                                <TablixMembers>
-                                  <TablixMember>
-                                    <TablixHeader>
-                                      <Size>2.05196in</Size>
-                                      <CellContents>
-                                        <Textbox Name="Textbox23">
-                                          <CanGrow>true</CanGrow>
-                                          <KeepTogether>true</KeepTogether>
-                                          <Paragraphs>
-                                            <Paragraph>
-                                              <TextRuns>
-                                                <TextRun>
-                                                  <Value>Intereses Corrientes</Value>
-                                                  <Style>
-                                                    <FontSize>8pt</FontSize>
-                                                  </Style>
-                                                </TextRun>
-                                              </TextRuns>
-                                              <Style />
-                                            </Paragraph>
-                                          </Paragraphs>
-                                          <rd:DefaultName>Textbox23</rd:DefaultName>
-                                          <Style>
-                                            <Border>
-                                              <Style>None</Style>
-                                            </Border>
-                                            <PaddingLeft>2pt</PaddingLeft>
-                                            <PaddingRight>2pt</PaddingRight>
-                                            <PaddingTop>2pt</PaddingTop>
-                                            <PaddingBottom>2pt</PaddingBottom>
-                                          </Style>
-                                        </Textbox>
-                                      </CellContents>
-                                    </TablixHeader>
-                                  </TablixMember>
-                                  <TablixMember>
-                                    <TablixHeader>
-                                      <Size>2.05196in</Size>
-                                      <CellContents>
-                                        <Textbox Name="Intereses_Moratorios1">
-                                          <CanGrow>true</CanGrow>
-                                          <KeepTogether>true</KeepTogether>
-                                          <Paragraphs>
-                                            <Paragraph>
-                                              <TextRuns>
-                                                <TextRun>
-                                                  <Value>Intereses Moratorios</Value>
-                                                  <Style>
-                                                    <FontSize>8pt</FontSize>
-                                                  </Style>
-                                                </TextRun>
-                                              </TextRuns>
-                                              <Style />
-                                            </Paragraph>
-                                          </Paragraphs>
-                                          <rd:DefaultName>Intereses_Moratorios1</rd:DefaultName>
-                                          <Style>
-                                            <Border>
-                                              <Style>None</Style>
-                                            </Border>
-                                            <PaddingLeft>2pt</PaddingLeft>
-                                            <PaddingRight>2pt</PaddingRight>
-                                            <PaddingTop>2pt</PaddingTop>
-                                            <PaddingBottom>2pt</PaddingBottom>
-                                          </Style>
-                                        </Textbox>
-                                      </CellContents>
-                                    </TablixHeader>
-                                  </TablixMember>
-                                  <TablixMember>
-                                    <TablixHeader>
-                                      <Size>2.05196in</Size>
-                                      <CellContents>
-                                        <Textbox Name="Textbox29">
-                                          <CanGrow>true</CanGrow>
-                                          <KeepTogether>true</KeepTogether>
-                                          <Paragraphs>
-                                            <Paragraph>
-                                              <TextRuns>
-                                                <TextRun>
-                                                  <Value>Seguro Vehiculo</Value>
-                                                  <Style>
-                                                    <FontSize>8pt</FontSize>
-                                                  </Style>
-                                                </TextRun>
-                                              </TextRuns>
-                                              <Style />
-                                            </Paragraph>
-                                          </Paragraphs>
-                                          <rd:DefaultName>Textbox29</rd:DefaultName>
-                                          <Style>
-                                            <Border>
-                                              <Style>None</Style>
-                                            </Border>
-                                            <PaddingLeft>2pt</PaddingLeft>
-                                            <PaddingRight>2pt</PaddingRight>
-                                            <PaddingTop>2pt</PaddingTop>
-                                            <PaddingBottom>2pt</PaddingBottom>
-                                          </Style>
-                                        </Textbox>
-                                      </CellContents>
-                                    </TablixHeader>
-                                  </TablixMember>
-                                  <TablixMember>
-                                    <TablixHeader>
-                                      <Size>2.05196in</Size>
-                                      <CellContents>
-                                        <Textbox Name="Textbox31">
-                                          <CanGrow>true</CanGrow>
-                                          <KeepTogether>true</KeepTogether>
-                                          <Paragraphs>
-                                            <Paragraph>
-                                              <TextRuns>
-                                                <TextRun>
-                                                  <Value>Seguro de Vida Sobre Saldos</Value>
-                                                  <Style>
-                                                    <FontSize>8pt</FontSize>
-                                                  </Style>
-                                                </TextRun>
-                                              </TextRuns>
-                                              <Style />
-                                            </Paragraph>
-                                          </Paragraphs>
-                                          <rd:DefaultName>Textbox31</rd:DefaultName>
-                                          <Style>
-                                            <Border>
-                                              <Style>None</Style>
-                                            </Border>
-                                            <PaddingLeft>2pt</PaddingLeft>
-                                            <PaddingRight>2pt</PaddingRight>
-                                            <PaddingTop>2pt</PaddingTop>
-                                            <PaddingBottom>2pt</PaddingBottom>
-                                          </Style>
-                                        </Textbox>
-                                      </CellContents>
-                                    </TablixHeader>
-                                  </TablixMember>
-                                </TablixMembers>
-                              </TablixRowHierarchy>
-                              <DataSetName>DataSet1</DataSetName>
-                              <Top>2.83625in</Top>
-                              <Left>0.75917in</Left>
-                              <Height>0.89584in</Height>
-                              <Width>3.27592in</Width>
-                              <ZIndex>5</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Tablix>
-                            <Textbox Name="AbonoACapital">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>En este pago se recibió </Value>
-                                      <Style>
-                                        <FontStyle>Normal</FontStyle>
-                                        <FontFamily>Calibri</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Normal</FontWeight>
-                                        <TextDecoration>None</TextDecoration>
-                                        <Color>#000000</Color>
-                                      </Style>
-                                    </TextRun>
-                                    <TextRun>
-                                      <Value>=Sum(Fields!AbonoACapital.Value)</Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                        <Format>#,0.00;(#,0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                    <TextRun>
-                                      <Value xml:space="preserve"> </Value>
-                                      <Style>
-                                        <FontSize>9pt</FontSize>
-                                        <Format>#,0.00;(#,0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                    <TextRun>
-                                      <Value>por abono a capital. El saldo actual de su crédito es de </Value>
-                                      <Style>
-                                        <FontStyle>Normal</FontStyle>
-                                        <FontFamily>Calibri</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Normal</FontWeight>
-                                        <TextDecoration>None</TextDecoration>
-                                        <Color>#000000</Color>
-                                      </Style>
-                                    </TextRun>
-                                    <TextRun>
-                                      <Value>=Fields!SALDO.Value</Value>
-                                      <Style>
-                                        <FontStyle>Normal</FontStyle>
-                                        <FontFamily>Calibri</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                        <FontWeight>Normal</FontWeight>
-                                        <Format>#,0.00;(#,0.00)</Format>
-                                        <TextDecoration>None</TextDecoration>
-                                        <Color>#000000</Color>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>AbonoACapital</rd:DefaultName>
-                              <Top>3.85569in</Top>
-                              <Left>0.75917in</Left>
-                              <Height>0.25in</Height>
-                              <Width>5.84375in</Width>
-                              <ZIndex>6</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>0.05pt</PaddingLeft>
-                                <PaddingRight>0.05pt</PaddingRight>
-                                <PaddingTop>0.05pt</PaddingTop>
-                                <PaddingBottom>0.05pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="totalfactura">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!totalfactura.Value</Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                        <Format>#,0.00;(#,0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>totalfactura</rd:DefaultName>
-                              <Top>2.83625in</Top>
-                              <Left>6.78508in</Left>
-                              <Height>0.25in</Height>
-                              <Width>1.125in</Width>
-                              <ZIndex>7</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="totalfactura2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!totalfactura.Value</Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                        <Format>#,0.00;(#,0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>totalfactura</rd:DefaultName>
-                              <Top>4.539in</Top>
-                              <Left>6.78508in</Left>
-                              <Height>0.25in</Height>
-                              <Width>1.125in</Width>
-                              <ZIndex>8</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="MONTOLETRAS">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!MONTOLETRAS.Value</Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>MONTOLETRAS</rd:DefaultName>
-                              <Top>4.539in</Top>
-                              <Left>0.53in</Left>
-                              <Height>0.25in</Height>
-                              <Width>5in</Width>
-                              <ZIndex>9</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
+                            </Rectangle>
                           </ReportItems>
                           <Height>13.69188cm</Height>
-                          <Width>20.83245cm</Width>
+                          <Width>20.85891cm</Width>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -690,6 +507,9 @@
           <TablixMembers>
             <TablixMember>
               <Group Name="Details">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!MOVIMIENTO.Value</GroupExpression>
+                </GroupExpressions>
                 <PageBreak>
                   <BreakLocation>Between</BreakLocation>
                 </PageBreak>
@@ -699,7 +519,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Height>13.69188cm</Height>
-        <Width>20.83245cm</Width>
+        <Width>20.85891cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -713,6 +533,8 @@
   <Width>8.21217in</Width>
   <Page>
     <PageHeight>6.5in</PageHeight>
+    <InteractiveHeight>6.5in</InteractiveHeight>
+    <InteractiveWidth>8.5in</InteractiveWidth>
     <LeftMargin>0.01969in</LeftMargin>
     <RightMargin>0.01969in</RightMargin>
     <TopMargin>0.01969in</TopMargin>
@@ -829,6 +651,14 @@
         </Field>
         <Field Name="DIRECCION">
           <DataField>DIRECCION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DETALLE_MONTO">
+          <DataField>DETALLE_MONTO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DETALLE_CONCEPTO">
+          <DataField>DETALLE_CONCEPTO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>

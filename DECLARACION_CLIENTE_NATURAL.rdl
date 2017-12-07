@@ -457,11 +457,32 @@ CEILING((ROW_NUMBER() OVER(order by CODIGO_ESTADO)) / 3.0) AS GRUPO
             <Value>=Parameters!CODIGO_CLIENTE.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>SELECT TIPO = 'CLIENTES', NOMBRE, DIRECCION, TELEFONO1 AS TELEFONO 
+        <CommandText>CREATE TABLE #TEMP (
+	TIPO VARCHAR(500),
+	NOMBRE VARCHAR(500),
+	DIRECCION VARCHAR(8000),
+	TELEFONO VARCHAR(100)
+)
+INSERT INTO #TEMP SELECT * FROM (
+SELECT TIPO = 'CLIENTES', NOMBRE, DIRECCION, TELEFONO1 AS TELEFONO 
 FROM FA.CLIENTE_RELACIONADOS WHERE TIPO_RELACION = '2' and CODIGO_CLIENTE = @CODIGO_CLIENTE
 UNION ALL
 SELECT TIPO = 'PROVEEDORES', NOMBRE_INSTITUCION AS NOMBRE,DIRECCION = '', TELEFONO1 AS TELEFONO 
-FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
+FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE) d;
+IF NOT EXISTS (SELECT 1 FROM #TEMP WHERE #TEMP.TIPO = 'CLIENTES') BEGIN
+	INSERT INTO #TEMP VALUES ('CLIENTES',NULL,NULL,NULL);
+	INSERT INTO #TEMP VALUES ('CLIENTES',NULL,NULL,NULL);
+	INSERT INTO #TEMP VALUES ('CLIENTES',NULL,NULL,NULL);
+	INSERT INTO #TEMP VALUES ('CLIENTES',NULL,NULL,NULL)
+END   
+IF NOT EXISTS (SELECT 1 FROM #TEMP WHERE #TEMP.TIPO = 'PROVEEDORES') BEGIN
+	INSERT INTO #TEMP VALUES ('PROVEEDORES',NULL,NULL,NULL);
+	INSERT INTO #TEMP VALUES ('PROVEEDORES',NULL,NULL,NULL);
+	INSERT INTO #TEMP VALUES ('PROVEEDORES',NULL,NULL,NULL);
+	INSERT INTO #TEMP VALUES ('PROVEEDORES',NULL,NULL,NULL)
+END 
+SELECT * FROM #TEMP
+DROP TABLE #TEMP</CommandText>
       </Query>
       <Fields>
         <Field Name="TIPO">
@@ -3340,6 +3361,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                             </Paragraph>
                                           </Paragraphs>
                                           <rd:DefaultName>Textbox6</rd:DefaultName>
+                                          <Left>0.37557cm</Left>
                                           <Height>0.67321cm</Height>
                                           <Width>7.38306cm</Width>
                                           <Style>
@@ -3396,6 +3418,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                             </Paragraph>
                                           </Paragraphs>
                                           <rd:DefaultName>Textbox6</rd:DefaultName>
+                                          <Left>0.53596cm</Left>
                                           <Height>0.67321cm</Height>
                                           <Width>3.3436cm</Width>
                                           <Style>
@@ -3447,6 +3470,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                             </Paragraph>
                                           </Paragraphs>
                                           <rd:DefaultName>Textbox6</rd:DefaultName>
+                                          <Left>0.22366cm</Left>
                                           <Height>0.67321cm</Height>
                                           <Width>2.85381cm</Width>
                                           <Style>
@@ -3744,6 +3768,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                             </Paragraph>
                                           </Paragraphs>
                                           <rd:DefaultName>Textbox6</rd:DefaultName>
+                                          <Left>0.47443cm</Left>
                                           <Height>0.67321cm</Height>
                                           <Width>7.38306cm</Width>
                                           <Style>
@@ -3800,6 +3825,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                             </Paragraph>
                                           </Paragraphs>
                                           <rd:DefaultName>Textbox6</rd:DefaultName>
+                                          <Left>0.63482cm</Left>
                                           <Height>0.67321cm</Height>
                                           <Width>3.3436cm</Width>
                                           <Style>
@@ -3851,6 +3877,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                             </Paragraph>
                                           </Paragraphs>
                                           <rd:DefaultName>Textbox6</rd:DefaultName>
+                                          <Left>0.33785cm</Left>
                                           <Height>0.67321cm</Height>
                                           <Width>2.85381cm</Width>
                                           <Style>
@@ -3979,7 +4006,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                 <KeepTogether>true</KeepTogether>
                 <Top>21.16856cm</Top>
                 <Left>0.07864cm</Left>
-                <Height>3.97753cm</Height>
+                <Height>3.89214cm</Height>
                 <Width>32.35271cm</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
@@ -4285,8 +4312,27 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                       <Style>
                                         <Border>
                                           <Style>Solid</Style>
-                                          <Width>0.5pt</Width>
                                         </Border>
+                                        <TopBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </TopBorder>
+                                        <BottomBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </BottomBorder>
+                                        <LeftBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </LeftBorder>
+                                        <RightBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </RightBorder>
                                         <VerticalAlign>Middle</VerticalAlign>
                                         <PaddingLeft>2pt</PaddingLeft>
                                         <PaddingRight>2pt</PaddingRight>
@@ -4610,8 +4656,27 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                       <Style>
                                         <Border>
                                           <Style>Solid</Style>
-                                          <Width>0.5pt</Width>
                                         </Border>
+                                        <TopBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </TopBorder>
+                                        <BottomBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </BottomBorder>
+                                        <LeftBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </LeftBorder>
+                                        <RightBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </RightBorder>
                                         <VerticalAlign>Middle</VerticalAlign>
                                         <PaddingLeft>2pt</PaddingLeft>
                                         <PaddingRight>2pt</PaddingRight>
@@ -5274,8 +5339,27 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                       <Style>
                                         <Border>
                                           <Style>Solid</Style>
-                                          <Width>0.5pt</Width>
                                         </Border>
+                                        <TopBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </TopBorder>
+                                        <BottomBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </BottomBorder>
+                                        <LeftBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </LeftBorder>
+                                        <RightBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </RightBorder>
                                         <VerticalAlign>Middle</VerticalAlign>
                                         <PaddingLeft>2pt</PaddingLeft>
                                         <PaddingRight>2pt</PaddingRight>
@@ -5606,8 +5690,27 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                       <Style>
                                         <Border>
                                           <Style>Solid</Style>
-                                          <Width>0.5pt</Width>
                                         </Border>
+                                        <TopBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </TopBorder>
+                                        <BottomBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </BottomBorder>
+                                        <LeftBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </LeftBorder>
+                                        <RightBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </RightBorder>
                                         <VerticalAlign>Middle</VerticalAlign>
                                         <PaddingLeft>2pt</PaddingLeft>
                                         <PaddingRight>2pt</PaddingRight>
@@ -5941,8 +6044,27 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                       <Style>
                                         <Border>
                                           <Style>Solid</Style>
-                                          <Width>0.5pt</Width>
                                         </Border>
+                                        <TopBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </TopBorder>
+                                        <BottomBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </BottomBorder>
+                                        <LeftBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </LeftBorder>
+                                        <RightBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </RightBorder>
                                         <VerticalAlign>Middle</VerticalAlign>
                                         <PaddingLeft>2pt</PaddingLeft>
                                         <PaddingRight>2pt</PaddingRight>
@@ -6339,8 +6461,27 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                       <Style>
                                         <Border>
                                           <Style>Solid</Style>
-                                          <Width>0.5pt</Width>
                                         </Border>
+                                        <TopBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </TopBorder>
+                                        <BottomBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </BottomBorder>
+                                        <LeftBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </LeftBorder>
+                                        <RightBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>1pt</Width>
+                                        </RightBorder>
                                         <VerticalAlign>Middle</VerticalAlign>
                                         <PaddingLeft>2pt</PaddingLeft>
                                         <PaddingRight>2pt</PaddingRight>
@@ -6943,7 +7084,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>25.35606cm</Top>
+                <Top>25.39087cm</Top>
                 <Left>0.07864cm</Left>
                 <Height>3.23912cm</Height>
                 <Width>32.51175cm</Width>
@@ -10238,6 +10379,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                     <PaddingBottom>2pt</PaddingBottom>
                                   </Style>
                                 </Textbox>
+                                <rd:Selected>true</rd:Selected>
                               </CellContents>
                             </TablixCell>
                             <TablixCell>
@@ -10682,7 +10824,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>3.40182cm</Top>
-            <Height>56.43287cm</Height>
+            <Height>58.43649cm</Height>
             <Width>32.61832cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
@@ -10692,7 +10834,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>23.55697in</Height>
+        <Height>24.34579in</Height>
         <Style />
       </Body>
       <Width>32.61832cm</Width>
