@@ -168,11 +168,185 @@
                             </Rectangle>
                             <Rectangle Name="Rectangle6">
                               <ReportItems>
+                                <Textbox Name="FECHA">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!FECHA_MOVIMIENTO.Value</Value>
+                                          <Style>
+                                            <FontFamily>Courier New</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                            <Format>d</Format>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>FECHA</rd:DefaultName>
+                                  <Top>4.09325cm</Top>
+                                  <Left>2.83751cm</Left>
+                                  <Height>0.47653cm</Height>
+                                  <Width>3.34667cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NOMBRE_CLIENTE">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!NOMBRE_COMPLETO.Value</Value>
+                                          <Style>
+                                            <FontFamily>Courier New</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NOMBRE_CLIENTE</rd:DefaultName>
+                                  <Top>4.55567cm</Top>
+                                  <Left>3.05976cm</Left>
+                                  <Height>0.46771cm</Height>
+                                  <Width>12.21236cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="DIRECCION">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!DIRECCION.Value</Value>
+                                          <Style>
+                                            <FontFamily>Courier New</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>DIRECCION</rd:DefaultName>
+                                  <Top>4.9828cm</Top>
+                                  <Left>3.05976cm</Left>
+                                  <Height>0.41832cm</Height>
+                                  <Width>16.74082cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NUMERO_NIT">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!NUMERO_NIT.Value</Value>
+                                          <Style>
+                                            <FontFamily>Courier New</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NUMERO_NIT</rd:DefaultName>
+                                  <Top>5.4999cm</Top>
+                                  <Left>2.27225cm</Left>
+                                  <Height>0.38833cm</Height>
+                                  <Width>7.65938cm</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="CREDITO">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>="CREDITO No:" &amp; Fields!CREDITO.Value</Value>
+                                          <Style>
+                                            <FontFamily>Courier New</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>CREDITO</rd:DefaultName>
+                                  <Top>1.57167in</Top>
+                                  <Left>6.08209in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>1.59375in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Left>0in</Left>
+                              <Height>2.66298in</Height>
+                              <Width>8.21217in</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                            <Rectangle Name="Rectangle3">
+                              <ReportItems>
                                 <Tablix Name="Tablix2">
                                   <TablixBody>
                                     <TablixColumns>
                                       <TablixColumn>
-                                        <Width>2.05196in</Width>
+                                        <Width>2.96232in</Width>
                                       </TablixColumn>
                                       <TablixColumn>
                                         <Width>1.22396in</Width>
@@ -180,7 +354,7 @@
                                     </TablixColumns>
                                     <TablixRows>
                                       <TablixRow>
-                                        <Height>0.22396in</Height>
+                                        <Height>0.18in</Height>
                                         <TablixCells>
                                           <TablixCell>
                                             <CellContents>
@@ -263,10 +437,10 @@
                                     </TablixMembers>
                                   </TablixRowHierarchy>
                                   <DataSetName>DataSet1</DataSetName>
-                                  <Top>2.83625in</Top>
+                                  <Top>0.16792in</Top>
                                   <Left>0.75917in</Left>
-                                  <Height>0.22396in</Height>
-                                  <Width>3.27592in</Width>
+                                  <Height>0.18in</Height>
+                                  <Width>4.18628in</Width>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -291,7 +465,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>totalfactura</rd:DefaultName>
-                                  <Top>2.83625in</Top>
+                                  <Top>0.16792in</Top>
                                   <Left>6.78508in</Left>
                                   <Height>0.25in</Height>
                                   <Width>1.125in</Width>
@@ -306,169 +480,12 @@
                                     <PaddingBottom>2pt</PaddingBottom>
                                   </Style>
                                 </Textbox>
-                                <Textbox Name="FECHA">
-                                  <CanGrow>true</CanGrow>
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>=Fields!FECHA_MOVIMIENTO.Value</Value>
-                                          <Style>
-                                            <FontFamily>Courier New</FontFamily>
-                                            <Format>d</Format>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>FECHA</rd:DefaultName>
-                                  <Top>4.09325cm</Top>
-                                  <Left>2.81104cm</Left>
-                                  <Height>0.47653cm</Height>
-                                  <Width>3.34667cm</Width>
-                                  <ZIndex>2</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
-                                  </Style>
-                                </Textbox>
-                                <Textbox Name="NOMBRE_CLIENTE">
-                                  <CanGrow>true</CanGrow>
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>=Fields!NOMBRE_COMPLETO.Value</Value>
-                                          <Style>
-                                            <FontFamily>Courier New</FontFamily>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>NOMBRE_CLIENTE</rd:DefaultName>
-                                  <Top>4.55567cm</Top>
-                                  <Left>3.03329cm</Left>
-                                  <Height>0.46771cm</Height>
-                                  <Width>12.21236cm</Width>
-                                  <ZIndex>3</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
-                                  </Style>
-                                </Textbox>
-                                <Textbox Name="DIRECCION">
-                                  <CanGrow>true</CanGrow>
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>=Fields!DIRECCION.Value</Value>
-                                          <Style>
-                                            <FontFamily>Courier New</FontFamily>
-                                            <FontSize>9pt</FontSize>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>DIRECCION</rd:DefaultName>
-                                  <Top>4.9828cm</Top>
-                                  <Left>3.03329cm</Left>
-                                  <Height>0.41832cm</Height>
-                                  <Width>16.74082cm</Width>
-                                  <ZIndex>4</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
-                                  </Style>
-                                </Textbox>
-                                <Textbox Name="NUMERO_NIT">
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>=Fields!NUMERO_NIT.Value</Value>
-                                          <Style>
-                                            <FontFamily>Courier New</FontFamily>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>NUMERO_NIT</rd:DefaultName>
-                                  <Top>5.4999cm</Top>
-                                  <Left>2.24578cm</Left>
-                                  <Height>0.38833cm</Height>
-                                  <Width>7.65938cm</Width>
-                                  <ZIndex>5</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                  </Style>
-                                </Textbox>
-                                <Textbox Name="CREDITO">
-                                  <CanGrow>true</CanGrow>
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>="CREDITO No:" &amp; Fields!CREDITO.Value</Value>
-                                          <Style>
-                                            <FontFamily>Courier New</FontFamily>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>CREDITO</rd:DefaultName>
-                                  <Top>1.57167in</Top>
-                                  <Left>6.07167in</Left>
-                                  <Height>0.25in</Height>
-                                  <Width>1.59375in</Width>
-                                  <ZIndex>6</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
-                                  </Style>
-                                </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Left>0.01042in</Left>
-                              <Height>3.81402in</Height>
-                              <Width>8.20175in</Width>
-                              <ZIndex>1</ZIndex>
+                              <Top>2.69076in</Top>
+                              <Height>1.15104in</Height>
+                              <Width>8.21217in</Width>
+                              <ZIndex>2</ZIndex>
                               <Style>
                                 <Border>
                                   <Style>None</Style>

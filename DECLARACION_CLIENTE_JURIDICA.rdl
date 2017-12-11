@@ -429,11 +429,32 @@ CEILING((ROW_NUMBER() OVER(order by CODIGO_ESTADO)) / 3.0) AS GRUPO
             <Value>=Parameters!CODIGO_CLIENTE.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>SELECT TIPO = 'CLIENTES', NOMBRE, DIRECCION, TELEFONO1 AS TELEFONO 
+        <CommandText>CREATE TABLE #TEMP (
+	TIPO VARCHAR(500),
+	NOMBRE VARCHAR(500),
+	DIRECCION VARCHAR(8000),
+	TELEFONO VARCHAR(100)
+)
+INSERT INTO #TEMP SELECT * FROM (
+SELECT TIPO = 'CLIENTES', NOMBRE, DIRECCION, TELEFONO1 AS TELEFONO 
 FROM FA.CLIENTE_RELACIONADOS WHERE TIPO_RELACION = '2' and CODIGO_CLIENTE = @CODIGO_CLIENTE
 UNION ALL
 SELECT TIPO = 'PROVEEDORES', NOMBRE_INSTITUCION AS NOMBRE,DIRECCION = '', TELEFONO1 AS TELEFONO 
-FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
+FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE) d;
+IF NOT EXISTS (SELECT 1 FROM #TEMP WHERE #TEMP.TIPO = 'CLIENTES') BEGIN
+	INSERT INTO #TEMP VALUES ('CLIENTES',NULL,NULL,NULL);
+	INSERT INTO #TEMP VALUES ('CLIENTES',NULL,NULL,NULL);
+	INSERT INTO #TEMP VALUES ('CLIENTES',NULL,NULL,NULL);
+	INSERT INTO #TEMP VALUES ('CLIENTES',NULL,NULL,NULL)
+END   
+IF NOT EXISTS (SELECT 1 FROM #TEMP WHERE #TEMP.TIPO = 'PROVEEDORES') BEGIN
+	INSERT INTO #TEMP VALUES ('PROVEEDORES',NULL,NULL,NULL);
+	INSERT INTO #TEMP VALUES ('PROVEEDORES',NULL,NULL,NULL);
+	INSERT INTO #TEMP VALUES ('PROVEEDORES',NULL,NULL,NULL);
+	INSERT INTO #TEMP VALUES ('PROVEEDORES',NULL,NULL,NULL)
+END 
+SELECT * FROM #TEMP
+DROP TABLE #TEMP</CommandText>
       </Query>
       <Fields>
         <Field Name="TIPO">
@@ -1733,8 +1754,6 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Top>0cm</Top>
-                        <Left>0cm</Left>
                         <Height>1.01424cm</Height>
                         <Width>2.69111cm</Width>
                         <ZIndex>18</ZIndex>
@@ -2037,7 +2056,6 @@ union all select 5  </CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
-                        <Top>0cm</Top>
                         <Left>9.91749cm</Left>
                         <Height>1.01424cm</Height>
                         <Width>0.50176cm</Width>
@@ -4482,7 +4500,6 @@ union all select 5  </CommandText>
                     </ReportItems>
                     <KeepTogether>true</KeepTogether>
                     <Top>9.00683cm</Top>
-                    <Left>0in</Left>
                     <Height>1.22608cm</Height>
                     <Width>32.44602cm</Width>
                     <ZIndex>5</ZIndex>
@@ -4857,7 +4874,6 @@ union all select 5  </CommandText>
                     </ReportItems>
                     <KeepTogether>true</KeepTogether>
                     <Top>0.68907cm</Top>
-                    <Left>0cm</Left>
                     <Height>5.09764cm</Height>
                     <Width>10.23977cm</Width>
                     <ZIndex>10</ZIndex>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>ConexionCLIN</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@COLUMNAS">
+          <DefaultValue>=3</DefaultValue>
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:UserDefined>true</rd:UserDefined>
+          <rd:DbType>Double</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@MODULO">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>String</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@TABLA">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>String</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@COLUMNA">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>String</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@CODIGO">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>String</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT ROW_NUMBER() OVER(order by orden) as FILA,
+	CEILING((ROW_NUMBER() OVER(order by orden)) / @COLUMNAS) AS GRUPO,
+	CODIGO, NOMBRE_RANGO, 
+	VALOR_INICIAL, 
+	VALOR_FINAL,
+	PESO,
+	PUNTAJE,
+	TABLA,
+	MODULO,
+	COLUMNA
+FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA AND CODIGO LIKE @CODIGO</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="FILA">
+        <DataField>FILA</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="GRUPO">
+        <DataField>GRUPO</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="CODIGO">
+        <DataField>CODIGO</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="NOMBRE_RANGO">
+        <DataField>NOMBRE_RANGO</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="VALOR_INICIAL">
+        <DataField>VALOR_INICIAL</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="VALOR_FINAL">
+        <DataField>VALOR_FINAL</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="PESO">
+        <DataField>PESO</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="PUNTAJE">
+        <DataField>PUNTAJE</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="TABLA">
+        <DataField>TABLA</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="MODULO">
+        <DataField>MODULO</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="COLUMNA">
+        <DataField>COLUMNA</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

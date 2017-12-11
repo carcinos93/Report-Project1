@@ -144,6 +144,10 @@
           <DataField>REFERENCIA</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ENVIO_MENSAJE">
+          <DataField>ENVIO_MENSAJE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="TIENE_AUDITORIA">
           <DataField>TIENE_AUDITORIA</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
@@ -954,13 +958,16 @@
                                                 <TablixBody>
                                                   <TablixColumns>
                                                     <TablixColumn>
-                                                      <Width>9.00069cm</Width>
+                                                      <Width>3.15354cm</Width>
                                                     </TablixColumn>
                                                     <TablixColumn>
-                                                      <Width>9.26904cm</Width>
+                                                      <Width>3.79569cm</Width>
                                                     </TablixColumn>
                                                     <TablixColumn>
-                                                      <Width>9.00069cm</Width>
+                                                      <Width>17.75108cm</Width>
+                                                    </TablixColumn>
+                                                    <TablixColumn>
+                                                      <Width>2.5701cm</Width>
                                                     </TablixColumn>
                                                   </TablixColumns>
                                                   <TablixRows>
@@ -1020,6 +1027,39 @@
                                                                 </Paragraph>
                                                               </Paragraphs>
                                                               <rd:DefaultName>Textbox26</rd:DefaultName>
+                                                              <Style>
+                                                                <Border>
+                                                                  <Color>LightGrey</Color>
+                                                                  <Style>Solid</Style>
+                                                                </Border>
+                                                                <PaddingLeft>2pt</PaddingLeft>
+                                                                <PaddingRight>2pt</PaddingRight>
+                                                                <PaddingTop>2pt</PaddingTop>
+                                                                <PaddingBottom>2pt</PaddingBottom>
+                                                              </Style>
+                                                            </Textbox>
+                                                          </CellContents>
+                                                        </TablixCell>
+                                                        <TablixCell>
+                                                          <CellContents>
+                                                            <Textbox Name="Textbox6">
+                                                              <CanGrow>true</CanGrow>
+                                                              <KeepTogether>true</KeepTogether>
+                                                              <Paragraphs>
+                                                                <Paragraph>
+                                                                  <TextRuns>
+                                                                    <TextRun>
+                                                                      <Value>Mensaje</Value>
+                                                                      <Style>
+                                                                        <FontSize>9pt</FontSize>
+                                                                        <FontWeight>Bold</FontWeight>
+                                                                      </Style>
+                                                                    </TextRun>
+                                                                  </TextRuns>
+                                                                  <Style />
+                                                                </Paragraph>
+                                                              </Paragraphs>
+                                                              <rd:DefaultName>Textbox6</rd:DefaultName>
                                                               <Style>
                                                                 <Border>
                                                                   <Color>LightGrey</Color>
@@ -1138,6 +1178,39 @@
                                                         </TablixCell>
                                                         <TablixCell>
                                                           <CellContents>
+                                                            <Textbox Name="ENVIO_MENSAJE">
+                                                              <CanGrow>true</CanGrow>
+                                                              <KeepTogether>true</KeepTogether>
+                                                              <Paragraphs>
+                                                                <Paragraph>
+                                                                  <TextRuns>
+                                                                    <TextRun>
+                                                                      <Value>=Fields!ENVIO_MENSAJE.Value</Value>
+                                                                      <MarkupType>HTML</MarkupType>
+                                                                      <Style>
+                                                                        <FontSize>8pt</FontSize>
+                                                                      </Style>
+                                                                    </TextRun>
+                                                                  </TextRuns>
+                                                                  <Style />
+                                                                </Paragraph>
+                                                              </Paragraphs>
+                                                              <rd:DefaultName>ENVIO_MENSAJE</rd:DefaultName>
+                                                              <Style>
+                                                                <Border>
+                                                                  <Color>LightGrey</Color>
+                                                                  <Style>Solid</Style>
+                                                                </Border>
+                                                                <PaddingLeft>2pt</PaddingLeft>
+                                                                <PaddingRight>2pt</PaddingRight>
+                                                                <PaddingTop>2pt</PaddingTop>
+                                                                <PaddingBottom>2pt</PaddingBottom>
+                                                              </Style>
+                                                            </Textbox>
+                                                          </CellContents>
+                                                        </TablixCell>
+                                                        <TablixCell>
+                                                          <CellContents>
                                                             <Textbox Name="ENVIO_ESTADO">
                                                               <CanGrow>true</CanGrow>
                                                               <KeepTogether>true</KeepTogether>
@@ -1174,6 +1247,7 @@
                                                 </TablixBody>
                                                 <TablixColumnHierarchy>
                                                   <TablixMembers>
+                                                    <TablixMember />
                                                     <TablixMember />
                                                     <TablixMember />
                                                     <TablixMember />

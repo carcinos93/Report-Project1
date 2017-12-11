@@ -108,8 +108,20 @@
           <DataField>DIRECCION</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="PRIMER_NOMBRE">
+          <DataField>PRIMER_NOMBRE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="ALIAS">
           <DataField>ALIAS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SEGUNDO_NOMBRE">
+          <DataField>SEGUNDO_NOMBRE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="APELLIDO1">
+          <DataField>APELLIDO1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DEPARTAMENTO">
@@ -118,6 +130,14 @@
         </Field>
         <Field Name="MUNICIPIO">
           <DataField>MUNICIPIO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="APELLIDO2">
+          <DataField>APELLIDO2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="APELLIDO3">
+          <DataField>APELLIDO3</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="GENTILICIO">
@@ -282,6 +302,10 @@
         </Field>
         <Field Name="REPRESEN_GENERO">
           <DataField>REPRESEN_GENERO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JEFE_INMEDIATO">
+          <DataField>JEFE_INMEDIATO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="REPRESEN_DEPARTAMENTO">
@@ -785,7 +809,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value />
+                            <Value>=iif(Not Code.EsVacio(First(Fields!DUI.Value, "DSFICHA")), "DUI", "")</Value>
                             <MarkupType>HTML</MarkupType>
                             <Style>
                               <FontWeight>Normal</FontWeight>
@@ -853,7 +877,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value />
+                            <Value>=First(Fields!DUI.Value, "DSFICHA")</Value>
                             <MarkupType>HTML</MarkupType>
                             <Style>
                               <FontWeight>Normal</FontWeight>
@@ -1405,6 +1429,7 @@
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
                 <Top>0.42885cm</Top>
+                <Left>0cm</Left>
                 <Height>11.01216cm</Height>
                 <Width>19.59cm</Width>
                 <Style>
@@ -1727,6 +1752,7 @@
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
                 <Top>11.6174cm</Top>
+                <Left>0cm</Left>
                 <Height>4.85479cm</Height>
                 <Width>19.59cm</Width>
                 <ZIndex>1</ZIndex>
@@ -1778,7 +1804,14 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>DECLARACION JURADA: POR LA PRESENTE DECLARO QUE LOS DATOS ANTES DESCRITOS SON VERDADEROS Y QUE CONOZCO A LA PERSONA QUE ME ESTÁ REALIZANDO EL ENVÍO DE DINERO Y QUE ESTOS FONDOS PROVIENEN DE ACTIVIDADES ENTERAMENTE LÍCITAS, POR CONSIGUIENTE, DICHOS FONDOS NO SE ENCUENTRAN RELACIONADOS BAJO NINGUNA CIRCUNSTANCIA CON HECHOS O ACTIVIDADES CRIMINALES RELACIONADAS CON EL NARCOTRAFICO Y DELITOS CONEXOS CON EN LAVADO DE DINERO Y OTROS ACTIVOS, TAMPOCO CON SITUACIONES EN CONTRA DE LA LEY DE LAVADO DE DINERO Y ACTIVOS DE LA REPUBLICA DE EL SALVADOR. ADEMAS DECLARO QUE ME SOMETO A CUALQUIER TIPO DE INVESTIGACION NECESARIA PARA ESTABLECER LA PROCEDENCIA Y EL ORIGEN DE LOS FONDOS DE MI OPERACION.  POR ULTIMO DECLARO QUE ESTE FORMULARIO HA SIDO COMPLETADO POR MI Y/O EN MI PRESENCIA Y QUE LA INFORMACION PROVISTA ES VERDADERA.</Value>
+                            <Value>DECLARACION JURADA:</Value>
+                            <Style>
+                              <FontStyle>Italic</FontStyle>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                          <TextRun>
+                            <Value> POR LA PRESENTE DECLARO QUE LOS DATOS ANTES DESCRITOS SON VERDADEROS Y QUE CONOZCO A LA PERSONA QUE ME ESTÁ REALIZANDO EL ENVÍO DE DINERO Y QUE ESTOS FONDOS PROVIENEN DE ACTIVIDADES ENTERAMENTE LÍCITAS, POR CONSIGUIENTE, DICHOS FONDOS NO SE ENCUENTRAN RELACIONADOS BAJO NINGUNA CIRCUNSTANCIA CON HECHOS O ACTIVIDADES CRIMINALES RELACIONADAS CON EL NARCOTRAFICO Y DELITOS CONEXOS CON EN LAVADO DE DINERO Y OTROS ACTIVOS, TAMPOCO CON SITUACIONES EN CONTRA DE LA LEY DE LAVADO DE DINERO Y ACTIVOS DE LA REPUBLICA DE EL SALVADOR. ADEMAS DECLARO QUE ME SOMETO A CUALQUIER TIPO DE INVESTIGACION NECESARIA PARA ESTABLECER LA PROCEDENCIA Y EL ORIGEN DE LOS FONDOS DE MI OPERACION.  POR ULTIMO DECLARO QUE ESTE FORMULARIO HA SIDO COMPLETADO POR MI Y/O EN MI PRESENCIA Y QUE LA INFORMACION PROVISTA ES VERDADERA.</Value>
                             <Style>
                               <FontStyle>Italic</FontStyle>
                             </Style>
@@ -1877,7 +1910,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>=First(Fields!TELEFONO1.Value, "DSFICHA")</Value>
+                            <Value />
                             <MarkupType>HTML</MarkupType>
                             <Style>
                               <FontWeight>Normal</FontWeight>
@@ -1912,7 +1945,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>Teléfono</Value>
+                            <Value>Firma del Cliente</Value>
                             <Style>
                               <FontSize>9pt</FontSize>
                             </Style>
@@ -1959,9 +1992,9 @@
                     </Paragraphs>
                     <rd:DefaultName>Textbox6</rd:DefaultName>
                     <Top>7.77282cm</Top>
-                    <Left>6.0161cm</Left>
+                    <Left>3.13214cm</Left>
                     <Height>0.9cm</Height>
-                    <Width>7.55781cm</Width>
+                    <Width>13.32573cm</Width>
                     <ZIndex>6</ZIndex>
                     <Style>
                       <Border>
@@ -1995,9 +2028,9 @@
                     </Paragraphs>
                     <rd:DefaultName>Textbox5</rd:DefaultName>
                     <Top>8.7081cm</Top>
-                    <Left>6.0161cm</Left>
+                    <Left>3.13214cm</Left>
                     <Height>0.72361cm</Height>
-                    <Width>7.55781cm</Width>
+                    <Width>13.32573cm</Width>
                     <ZIndex>7</ZIndex>
                     <Style>
                       <Border>
@@ -2012,8 +2045,9 @@
                   </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>16.64858cm</Top>
-                <Height>9.84912cm</Height>
+                <Top>22.04608cm</Top>
+                <Left>0cm</Left>
+                <Height>9.53162cm</Height>
                 <Width>19.59cm</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
@@ -2022,9 +2056,405 @@
                   </Border>
                 </Style>
               </Rectangle>
+              <Rectangle Name="Rectangle5">
+                <ReportItems>
+                  <Textbox Name="Textbox51">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>DATOS DEL ENVÍO</Value>
+                            <Style>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox7</rd:DefaultName>
+                    <Left>0cm</Left>
+                    <Height>0.59767cm</Height>
+                    <Width>19.59cm</Width>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <BackgroundColor>#c4d79b</BackgroundColor>
+                      <VerticalAlign>Bottom</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox52">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>0.84111cm</Top>
+                    <Left>0cm</Left>
+                    <Height>0.9cm</Height>
+                    <Width>5.44114cm</Width>
+                    <ZIndex>1</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox53">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Monto del Envío</Value>
+                            <Style>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>1.77639cm</Top>
+                    <Left>0cm</Left>
+                    <Height>0.72361cm</Height>
+                    <Width>5.44114cm</Width>
+                    <ZIndex>2</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox55">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>0.84111cm</Top>
+                    <Left>6.77404cm</Left>
+                    <Height>0.9cm</Height>
+                    <Width>12.81596cm</Width>
+                    <ZIndex>3</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox56">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Próposito del Envío</Value>
+                            <Style>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>1.77639cm</Top>
+                    <Left>6.77404cm</Left>
+                    <Height>0.72361cm</Height>
+                    <Width>12.81596cm</Width>
+                    <ZIndex>4</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox57">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>2.85194cm</Top>
+                    <Height>0.9cm</Height>
+                    <Width>5.44114cm</Width>
+                    <ZIndex>5</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox58">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Referencia</Value>
+                            <Style>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>3.78722cm</Top>
+                    <Height>0.72361cm</Height>
+                    <Width>5.44114cm</Width>
+                    <ZIndex>6</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox59">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>2.85194cm</Top>
+                    <Left>6.77404cm</Left>
+                    <Height>0.9cm</Height>
+                    <Width>6.71114cm</Width>
+                    <ZIndex>7</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox60">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Nombre del Cajero/ Ejecutivo</Value>
+                            <Style>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>3.78722cm</Top>
+                    <Left>6.77404cm</Left>
+                    <Height>0.72361cm</Height>
+                    <Width>6.71114cm</Width>
+                    <ZIndex>8</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox61">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>2.85194cm</Top>
+                    <Left>14.14886cm</Left>
+                    <Height>0.9cm</Height>
+                    <Width>5.44114cm</Width>
+                    <ZIndex>9</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox62">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Firma y Sello</Value>
+                            <Style>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>3.78722cm</Top>
+                    <Left>14.14886cm</Left>
+                    <Height>0.72361cm</Height>
+                    <Width>5.44114cm</Width>
+                    <ZIndex>10</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </ReportItems>
+                <KeepTogether>true</KeepTogether>
+                <Top>16.56799cm</Top>
+                <Height>4.77542cm</Height>
+                <Width>19.59cm</Width>
+                <ZIndex>3</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Rectangle>
             </ReportItems>
-            <Top>3.59517cm</Top>
-            <Height>26.4977cm</Height>
+            <Top>3.03955cm</Top>
+            <Height>31.5777cm</Height>
             <Width>19.59cm</Width>
             <Style>
               <Border>
@@ -2037,6 +2467,7 @@
             <Value>=First(Fields!LOGO.Value, "DataSet2")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Sizing>FitProportional</Sizing>
+            <Left>0cm</Left>
             <Height>2.39394cm</Height>
             <Width>6.19111cm</Width>
             <ZIndex>1</ZIndex>
@@ -2135,7 +2566,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox48</rd:DefaultName>
             <Left>6.18247cm</Left>
-            <Height>3.45406cm</Height>
+            <Height>2.89844cm</Height>
             <Width>9.74569cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
@@ -2199,8 +2630,38 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Textbox Name="Textbox64">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>F-OC-DJ -PAGO-R-10</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox64</rd:DefaultName>
+            <Top>2.18378cm</Top>
+            <Left>15.99872cm</Left>
+            <Height>0.6cm</Height>
+            <Width>3.55601cm</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>11.84759in</Height>
+        <Height>13.62884in</Height>
         <Style />
       </Body>
       <Width>19.59cm</Width>
@@ -2236,7 +2697,10 @@ public function telefono(ByVal valor As Object) as String
 	   return ""	
 	end if
 	return ReplaceFormat(CStr(valor),"^([0-9]{4})([0-9]{4})$","$1-$2")
-end function	</Code>
+end function	
+	public function EsVacio(ByVal valor as object) as boolean			
+		return string.IsNullOrEmpty(cstr(valor))
+	end function</Code>
   <Language>es-SV</Language>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>18d163b4-decc-46e5-b7e5-0558c97f8c03</rd:ReportID>
