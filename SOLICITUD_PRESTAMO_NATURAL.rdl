@@ -2172,31 +2172,1085 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="Textbox55">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value />
+                            <Rectangle Name="Rectangle12">
+                              <ReportItems>
+                                <Textbox Name="Textbox56">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>14. RESIDENCIA:</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
                                       <Style />
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox55</rd:DefaultName>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.02646cm</Top>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.48209cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox55">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>PROPIA</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.02646cm</Top>
+                                  <Left>4.54631cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>1.29074cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox57">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.07646cm</Top>
+                                  <Left>6.01344cm</Left>
+                                  <Height>0.5cm</Height>
+                                  <Width>0.5cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <TopBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </TopBorder>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <LeftBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </LeftBorder>
+                                    <RightBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </RightBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox58">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>ALQUILADA</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.02646cm</Top>
+                                  <Left>8.36912cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>1.74053cm</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox59">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.07646cm</Top>
+                                  <Left>10.25076cm</Left>
+                                  <Height>0.5cm</Height>
+                                  <Width>0.5cm</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <TopBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </TopBorder>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <LeftBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </LeftBorder>
+                                    <RightBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </RightBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox60">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>PROMESA DE VENTA</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.02646cm</Top>
+                                  <Left>12.15843cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>3.08108cm</Width>
+                                  <ZIndex>5</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox61">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.07646cm</Top>
+                                  <Left>15.38063cm</Left>
+                                  <Height>0.5cm</Height>
+                                  <Width>0.5cm</Width>
+                                  <ZIndex>6</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <TopBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </TopBorder>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <LeftBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </LeftBorder>
+                                    <RightBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </RightBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox62">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>OTROS</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.02646cm</Top>
+                                  <Left>18.10983cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>1.20254cm</Width>
+                                  <ZIndex>7</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox63">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.07646cm</Top>
+                                  <Left>19.48876cm</Left>
+                                  <Height>0.5cm</Height>
+                                  <Width>0.5cm</Width>
+                                  <ZIndex>8</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <TopBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </TopBorder>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <LeftBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </LeftBorder>
+                                    <RightBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </RightBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
                               </Style>
-                            </Textbox>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>1.69373cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle13">
+                              <ReportItems>
+                                <Textbox Name="Textbox64">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>14. BENEFICIARIO DE MIS ACCIONES:</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.02646cm</Top>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.91626cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox65">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.12646cm</Top>
+                                  <Left>5.09265cm</Left>
+                                  <Height>0.4cm</Height>
+                                  <Width>15.2237cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox66">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.63229cm</Top>
+                                  <Left>5.09265cm</Left>
+                                  <Height>0.4cm</Height>
+                                  <Width>15.2237cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox67">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>1.1734cm</Top>
+                                  <Height>0.4cm</Height>
+                                  <Width>20.31635cm</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.76769cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle14">
+                              <ReportItems>
+                                <Textbox Name="Textbox68">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>1. LUGAR DE TRABAJO:</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Height>0.6cm</Height>
+                                  <Width>3.51546cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox69">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.1cm</Top>
+                                  <Left>3.69184cm</Left>
+                                  <Height>0.4cm</Height>
+                                  <Width>10.11406cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox70">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>No. DE TELEFONO:</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Left>14.12006cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.7cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox71">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.1cm</Top>
+                                  <Left>16.99645cm</Left>
+                                  <Height>0.4cm</Height>
+                                  <Width>3.3199cm</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.76769cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle15">
+                              <ReportItems>
+                                <Textbox Name="Textbox72">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>2. DIRECCION:</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Height>0.6cm</Height>
+                                  <Width>2.21678cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox73">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.1cm</Top>
+                                  <Left>2.39317cm</Left>
+                                  <Height>0.4cm</Height>
+                                  <Width>17.92318cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.76769cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle16">
+                              <ReportItems>
+                                <Textbox Name="Textbox74">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>3. CARGO QUE DESEMPEÑA:</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.09754cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox75">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.1cm</Top>
+                                  <Left>4.27393cm</Left>
+                                  <Height>0.4cm</Height>
+                                  <Width>7.96468cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox76">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>4. SUELDO:</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Left>12.49778cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>1.9cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox77">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.1cm</Top>
+                                  <Left>14.57417cm</Left>
+                                  <Height>0.4cm</Height>
+                                  <Width>5.74218cm</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.76769cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle17">
+                              <ReportItems>
+                                <Textbox Name="Textbox78">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>5. SALARIO FECHA DE PAGO:</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.09754cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox79">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.1cm</Top>
+                                  <Left>4.27393cm</Left>
+                                  <Height>0.4cm</Height>
+                                  <Width>4.13447cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox80">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>6. FECHA DE CORTE PLANILLA:</Value>
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Left>8.68778cm</Left>
+                                  <Height>0.6cm</Height>
+                                  <Width>4.39667cm</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox81">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontSize>8pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox10</rd:DefaultName>
+                                  <Top>0.1cm</Top>
+                                  <Left>13.3551cm</Left>
+                                  <Height>0.4cm</Height>
+                                  <Width>6.96125cm</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
                           </CellContents>
                         </TablixCell>
                       </TablixCells>
@@ -2224,12 +3278,17 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                         <TablixMember />
                         <TablixMember />
                         <TablixMember />
+                        <TablixMember />
+                        <TablixMember />
+                        <TablixMember />
+                        <TablixMember />
+                        <TablixMember />
                       </TablixMembers>
                     </TablixMember>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>DSDUMMY</DataSetName>
-                <Height>7.07556cm</Height>
+                <Height>11.84005cm</Height>
                 <Width>20.59cm</Width>
                 <Style>
                   <Border>
@@ -2260,7 +3319,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>5.7476cm</Top>
-            <Height>7.07556cm</Height>
+            <Height>11.84005cm</Height>
             <Width>20.59cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
