@@ -92,8 +92,20 @@
           <DataField>ALIAS</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="PRIMER_NOMBRE">
+          <DataField>PRIMER_NOMBRE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="DEPARTAMENTO">
           <DataField>DEPARTAMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SEGUNDO_NOMBRE">
+          <DataField>SEGUNDO_NOMBRE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="APELLIDO1">
+          <DataField>APELLIDO1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="MUNICIPIO">
@@ -104,8 +116,16 @@
           <DataField>GENTILICIO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="APELLIDO2">
+          <DataField>APELLIDO2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="NIT">
           <DataField>NIT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="APELLIDO3">
+          <DataField>APELLIDO3</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DUI">
@@ -128,6 +148,10 @@
           <DataField>CORREO1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="PAIS_DIRECCION">
+          <DataField>PAIS_DIRECCION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="CORREO2">
           <DataField>CORREO2</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -135,6 +159,10 @@
         <Field Name="ES_PEP">
           <DataField>ES_PEP</DataField>
           <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="GIRO">
+          <DataField>GIRO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="PROCEDENCIA_FONDOS">
           <DataField>PROCEDENCIA_FONDOS</DataField>
@@ -164,6 +192,10 @@
           <DataField>TELEFONO3</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="SITIO_WEB">
+          <DataField>SITIO_WEB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="DIRECCION">
           <DataField>DIRECCION</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -179,6 +211,10 @@
         <Field Name="CODIGO_ACTIVIDAD">
           <DataField>CODIGO_ACTIVIDAD</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIENE_GIRO">
+          <DataField>TIENE_GIRO</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
         </Field>
         <Field Name="LUGAR_NACIMIENTO">
           <DataField>LUGAR_NACIMIENTO</DataField>
@@ -248,8 +284,20 @@
           <DataField>REPRESEN_GENERO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="EDAD">
+          <DataField>EDAD</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="REPRESEN_DEPARTAMENTO">
           <DataField>REPRESEN_DEPARTAMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CARGO">
+          <DataField>CARGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SEGURO_SOCIAL">
+          <DataField>SEGURO_SOCIAL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="REPRESEN_MUNICIPIO">
@@ -260,6 +308,10 @@
           <DataField>REPRESEN_NACIONALIDAD</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ES_EXTRANJERO">
+          <DataField>ES_EXTRANJERO</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="REPRESEN_DIRECCION">
           <DataField>REPRESEN_DIRECCION</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -268,13 +320,25 @@
           <DataField>REPRESEN_TELEFONO1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="NUMERO_EMPLEADOS">
+          <DataField>NUMERO_EMPLEADOS</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="REPRESEN_TELEFONO2">
           <DataField>REPRESEN_TELEFONO2</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="NUMERO_SUCURSALES">
+          <DataField>NUMERO_SUCURSALES</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="REPRESEN_TELEFONO3">
           <DataField>REPRESEN_TELEFONO3</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ACREDITADO">
+          <DataField>ACREDITADO</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
         </Field>
         <Field Name="REPRESEN_LTRABAJO">
           <DataField>REPRESEN_LTRABAJO</DataField>
@@ -288,12 +352,20 @@
           <DataField>REPRESEN_TELTRABAJO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="CODIGO_ESTADO_CIVIL">
+          <DataField>CODIGO_ESTADO_CIVIL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="REPRESEN_CORREO">
           <DataField>REPRESEN_CORREO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="REPRESEN_ESTADOF">
           <DataField>REPRESEN_ESTADOF</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JEFE_INMEDIATO">
+          <DataField>JEFE_INMEDIATO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="REPRESEN_PROFESION">
@@ -332,12 +404,24 @@
           <DataField>REPRESEN_INGRESOS</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="REPRESEN_PAISDIRECCION">
+          <DataField>REPRESEN_PAISDIRECCION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="REPRESEN_EGRESOS">
           <DataField>REPRESEN_EGRESOS</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="REPRESEN_CARNETRESIDENTE">
           <DataField>REPRESEN_CARNETRESIDENTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REPRESEN_CODESTADOF">
+          <DataField>REPRESEN_CODESTADOF</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REPRESEN_ACTIVIDAD_ECONO">
+          <DataField>REPRESEN_ACTIVIDAD_ECONO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -538,15 +622,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>I. DATOS GENERALES DEL </Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                          <Color>White</Color>
-                        </Style>
-                      </TextRun>
-                      <TextRun>
-                        <Value>=iif(First(Fields!TIPO_PERSONA.Value, "dsFicha") = "1", "CLIENTE &lt;span style='font-size:6pt'&gt;(PERSONA NATURAL)&lt;span&gt;","REPRESENTANTE LEGAL &lt;span style='font-size:6pt'&gt;(PERSONA JURIDICA)&lt;span&gt;")</Value>
-                        <MarkupType>HTML</MarkupType>
+                        <Value>I. DATOS GENERALES DEL CLIENTE (PERSONA NATURAL)  O REPRESENTANTE LEGAL (PERSONA JURIDICA)</Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
                           <Color>White</Color>
@@ -559,7 +635,6 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox7</rd:DefaultName>
-                <Left>0cm</Left>
                 <Height>0.59767cm</Height>
                 <Width>28.46578cm</Width>
                 <Style>
@@ -581,15 +656,8 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>NOMBRE DEL </Value>
+                        <Value>NOMBRE DEL CLIENTE O  REPRESENTANTE LEGAL </Value>
                         <Style />
-                      </TextRun>
-                      <TextRun>
-                        <Value>=iif(First(Fields!TIPO_PERSONA.Value, "dsFicha") = "1", "CLIENTE","REPRESENTANTE LEGAL")</Value>
-                        <MarkupType>HTML</MarkupType>
-                        <Style>
-                          <FontWeight>Normal</FontWeight>
-                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
@@ -599,7 +667,7 @@
                 <Top>1.42875cm</Top>
                 <Left>0.40739cm</Left>
                 <Height>0.9cm</Height>
-                <Width>5.75184cm</Width>
+                <Width>9.40641cm</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -631,9 +699,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>1.42875cm</Top>
-                <Left>6.42653cm</Left>
+                <Left>10.0658cm</Left>
                 <Height>0.9cm</Height>
-                <Width>17.97651cm</Width>
+                <Width>15.70109cm</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
@@ -914,7 +982,7 @@
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>3.01447cm</Top>
-            <Left>0.06968cm</Left>
+            <Left>0.04638cm</Left>
             <Height>3.84938cm</Height>
             <Width>28.46578cm</Width>
             <ZIndex>3</ZIndex>
@@ -976,7 +1044,6 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox7</rd:DefaultName>
-                <Left>0cm</Left>
                 <Height>0.62675cm</Height>
                 <Width>28.48173cm</Width>
                 <Style>
@@ -1550,7 +1617,6 @@
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>0cm</Top>
                     <Left>0.96608cm</Left>
                     <Height>0.9cm</Height>
                     <Width>4.60869cm</Width>
@@ -1583,7 +1649,6 @@
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox6</rd:DefaultName>
-                    <Top>0cm</Top>
                     <Left>8.75569cm</Left>
                     <Height>0.9cm</Height>
                     <Width>0.53599cm</Width>
@@ -1617,7 +1682,6 @@
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>0cm</Top>
                     <Left>7.65987cm</Left>
                     <Height>0.9cm</Height>
                     <Width>0.77014cm</Width>
@@ -1651,7 +1715,6 @@
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox6</rd:DefaultName>
-                    <Top>0cm</Top>
                     <Left>6.91458cm</Left>
                     <Height>0.9cm</Height>
                     <Width>0.53599cm</Width>
@@ -1685,7 +1748,6 @@
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>0cm</Top>
                     <Left>5.81876cm</Left>
                     <Height>0.9cm</Height>
                     <Width>0.77014cm</Width>
@@ -3146,6 +3208,94 @@
                         </TablixCell>
                       </TablixCells>
                     </TablixRow>
+                    <TablixRow>
+                      <Height>0.9369cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle7">
+                              <ReportItems>
+                                <Textbox Name="Textbox122">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Detalle la procedencia de los ingresos que generarían el pago anticipado:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox5</rd:DefaultName>
+                                  <Top>0.01845cm</Top>
+                                  <Left>0.43927cm</Left>
+                                  <Height>0.9cm</Height>
+                                  <Width>9.3115cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox123">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <MarkupType>HTML</MarkupType>
+                                          <Style>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox6</rd:DefaultName>
+                                  <Top>0.01845cm</Top>
+                                  <Left>10.01701cm</Left>
+                                  <Height>0.9cm</Height>
+                                  <Width>18.36927cm</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                      <Width>0.5pt</Width>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
                   </TablixRows>
                 </TablixBody>
                 <TablixColumnHierarchy>
@@ -3162,14 +3312,14 @@
                         <TablixMember />
                         <TablixMember />
                         <TablixMember />
+                        <TablixMember />
                       </TablixMembers>
                     </TablixMember>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>dsdummy</DataSetName>
                 <Top>1.09389cm</Top>
-                <Left>0cm</Left>
-                <Height>4.82191cm</Height>
+                <Height>5.75882cm</Height>
                 <Width>28.49767cm</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
@@ -3182,7 +3332,7 @@
             <KeepTogether>true</KeepTogether>
             <Top>10.91683cm</Top>
             <Left>0.03779cm</Left>
-            <Height>5.9158cm</Height>
+            <Height>6.85271cm</Height>
             <Width>28.50794cm</Width>
             <ZIndex>6</ZIndex>
             <Visibility>
@@ -3216,7 +3366,6 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox7</rd:DefaultName>
-                <Top>0.00092in</Top>
                 <Left>0.03188cm</Left>
                 <Height>0.59767cm</Height>
                 <Width>28.48173cm</Width>
@@ -3255,7 +3404,7 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox168</rd:DefaultName>
-                <Top>0.95948cm</Top>
+                <Top>0.95714cm</Top>
                 <Left>0.03188cm</Left>
                 <Height>2.20925cm</Height>
                 <Width>28.35438cm</Width>
@@ -3288,8 +3437,7 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox168</rd:DefaultName>
-                <Top>3.34512cm</Top>
-                <Left>0cm</Left>
+                <Top>3.34278cm</Top>
                 <Height>2.32555cm</Height>
                 <Width>28.35438cm</Width>
                 <ZIndex>2</ZIndex>
@@ -3308,9 +3456,9 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>17.23804cm</Top>
+            <Top>17.87538cm</Top>
             <Left>0.03779cm</Left>
-            <Height>5.67067cm</Height>
+            <Height>5.66833cm</Height>
             <Width>28.51361cm</Width>
             <ZIndex>7</ZIndex>
             <Style>
@@ -3520,7 +3668,7 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>23.21164cm</Top>
+            <Top>23.84664cm</Top>
             <Left>0.03779cm</Left>
             <Height>2.58535cm</Height>
             <Width>28.38626cm</Width>
@@ -3553,7 +3701,6 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox7</rd:DefaultName>
-                <Left>0cm</Left>
                 <Height>0.59767cm</Height>
                 <Width>28.48173cm</Width>
                 <Style>
@@ -3590,7 +3737,7 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>¿SE REALIZÓ DE PERSONA SOLICITANTE EL CREDITO EN LA BASE DE DATOS DE USUARIOS NO ELEGIBLE INTERNA?</Value>
+                                          <Value>¿SE REALIZÓ BUSQUEDA DE PERSONA SOLICITANTE DEL CREDITO EN LA BASE DE DATOS DE USUARIOS NO ELEGIBLES INTERNA?</Value>
                                           <Style />
                                         </TextRun>
                                       </TextRuns>
@@ -3600,7 +3747,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox5</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>0.06968cm</Left>
                                   <Height>1.0707cm</Height>
                                   <Width>13.83811cm</Width>
@@ -3959,7 +4105,7 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>¿SE REALIZÓ DE PERSONA SOLICITANTE EL CREDITO EN LA BASE DE DATOS OFAC O LISTA CLINTON?</Value>
+                                          <Value>¿SE REALIZÓ BUSQUEDA DE PERSONA SOLICITANTE DEL CREDITO EN LA BASE DE DATOS OFAC O LISTA CLINTON?</Value>
                                           <Style />
                                         </TextRun>
                                       </TextRuns>
@@ -3969,7 +4115,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox5</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>0.06968cm</Left>
                                   <Height>1.0707cm</Height>
                                   <Width>13.83811cm</Width>
@@ -4427,7 +4572,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox5</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>0.47706cm</Left>
                                   <Height>0.9cm</Height>
                                   <Width>11.86966cm</Width>
@@ -4496,7 +4640,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox5</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>12.86295cm</Left>
                                   <Height>0.9cm</Height>
                                   <Width>5.34175cm</Width>
@@ -4566,7 +4709,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox5</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>18.89164cm</Left>
                                   <Height>0.9cm</Height>
                                   <Width>4.33026cm</Width>
@@ -4638,7 +4780,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox5</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>23.94153cm</Left>
                                   <Height>0.9cm</Height>
                                   <Width>4.45064cm</Width>
@@ -4716,7 +4857,7 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>NOMBRE DEL EJECUTIVO RESPONSABLEDE REALIZAR REVISION DE "GESTION DEL LLENADO DE FORMULARIO"</Value>
+                                          <Value>NOMBRE DEL EJECUTIVO RESPONSABLE DE REALIZAR REVISION DE "GESTION DEL LLENADO DE FORMULARIO"</Value>
                                           <Style>
                                             <FontSize>9pt</FontSize>
                                           </Style>
@@ -4728,7 +4869,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox5</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>0.47706cm</Left>
                                   <Height>0.9cm</Height>
                                   <Width>11.86966cm</Width>
@@ -4797,7 +4937,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox5</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>12.86295cm</Left>
                                   <Height>0.9cm</Height>
                                   <Width>5.34175cm</Width>
@@ -4867,7 +5006,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox5</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>18.89164cm</Left>
                                   <Height>0.9cm</Height>
                                   <Width>4.33026cm</Width>
@@ -4939,7 +5077,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox5</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>23.94153cm</Left>
                                   <Height>0.9cm</Height>
                                   <Width>4.45064cm</Width>
@@ -5026,8 +5163,7 @@
                 </TablixRowHierarchy>
                 <DataSetName>dsdummy</DataSetName>
                 <Top>0.77406cm</Top>
-                <Left>0cm</Left>
-                <Height>9.93777cm</Height>
+                <Height>9.93776cm</Height>
                 <Width>28.39217cm</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
@@ -5038,9 +5174,8 @@
               </Tablix>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>26.11352cm</Top>
-            <Left>0cm</Left>
-            <Height>10.71182cm</Height>
+            <Top>26.74852cm</Top>
+            <Height>10.71183cm</Height>
             <Width>28.48173cm</Width>
             <ZIndex>9</ZIndex>
             <Style>
@@ -5049,48 +5184,82 @@
               </Border>
             </Style>
           </Rectangle>
-          <Textbox Name="Textbox267">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Base legal: Art. 13, numeral 2) del Instructivo de la Unidad de Investigación Financiera</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox267</rd:DefaultName>
-            <Top>37.49989cm</Top>
-            <Left>0.03779cm</Left>
-            <Height>0.91294cm</Height>
-            <Width>28.33844cm</Width>
-            <ZIndex>10</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
         </ReportItems>
-        <Height>15.15901in</Height>
+        <Height>14.74817in</Height>
         <Style />
       </Body>
       <Width>28.55141cm</Width>
       <Page>
         <PageFooter>
-          <Height>0.02646cm</Height>
+          <Height>1.06858cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox267">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Base legal: Art. 8 Procedimientos en apertura de Cuentas o Contratos, numeral 2 del Instructivo de la Unidad de Investigación Financiera</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox267</rd:DefaultName>
+              <Left>7.04747cm</Left>
+              <Height>1.06858cm</Height>
+              <Width>14.45647cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox2">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Versión -02</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0.10583cm</Top>
+              <Left>26.45073cm</Left>
+              <Height>0.6cm</Height>
+              <Width>1.94144cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
           <Style>
             <Border>
               <Style>None</Style>
@@ -5109,10 +5278,6 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="CODIGO_CLIENTE">
-      <DataType>String</DataType>
-      <Prompt>CODIGO CLIENTE</Prompt>
-    </ReportParameter>
     <ReportParameter Name="TIPO">
       <DataType>String</DataType>
       <Prompt>TIPO</Prompt>
@@ -5128,6 +5293,10 @@
           </ParameterValue>
         </ParameterValues>
       </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="CODIGO_CLIENTE">
+      <DataType>String</DataType>
+      <Prompt>CODIGO CLIENTE</Prompt>
     </ReportParameter>
   </ReportParameters>
   <Language>es-SV</Language>

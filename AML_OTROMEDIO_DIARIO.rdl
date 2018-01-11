@@ -25,8 +25,14 @@
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@FECHA">
-            <Value>=Parameters!FECHA.Value</Value>
+          <QueryParameter Name="@FECHA_INICIO">
+            <Value>=Parameters!FECHA_INICIO.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@FECHA_FIN">
+            <Value>=Parameters!FECHA_FIN.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ESTADO">
+            <Value>=Parameters!ESTADO.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
@@ -37,8 +43,16 @@
           <DataField>CORRELATIVO</DataField>
           <rd:TypeName>System.Int64</rd:TypeName>
         </Field>
+        <Field Name="CODIGO_CONFIRMACION">
+          <DataField>CODIGO_CONFIRMACION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="CODIGO_TRANSACCION">
           <DataField>CODIGO_TRANSACCION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ESTADO">
+          <DataField>ESTADO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="TIPO_INFORME">
@@ -484,6 +498,10 @@
           <DataField>ACTIVIDAD</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="DEPARTAMENTO">
+          <DataField>DEPARTAMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
     </DataSet>
     <DataSet Name="DS_TIPODOC">
@@ -529,6 +547,9 @@
               <TablixColumns>
                 <TablixColumn>
                   <Width>3.17469cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>3.34667cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>5.55686cm</Width>
@@ -753,6 +774,36 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox285</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1351,6 +1402,38 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Codigo confirmacion</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -3547,6 +3630,38 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!CODIGO_CONFIRMACION.Value</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="direccionAgencia">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -5667,6 +5782,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -5685,7 +5801,7 @@
             <DataSetName>dstrans</DataSetName>
             <PageName>Reporte Otros Medios Diario</PageName>
             <Height>1.8cm</Height>
-            <Width>223.83923cm</Width>
+            <Width>227.1859cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -5705,7 +5821,7 @@
           </BottomBorder>
         </Style>
       </Body>
-      <Width>223.83923cm</Width>
+      <Width>227.1859cm</Width>
       <Page>
         <PageHeight>27.94cm</PageHeight>
         <PageWidth>21.59cm</PageWidth>
@@ -5719,9 +5835,38 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="FECHA">
+    <ReportParameter Name="ESTADO">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="T"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ESTADO</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>="T"</Value>
+            <Label>="TODOS"</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>="100"</Value>
+            <Label>="CONFIRMADOS"</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>="0"</Value>
+            <Label>="PENDIENTES"</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="FECHA_INICIO">
       <DataType>DateTime</DataType>
-      <Prompt>FECHA</Prompt>
+      <Prompt>FECHA INICIO</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FECHA_FIN">
+      <DataType>DateTime</DataType>
+      <Prompt>FECHA FIN</Prompt>
     </ReportParameter>
   </ReportParameters>
   <Code>function Fecha(ByVal valor as String) As Date

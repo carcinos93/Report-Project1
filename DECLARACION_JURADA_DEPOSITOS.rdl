@@ -538,15 +538,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>I. DATOS GENERALES DEL </Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                          <Color>White</Color>
-                        </Style>
-                      </TextRun>
-                      <TextRun>
-                        <Value>=iif(First(Fields!TIPO_PERSONA.Value, "dsFicha") = "1", "CLIENTE &lt;span style='font-size:6pt'&gt;(PERSONA NATURAL)&lt;span&gt;","REPRESENTANTE LEGAL &lt;span style='font-size:6pt'&gt;(PERSONA JURIDICA)&lt;span&gt;")</Value>
-                        <MarkupType>HTML</MarkupType>
+                        <Value>I. DATOS GENERALES DEL CLIENTE (PERSONA NATURAL)  O REPRESENTANTE LEGAL (PERSONA JURIDICA)</Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
                           <Color>White</Color>
@@ -580,15 +572,8 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>NOMBRE DEL </Value>
+                        <Value>NOMBRE DELCLIENTE O  REPRESENTANTE LEGAL </Value>
                         <Style />
-                      </TextRun>
-                      <TextRun>
-                        <Value>=iif(First(Fields!TIPO_PERSONA.Value, "dsFicha") = "1", "CLIENTE","REPRESENTANTE LEGAL")</Value>
-                        <MarkupType>HTML</MarkupType>
-                        <Style>
-                          <FontWeight>Normal</FontWeight>
-                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
@@ -598,7 +583,7 @@
                 <Top>1.42875cm</Top>
                 <Left>0.40739cm</Left>
                 <Height>0.9cm</Height>
-                <Width>5.75184cm</Width>
+                <Width>8.88546cm</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -630,9 +615,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>1.42875cm</Top>
-                <Left>6.42653cm</Left>
+                <Left>9.60153cm</Left>
                 <Height>0.9cm</Height>
-                <Width>17.97651cm</Width>
+                <Width>16.05866cm</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
@@ -930,7 +915,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value />
+                    <Value>F-OC-DJDAF-09</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -1968,38 +1953,6 @@
               </Border>
             </Style>
           </Rectangle>
-          <Textbox Name="Textbox267">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Base legal: Art. 13, numeral 2) del Instructivo de la Unidad de Investigación Financiera</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox267</rd:DefaultName>
-            <Top>28.92739cm</Top>
-            <Left>0.1695cm</Left>
-            <Height>0.91294cm</Height>
-            <Width>28.33844cm</Width>
-            <ZIndex>8</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Rectangle Name="Rectangle4">
             <ReportItems>
               <Textbox Name="Textbox19">
@@ -2588,7 +2541,7 @@
             <Left>0.1695cm</Left>
             <Height>3.88355cm</Height>
             <Width>28.49767cm</Width>
-            <ZIndex>9</ZIndex>
+            <ZIndex>8</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2709,7 +2662,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>CARNEO CONSTANCIA DE PENSION</Value>
+                        <Value>CARNE O CONSTANCIA DE PENSION</Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                         </Style>
@@ -3234,7 +3187,7 @@
             <Left>0.18544cm</Left>
             <Height>5.52761cm</Height>
             <Width>28.52955cm</Width>
-            <ZIndex>10</ZIndex>
+            <ZIndex>9</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -3242,15 +3195,82 @@
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>11.74816in</Height>
+        <Height>11.51899in</Height>
         <Style />
       </Body>
       <Width>28.71499cm</Width>
       <Page>
         <PageFooter>
-          <Height>0.02646cm</Height>
+          <Height>1.20087cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox267">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Base legal: Art. 8 Procedimientos en apertura de Cuentas o Contratos, numeral 2 del Instructivo de la Unidad de Investigación Financiera</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox267</rd:DefaultName>
+              <Top>0cm</Top>
+              <Left>7.12926cm</Left>
+              <Height>1.06858cm</Height>
+              <Width>14.45647cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox2">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Versión -02</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0cm</Top>
+              <Left>26.61434cm</Left>
+              <Height>0.6cm</Height>
+              <Width>1.94144cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
           <Style>
             <Border>
               <Style>None</Style>

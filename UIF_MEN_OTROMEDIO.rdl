@@ -6248,9 +6248,6 @@
                 <Height>2.73458cm</Height>
                 <Width>18.46728cm</Width>
                 <ZIndex>4</ZIndex>
-                <Visibility>
-                  <Hidden>true</Hidden>
-                </Visibility>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -6259,7 +6256,6 @@
               </Tablix>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>0.86995cm</Top>
             <Left>1.33747cm</Left>
             <Height>32.26859cm</Height>
             <Width>18.5554cm</Width>
@@ -6270,11 +6266,54 @@
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>13.04667in</Height>
+        <Height>12.70417in</Height>
         <Style />
       </Body>
       <Width>21.59cm</Width>
       <Page>
+        <PageHeader>
+          <Height>1.23758cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox273">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>UNIDAD DE INVESTIGACION FINANCIERA – FISCALIA GENERAL DE LA REPUBLICA</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox273</rd:DefaultName>
+              <Top>0.31879cm</Top>
+              <Left>1.37266cm</Left>
+              <Height>0.6cm</Height>
+              <Width>18.46728cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
         <PageHeight>27.94cm</PageHeight>
         <PageWidth>21.59cm</PageWidth>
         <LeftMargin>2cm</LeftMargin>
@@ -6313,10 +6352,10 @@ Public Function valorUrl(ByVal url As String, ByVal nombre As String) As String
  End Function
 public function FechaFormato1(byval fecha1 as object) as string
 		if Microsoft.VisualBasic.IsNothing(fecha1) then
-			return ""
+			return FechaFormato(Nothing)
 		elseif typeof fecha1 is string then 
 			if cstr(fecha1).length = 0 then
-				return ""
+				return FechaFormato(Nothing)
 			else
 				FechaFormato(Fecha(fecha1))
 			end if
@@ -6324,15 +6363,23 @@ public function FechaFormato1(byval fecha1 as object) as string
 		return FechaFormato(fecha1)
 end function
 public function FechaFormato(byval fecha as Date) as string
+		if Microsoft.VisualBasic.IsNothing(fecha) or fecha = Date.MinValue then
+			return "DIA &lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/u&gt;  MES &lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/u&gt;  A&amp;Ntilde;O &lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/u&gt;"
+		end if	
+	
 		return string.format("{0:'DIA &lt;u&gt;&amp;nbsp;&amp;nbsp;'dd'&amp;nbsp;&amp;nbsp;&lt;/u&gt;  MES &lt;u&gt;&amp;nbsp;&amp;nbsp;'MM'&amp;nbsp;&amp;nbsp;&lt;/u&gt;  A&amp;Ntilde;O &lt;u&gt;&amp;nbsp;&amp;nbsp;'yyyy'&amp;nbsp;&amp;nbsp;&lt;/u&gt;'}", fecha)
-end function
-public function FechaFormato2(ByVal fecha1 As Object) as string
+	end function
+	public function FechaFormato2(ByVal fecha1 As Object) as string
+		dim formatoVacio = "DIA &lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/u&gt;" + _
+			" MES &lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/u&gt;" + _
+			" A&amp;Ntilde;O &lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/u&gt;" + _
+			" HORA &lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/u&gt;"
 		Dim fecha2 As Date
 		if Microsoft.VisualBasic.IsNothing(fecha1) then
-			return ""
+			return formatoVacio
 		elseif typeof fecha1 is string then 
 			if cstr(fecha1).length = 0 then
-				return ""
+				return formatoVacio
 			else
 				fecha2 = Fecha(fecha1)
 			end if
@@ -6344,9 +6391,7 @@ public function FechaFormato2(ByVal fecha1 As Object) as string
 			"' A&amp;Ntilde;O &lt;u&gt;&amp;nbsp;&amp;nbsp;'yyyy'&amp;nbsp;&amp;nbsp;&lt;/u&gt;'" + _
 			"' HORA &lt;u&gt;&amp;nbsp;&amp;nbsp;'hh:mm tt'&amp;nbsp;&amp;nbsp;&lt;/u&gt;'" + _
 			 "}",fecha2)
-end function		
-
-</Code>
+end function</Code>
   <Language>es-SV</Language>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>c5b56dea-b86a-45f0-9eb7-d12f69b88047</rd:ReportID>

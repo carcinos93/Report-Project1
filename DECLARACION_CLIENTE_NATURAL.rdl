@@ -66,6 +66,10 @@
           <DataField>DEPARTAMENTO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ACTIVIDAD">
+          <DataField>ACTIVIDAD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
     </DataSet>
     <DataSet Name="dsFicha">
@@ -164,6 +168,10 @@
           <DataField>ES_PEP</DataField>
           <rd:TypeName>System.Boolean</rd:TypeName>
         </Field>
+        <Field Name="SITIO_WEB">
+          <DataField>SITIO_WEB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="PROCEDENCIA_FONDOS">
           <DataField>PROCEDENCIA_FONDOS</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -248,9 +256,21 @@
           <DataField>ESTADO_CIVIL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="EDAD">
+          <DataField>EDAD</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="ES_EXTRANJERO">
           <DataField>ES_EXTRANJERO</DataField>
-          <rd:TypeName>System.Boolean</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CARGO">
+          <DataField>CARGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SEGURO_SOCIAL">
+          <DataField>SEGURO_SOCIAL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="PROFESION">
           <DataField>PROFESION</DataField>
@@ -268,9 +288,21 @@
           <DataField>LUGAR_TRABAJO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="NUMERO_EMPLEADOS">
+          <DataField>NUMERO_EMPLEADOS</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="DIRECCION_TRABAJO">
           <DataField>DIRECCION_TRABAJO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NUMERO_SUCURSALES">
+          <DataField>NUMERO_SUCURSALES</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ACREDITADO">
+          <DataField>ACREDITADO</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
         </Field>
         <Field Name="TELEFONO_TRABAJO">
           <DataField>TELEFONO_TRABAJO</DataField>
@@ -767,7 +799,7 @@ DROP TABLE #TEMP</CommandText>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>Por la presente declaro que los datos antes descritos son verdaderos y que mis ingresos provienen de actividades enteramente lícitas, por consiguiente, dichos fondos no se encuentran relacionados bajo ninguna circunstancia con hechos o actividades criminales relacionadas con el narcotráfico y delitos conexos en el lavado de dinero y otros activos, tampoco con situaciones en contra de la Ley Contra el Lavado de Dinero y Activos de la República de El Salvador. Además declaro que me someto a cualquier tipo de investigación necesaria para establecer la procedencia de los fondos de mi (s) operación (es). Por último declaro que este formulario ha sido completado por mi y/o en mi presencia y que la información proporcionada es verdadera.</Value>
+                            <Value>Por la presente declaro que los datos antes descritos son verdaderos y que mis ingresos provienen de actividades enteramente lícitas, por consiguiente, dichos fondos no se encuentran relacionados bajo ninguna circunstancia con hechos o actividades criminales relacionadas con el narcotráfico y delitos conexos a dicho flagelo en el lavado de dinero y otros activos, tampoco con situaciones en contra de la Ley Contra el Lavado de Dinero y Activos de la República de El Salvador y demás normativa. Además declaro que me someto a suministrar cualquier tipo de información y documentación necesaria para establecer la procedencia de los fondos de mi (s) operación (es). Por último declaro que este formulario ha sido completado por mi y/o en mi presencia y que la información proporcionada es verdadera.</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
@@ -791,7 +823,7 @@ DROP TABLE #TEMP</CommandText>
                   </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>37.39399cm</Top>
+                <Top>38.66399cm</Top>
                 <Left>0.07864cm</Left>
                 <Height>2.79564cm</Height>
                 <Width>32.44602cm</Width>
@@ -875,7 +907,7 @@ DROP TABLE #TEMP</CommandText>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>=First(Fields!DEPARTAMENTO.Value, "DataSet2") &amp; ", " &amp; Format(Now(),"dd 'de' MMMM 'de' yyyy")</Value>
+                            <Value />
                             <MarkupType>HTML</MarkupType>
                             <Style>
                               <FontWeight>Normal</FontWeight>
@@ -1002,7 +1034,7 @@ DROP TABLE #TEMP</CommandText>
                   </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>40.3076cm</Top>
+                <Top>41.5776cm</Top>
                 <Height>2.36221cm</Height>
                 <Width>32.26515cm</Width>
                 <ZIndex>1</ZIndex>
@@ -1070,7 +1102,7 @@ DROP TABLE #TEMP</CommandText>
                                         <Paragraph>
                                           <TextRuns>
                                             <TextRun>
-                                              <Value>¿SE REALIZÓ DE PERSONA SOLICITANTE EL CREDITO EN LA BASE DE DATOS DE USUARIOS NO ELEGIBLE INTERNA?</Value>
+                                              <Value>¿SE REALIZÓ BUSQUEDA DE LA PERSONA NATURAL EN LA BASE DE DATOS DE USUARIOS NO ELEGIBLES INTERNA?</Value>
                                               <Style />
                                             </TextRun>
                                           </TextRuns>
@@ -1438,7 +1470,7 @@ DROP TABLE #TEMP</CommandText>
                                         <Paragraph>
                                           <TextRuns>
                                             <TextRun>
-                                              <Value>¿SE REALIZÓ DE PERSONA SOLICITANTE EL CREDITO EN LA BASE DE DATOS OFAC O LISTA CLINTON?</Value>
+                                              <Value>¿SE REALIZÓ BUSQUEDA DE LA PERSONA NATURAL EN LA BASE DE DATOS OFAC O LISTA CLINTON?</Value>
                                               <Style />
                                             </TextRun>
                                           </TextRuns>
@@ -1806,7 +1838,7 @@ DROP TABLE #TEMP</CommandText>
                                         <Paragraph>
                                           <TextRuns>
                                             <TextRun>
-                                              <Value>EN EL CASO QUE LA PERSONA SOLICITANTE DEL CREDITO HAYA SIDO ENCONTRADO EN CUALQUIERA DE LAS BASES DE DATOS DETALLADAS ANTERIORMENTE MENCIONE LA RAZON O EL DELITO, POR CUAL SE ENCUENTRA EN DICHA BASE DE DATOS</Value>
+                                              <Value>EN EL CASO QUE LA PERSONA NATURAL HAYA SIDO ENCONTRADO EN CUALQUIERA DE LAS BASES DE DATOS DETALLADAS ANTERIORMENTE MENCIONE LA RAZON O EL DELITO DEL POR CUAL SE ENCUENTRA EN DICHA BASE DE DATOS</Value>
                                               <Style />
                                             </TextRun>
                                           </TextRuns>
@@ -2818,7 +2850,7 @@ DROP TABLE #TEMP</CommandText>
                                         <Paragraph>
                                           <TextRuns>
                                             <TextRun>
-                                              <Value>NOMBRE DEL EJECUTIVO RESPONSABLEDE REALIZAR REVISION DE ENTREVISTA Y PERFIL DEL CLIENTE</Value>
+                                              <Value>NOMBRE DEL EJECUTIVO RESPONSABLE DE REALIZAR REVISION DE ENTREVISTA Y PERFIL DEL CLIENTE</Value>
                                               <Style>
                                                 <FontSize>9pt</FontSize>
                                               </Style>
@@ -3138,7 +3170,7 @@ DROP TABLE #TEMP</CommandText>
                   </Tablix>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>42.79231cm</Top>
+                <Top>44.06231cm</Top>
                 <Left>0.07864cm</Left>
                 <Height>13.42168cm</Height>
                 <Width>32.45351cm</Width>
@@ -3168,11 +3200,11 @@ DROP TABLE #TEMP</CommandText>
                           </TablixColumns>
                           <TablixRows>
                             <TablixRow>
-                              <Height>0.6cm</Height>
+                              <Height>1.07006cm</Height>
                               <TablixCells>
                                 <TablixCell>
                                   <CellContents>
-                                    <Textbox Name="Textbox276">
+                                    <Textbox Name="Textbox258">
                                       <CanGrow>true</CanGrow>
                                       <KeepTogether>true</KeepTogether>
                                       <Paragraphs>
@@ -3188,7 +3220,7 @@ DROP TABLE #TEMP</CommandText>
                                           </Style>
                                         </Paragraph>
                                       </Paragraphs>
-                                      <rd:DefaultName>Textbox276</rd:DefaultName>
+                                      <rd:DefaultName>Textbox258</rd:DefaultName>
                                       <Style>
                                         <Border>
                                           <Style>None</Style>
@@ -3196,63 +3228,8 @@ DROP TABLE #TEMP</CommandText>
                                         <TopBorder>
                                           <Color>Black</Color>
                                           <Style>Solid</Style>
-                                          <Width>1pt</Width>
+                                          <Width>0.75pt</Width>
                                         </TopBorder>
-                                        <BottomBorder>
-                                          <Color>Black</Color>
-                                          <Style>Solid</Style>
-                                          <Width>1pt</Width>
-                                        </BottomBorder>
-                                        <LeftBorder>
-                                          <Color>Black</Color>
-                                          <Style>Solid</Style>
-                                          <Width>1pt</Width>
-                                        </LeftBorder>
-                                        <RightBorder>
-                                          <Color>Black</Color>
-                                          <Style>Solid</Style>
-                                          <Width>1pt</Width>
-                                        </RightBorder>
-                                        <VerticalAlign>Middle</VerticalAlign>
-                                        <PaddingLeft>2pt</PaddingLeft>
-                                        <PaddingRight>2pt</PaddingRight>
-                                        <PaddingTop>2pt</PaddingTop>
-                                        <PaddingBottom>2pt</PaddingBottom>
-                                      </Style>
-                                    </Textbox>
-                                    <ColSpan>3</ColSpan>
-                                  </CellContents>
-                                </TablixCell>
-                                <TablixCell />
-                                <TablixCell />
-                              </TablixCells>
-                            </TablixRow>
-                            <TablixRow>
-                              <Height>1.07006cm</Height>
-                              <TablixCells>
-                                <TablixCell>
-                                  <CellContents>
-                                    <Textbox Name="Textbox258">
-                                      <CanGrow>true</CanGrow>
-                                      <KeepTogether>true</KeepTogether>
-                                      <Paragraphs>
-                                        <Paragraph>
-                                          <TextRuns>
-                                            <TextRun>
-                                              <Value>CLIENTES</Value>
-                                              <Style />
-                                            </TextRun>
-                                          </TextRuns>
-                                          <Style>
-                                            <TextAlign>Center</TextAlign>
-                                          </Style>
-                                        </Paragraph>
-                                      </Paragraphs>
-                                      <rd:DefaultName>Textbox258</rd:DefaultName>
-                                      <Style>
-                                        <Border>
-                                          <Style>None</Style>
-                                        </Border>
                                         <LeftBorder>
                                           <Color>Black</Color>
                                           <Style>Solid</Style>
@@ -3290,6 +3267,11 @@ DROP TABLE #TEMP</CommandText>
                                         <Border>
                                           <Style>None</Style>
                                         </Border>
+                                        <TopBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>0.75pt</Width>
+                                        </TopBorder>
                                         <PaddingLeft>2pt</PaddingLeft>
                                         <PaddingRight>2pt</PaddingRight>
                                         <PaddingTop>2pt</PaddingTop>
@@ -3321,6 +3303,11 @@ DROP TABLE #TEMP</CommandText>
                                         <Border>
                                           <Style>None</Style>
                                         </Border>
+                                        <TopBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>0.75pt</Width>
+                                        </TopBorder>
                                         <RightBorder>
                                           <Color>Black</Color>
                                           <Style>Solid</Style>
@@ -3522,9 +3509,6 @@ DROP TABLE #TEMP</CommandText>
                               <KeepWithGroup>After</KeepWithGroup>
                             </TablixMember>
                             <TablixMember>
-                              <KeepWithGroup>After</KeepWithGroup>
-                            </TablixMember>
-                            <TablixMember>
                               <Group Name="Details2" />
                             </TablixMember>
                           </TablixMembers>
@@ -3539,7 +3523,7 @@ DROP TABLE #TEMP</CommandText>
                             </FilterValues>
                           </Filter>
                         </Filters>
-                        <Height>2.60743cm</Height>
+                        <Height>2.00743cm</Height>
                         <Width>15.85084cm</Width>
                         <Style>
                           <Border>
@@ -3550,7 +3534,7 @@ DROP TABLE #TEMP</CommandText>
                     </ReportItems>
                     <KeepTogether>true</KeepTogether>
                     <Top>1.18112cm</Top>
-                    <Height>2.60743cm</Height>
+                    <Height>2.31508cm</Height>
                     <Width>15.85084cm</Width>
                     <Style>
                       <Border>
@@ -3575,11 +3559,11 @@ DROP TABLE #TEMP</CommandText>
                           </TablixColumns>
                           <TablixRows>
                             <TablixRow>
-                              <Height>0.6cm</Height>
+                              <Height>1.07006cm</Height>
                               <TablixCells>
                                 <TablixCell>
                                   <CellContents>
-                                    <Textbox Name="Textbox279">
+                                    <Textbox Name="Textbox259">
                                       <CanGrow>true</CanGrow>
                                       <KeepTogether>true</KeepTogether>
                                       <Paragraphs>
@@ -3595,71 +3579,16 @@ DROP TABLE #TEMP</CommandText>
                                           </Style>
                                         </Paragraph>
                                       </Paragraphs>
-                                      <rd:DefaultName>Textbox279</rd:DefaultName>
-                                      <Style>
-                                        <Border>
-                                          <Style>Solid</Style>
-                                        </Border>
-                                        <TopBorder>
-                                          <Color>Black</Color>
-                                          <Style>Solid</Style>
-                                          <Width>1pt</Width>
-                                        </TopBorder>
-                                        <BottomBorder>
-                                          <Color>Black</Color>
-                                          <Style>Solid</Style>
-                                          <Width>1pt</Width>
-                                        </BottomBorder>
-                                        <LeftBorder>
-                                          <Color>Black</Color>
-                                          <Style>Solid</Style>
-                                          <Width>1pt</Width>
-                                        </LeftBorder>
-                                        <RightBorder>
-                                          <Color>Black</Color>
-                                          <Style>Solid</Style>
-                                          <Width>1pt</Width>
-                                        </RightBorder>
-                                        <VerticalAlign>Middle</VerticalAlign>
-                                        <PaddingLeft>2pt</PaddingLeft>
-                                        <PaddingRight>2pt</PaddingRight>
-                                        <PaddingTop>2pt</PaddingTop>
-                                        <PaddingBottom>2pt</PaddingBottom>
-                                      </Style>
-                                    </Textbox>
-                                    <ColSpan>3</ColSpan>
-                                  </CellContents>
-                                </TablixCell>
-                                <TablixCell />
-                                <TablixCell />
-                              </TablixCells>
-                            </TablixRow>
-                            <TablixRow>
-                              <Height>1.07006cm</Height>
-                              <TablixCells>
-                                <TablixCell>
-                                  <CellContents>
-                                    <Textbox Name="Textbox259">
-                                      <CanGrow>true</CanGrow>
-                                      <KeepTogether>true</KeepTogether>
-                                      <Paragraphs>
-                                        <Paragraph>
-                                          <TextRuns>
-                                            <TextRun>
-                                              <Value>CLIENTES</Value>
-                                              <Style />
-                                            </TextRun>
-                                          </TextRuns>
-                                          <Style>
-                                            <TextAlign>Center</TextAlign>
-                                          </Style>
-                                        </Paragraph>
-                                      </Paragraphs>
                                       <rd:DefaultName>Textbox258</rd:DefaultName>
                                       <Style>
                                         <Border>
                                           <Style>None</Style>
                                         </Border>
+                                        <TopBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>0.75pt</Width>
+                                        </TopBorder>
                                         <LeftBorder>
                                           <Color>Black</Color>
                                           <Style>Solid</Style>
@@ -3683,7 +3612,7 @@ DROP TABLE #TEMP</CommandText>
                                         <Paragraph>
                                           <TextRuns>
                                             <TextRun>
-                                              <Value>VALOR MENSUAL EN VENTAS US$</Value>
+                                              <Value>VALOR MENSUAL EN COMPRAS US$</Value>
                                               <Style />
                                             </TextRun>
                                           </TextRuns>
@@ -3697,6 +3626,11 @@ DROP TABLE #TEMP</CommandText>
                                         <Border>
                                           <Style>None</Style>
                                         </Border>
+                                        <TopBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>0.75pt</Width>
+                                        </TopBorder>
                                         <PaddingLeft>2pt</PaddingLeft>
                                         <PaddingRight>2pt</PaddingRight>
                                         <PaddingTop>2pt</PaddingTop>
@@ -3728,6 +3662,11 @@ DROP TABLE #TEMP</CommandText>
                                         <Border>
                                           <Style>None</Style>
                                         </Border>
+                                        <TopBorder>
+                                          <Color>Black</Color>
+                                          <Style>Solid</Style>
+                                          <Width>0.75pt</Width>
+                                        </TopBorder>
                                         <RightBorder>
                                           <Color>Black</Color>
                                           <Style>Solid</Style>
@@ -3929,9 +3868,6 @@ DROP TABLE #TEMP</CommandText>
                               <KeepWithGroup>After</KeepWithGroup>
                             </TablixMember>
                             <TablixMember>
-                              <KeepWithGroup>After</KeepWithGroup>
-                            </TablixMember>
-                            <TablixMember>
                               <Group Name="Details3" />
                             </TablixMember>
                           </TablixMembers>
@@ -3946,7 +3882,7 @@ DROP TABLE #TEMP</CommandText>
                             </FilterValues>
                           </Filter>
                         </Filters>
-                        <Height>2.60743cm</Height>
+                        <Height>2.00743cm</Height>
                         <Width>16.47468cm</Width>
                         <Style>
                           <Border>
@@ -3958,7 +3894,7 @@ DROP TABLE #TEMP</CommandText>
                     <KeepTogether>true</KeepTogether>
                     <Top>1.18112cm</Top>
                     <Left>15.83177cm</Left>
-                    <Height>2.60743cm</Height>
+                    <Height>2.31508cm</Height>
                     <Width>16.52094cm</Width>
                     <ZIndex>1</ZIndex>
                     <Style>
@@ -4004,7 +3940,7 @@ DROP TABLE #TEMP</CommandText>
                   </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>21.16856cm</Top>
+                <Top>22.43856cm</Top>
                 <Left>0.07864cm</Left>
                 <Height>3.89214cm</Height>
                 <Width>32.35271cm</Width>
@@ -4024,7 +3960,7 @@ DROP TABLE #TEMP</CommandText>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>II. DETALLE DE PRINCIPALES CLIENTES Y PROVEEDORES</Value>
+                            <Value>II. DETALLE DE INGRESOS Y/O ACTIVIDAD ECONOMICA </Value>
                             <Style>
                               <FontWeight>Bold</FontWeight>
                               <Color>White</Color>
@@ -6640,7 +6576,7 @@ DROP TABLE #TEMP</CommandText>
                   </Tablix>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>12.13732cm</Top>
+                <Top>13.40732cm</Top>
                 <Height>8.96283cm</Height>
                 <Width>32.52466cm</Width>
                 <ZIndex>4</ZIndex>
@@ -7084,7 +7020,7 @@ DROP TABLE #TEMP</CommandText>
                   </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>25.39087cm</Top>
+                <Top>26.66087cm</Top>
                 <Left>0.07864cm</Left>
                 <Height>3.23912cm</Height>
                 <Width>32.51175cm</Width>
@@ -7292,7 +7228,7 @@ DROP TABLE #TEMP</CommandText>
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>TELEFONO</Value>
+                                          <Value>TELEFONO DE CONTACTO</Value>
                                           <Style />
                                         </TextRun>
                                       </TextRuns>
@@ -7679,7 +7615,7 @@ DROP TABLE #TEMP</CommandText>
                   </Tablix>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>28.77157cm</Top>
+                <Top>30.04157cm</Top>
                 <Left>0.07864cm</Left>
                 <Height>2.58419cm</Height>
                 <Width>32.53968cm</Width>
@@ -8267,7 +8203,7 @@ DROP TABLE #TEMP</CommandText>
                   </Tablix>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>34.06973cm</Top>
+                <Top>35.33973cm</Top>
                 <Left>0.07864cm</Left>
                 <Height>3.07487cm</Height>
                 <Width>32.53064cm</Width>
@@ -9717,7 +9653,7 @@ DROP TABLE #TEMP</CommandText>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>ACTIVIDAD ECONOMICA SEGÚN DUI</Value>
+                            <Value>PROFESION</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
@@ -9728,7 +9664,7 @@ DROP TABLE #TEMP</CommandText>
                     <Top>9.4568cm</Top>
                     <Left>0.03705cm</Left>
                     <Height>1.04694cm</Height>
-                    <Width>6.36328cm</Width>
+                    <Width>2.57779cm</Width>
                     <ZIndex>12</ZIndex>
                     <Style>
                       <Border>
@@ -9760,9 +9696,9 @@ DROP TABLE #TEMP</CommandText>
                     </Paragraphs>
                     <rd:DefaultName>Textbox6</rd:DefaultName>
                     <Top>9.53027cm</Top>
-                    <Left>6.66389cm</Left>
+                    <Left>2.93234cm</Left>
                     <Height>0.9cm</Height>
-                    <Width>6.99986cm</Width>
+                    <Width>10.73141cm</Width>
                     <ZIndex>13</ZIndex>
                     <Style>
                       <Border>
@@ -9783,7 +9719,7 @@ DROP TABLE #TEMP</CommandText>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>ACTIVIDAD(ES) ECONOMICA(S) A LAS QUE SE DEDICA (catálogo del BCR o Ministerio de Hacienda)</Value>
+                            <Value>ACTIVIDAD(ES) ECONOMICA(S) A LAS QUE SE DEDICA</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
@@ -10051,7 +9987,7 @@ DROP TABLE #TEMP</CommandText>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>¿LA PERSONA NATURAL  POSEE GIRO FINANCIERO O APNFD?</Value>
+                            <Value>¿LA PERSONA NATURAL  POSEE GIRO FINANCIERO?</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
@@ -10090,7 +10026,7 @@ DROP TABLE #TEMP</CommandText>
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>10.69054cm</Top>
+                    <Top>10.6612cm</Top>
                     <Left>11.41363cm</Left>
                     <Height>1.01424cm</Height>
                     <Width>0.50176cm</Width>
@@ -10113,7 +10049,7 @@ DROP TABLE #TEMP</CommandText>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>=iif(First(Fields!TIENE_GIRO.Value, "dsFicha") or First(Fields!ES_APNFD.Value, "dsFicha"), "X","")</Value>
+                            <Value>=iif(First(Fields!TIENE_GIRO.Value, "dsFicha"), "X","")</Value>
                             <MarkupType>HTML</MarkupType>
                             <Style>
                               <FontWeight>Normal</FontWeight>
@@ -10126,7 +10062,7 @@ DROP TABLE #TEMP</CommandText>
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox6</rd:DefaultName>
-                    <Top>4.21399in</Top>
+                    <Top>4.19732in</Top>
                     <Left>12.09178cm</Left>
                     <Height>1.01424cm</Height>
                     <Width>0.60824cm</Width>
@@ -10158,7 +10094,7 @@ DROP TABLE #TEMP</CommandText>
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox5</rd:DefaultName>
-                    <Top>10.70353cm</Top>
+                    <Top>10.6612cm</Top>
                     <Left>13.22076cm</Left>
                     <Height>1.01424cm</Height>
                     <Width>0.77815cm</Width>
@@ -10181,7 +10117,7 @@ DROP TABLE #TEMP</CommandText>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>=iif(Not First(Fields!TIENE_GIRO.Value, "dsFicha") or Not First(Fields!ES_APNFD.Value, "dsFicha"), "X","")</Value>
+                            <Value>=iif(Not First(Fields!TIENE_GIRO.Value, "dsFicha"), "X","")</Value>
                             <MarkupType>HTML</MarkupType>
                             <Style>
                               <FontWeight>Normal</FontWeight>
@@ -10194,7 +10130,7 @@ DROP TABLE #TEMP</CommandText>
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox6</rd:DefaultName>
-                    <Top>4.21399in</Top>
+                    <Top>4.19732in</Top>
                     <Left>14.21641cm</Left>
                     <Height>1.01424cm</Height>
                     <Width>0.60824cm</Width>
@@ -10211,11 +10147,512 @@ DROP TABLE #TEMP</CommandText>
                       <PaddingBottom>2pt</PaddingBottom>
                     </Style>
                   </Textbox>
+                  <Textbox Name="Textbox64">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>POSEE ACREDITACION DE LA UIF</Value>
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>10.64485cm</Top>
+                    <Left>16.09557cm</Left>
+                    <Height>1.04694cm</Height>
+                    <Width>6.15892cm</Width>
+                    <ZIndex>27</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox311">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>SI</Value>
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>10.70353cm</Top>
+                    <Left>22.62229cm</Left>
+                    <Height>1.01424cm</Height>
+                    <Width>0.50176cm</Width>
+                    <ZIndex>28</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox312">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=iif(First(Fields!ACREDITADO.Value, "dsFicha"), "X", "")</Value>
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>4.21399in</Top>
+                    <Left>23.30044cm</Left>
+                    <Height>1.01424cm</Height>
+                    <Width>0.60824cm</Width>
+                    <ZIndex>29</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox313">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>NO</Value>
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>10.70353cm</Top>
+                    <Left>24.42942cm</Left>
+                    <Height>1.01424cm</Height>
+                    <Width>0.77815cm</Width>
+                    <ZIndex>30</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox314">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=iif(Not First(Fields!ACREDITADO.Value, "dsFicha"), "X", "")</Value>
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>4.21399in</Top>
+                    <Left>25.42507cm</Left>
+                    <Height>1.01424cm</Height>
+                    <Width>0.60824cm</Width>
+                    <ZIndex>31</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox65">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>¿LA PERSONA NATURAL POSEE GIRO DE APNFD'S?</Value>
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>12.05829cm</Top>
+                    <Left>0.03705cm</Left>
+                    <Height>0.75296cm</Height>
+                    <Width>10.88374cm</Width>
+                    <ZIndex>32</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox315">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>SI</Value>
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>11.92765cm</Top>
+                    <Left>11.3927cm</Left>
+                    <Height>1.01424cm</Height>
+                    <Width>0.50176cm</Width>
+                    <ZIndex>33</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox316">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=iif(First(Fields!ES_APNFD.Value, "dsFicha"), "X", "")</Value>
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>4.69592in</Top>
+                    <Left>12.07085cm</Left>
+                    <Height>1.01424cm</Height>
+                    <Width>0.60824cm</Width>
+                    <ZIndex>34</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox317">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>NO</Value>
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>11.92765cm</Top>
+                    <Left>13.19983cm</Left>
+                    <Height>1.01424cm</Height>
+                    <Width>0.77815cm</Width>
+                    <ZIndex>35</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox318">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=iif(Not First(Fields!ES_APNFD.Value, "dsFicha"), "X", "")</Value>
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>4.69592in</Top>
+                    <Left>14.19548cm</Left>
+                    <Height>1.01424cm</Height>
+                    <Width>0.60824cm</Width>
+                    <ZIndex>36</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox66">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>POSEE ACREDITACION DE LA UIF</Value>
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>11.9113cm</Top>
+                    <Left>16.09557cm</Left>
+                    <Height>1.04694cm</Height>
+                    <Width>6.15892cm</Width>
+                    <ZIndex>37</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox319">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>SI</Value>
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>11.92765cm</Top>
+                    <Left>22.62229cm</Left>
+                    <Height>1.01424cm</Height>
+                    <Width>0.50176cm</Width>
+                    <ZIndex>38</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox320">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>4.69592in</Top>
+                    <Left>23.30044cm</Left>
+                    <Height>1.01424cm</Height>
+                    <Width>0.60824cm</Width>
+                    <ZIndex>39</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox321">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>NO</Value>
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <Top>11.92765cm</Top>
+                    <Left>24.42942cm</Left>
+                    <Height>1.01424cm</Height>
+                    <Width>0.77815cm</Width>
+                    <ZIndex>40</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox322">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <MarkupType>HTML</MarkupType>
+                            <Style>
+                              <FontWeight>Normal</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Top>4.69592in</Top>
+                    <Left>25.42507cm</Left>
+                    <Height>1.01424cm</Height>
+                    <Width>0.60824cm</Width>
+                    <ZIndex>41</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                        <Width>0.5pt</Width>
+                      </Border>
+                      <VerticalAlign>Middle</VerticalAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
                 <Top>0.05412in</Top>
                 <Left>0.16326cm</Left>
-                <Height>11.71777cm</Height>
+                <Height>13.09347cm</Height>
                 <Width>32.44602cm</Width>
                 <ZIndex>8</ZIndex>
                 <Style>
@@ -10379,7 +10816,6 @@ DROP TABLE #TEMP</CommandText>
                                     <PaddingBottom>2pt</PaddingBottom>
                                   </Style>
                                 </Textbox>
-                                <rd:Selected>true</rd:Selected>
                               </CellContents>
                             </TablixCell>
                             <TablixCell>
@@ -10810,7 +11246,7 @@ DROP TABLE #TEMP</CommandText>
                   </Tablix>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>31.54cm</Top>
+                <Top>32.81cm</Top>
                 <Left>0.07864cm</Left>
                 <Height>2.50807cm</Height>
                 <Width>32.53968cm</Width>
@@ -10823,8 +11259,8 @@ DROP TABLE #TEMP</CommandText>
               </Rectangle>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>3.40182cm</Top>
-            <Height>58.43649cm</Height>
+            <Top>3.08432cm</Top>
+            <Height>57.48399cm</Height>
             <Width>32.61832cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
@@ -10834,13 +11270,13 @@ DROP TABLE #TEMP</CommandText>
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>24.34579in</Height>
+        <Height>23.95267in</Height>
         <Style />
       </Body>
       <Width>32.61832cm</Width>
       <Page>
         <PageFooter>
-          <Height>1.07197cm</Height>
+          <Height>2.04326cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -10851,7 +11287,7 @@ DROP TABLE #TEMP</CommandText>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Base legal: Art. 13, numeral 2) del Instructivo de la Unidad de Investigación Financiera</Value>
+                      <Value>Base legal: Art. 10, literal a) y e) romano 1) y 2) de la Ley Contra el Lavado de Dinero y Activos y Capítulo III del Instructivo de la Unidad de Investigación Financiera</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -10861,10 +11297,44 @@ DROP TABLE #TEMP</CommandText>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox267</rd:DefaultName>
+              <Top>0.00357cm</Top>
+              <Left>8.16328cm</Left>
+              <Height>1.94061cm</Height>
+              <Width>16.29175cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox2">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Versión -02</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.10583cm</Top>
-              <Left>0.04936cm</Left>
-              <Height>0.91294cm</Height>
-              <Width>32.23079cm</Width>
+              <Left>30.56141cm</Left>
+              <Height>1.83835cm</Height>
+              <Width>1.94144cm</Width>
+              <ZIndex>1</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -10903,7 +11373,6 @@ DROP TABLE #TEMP</CommandText>
 		return string.IsNullOrEmpty(cstr(valor))
 	end function	</Code>
   <Language>es-SV</Language>
-  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>f7e83cf8-270b-4ea6-86b0-c58f40fc99d5</rd:ReportID>
 </Report>

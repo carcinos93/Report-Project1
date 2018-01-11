@@ -533,7 +533,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>SOLICITUD DE PRESTAMO</Value>
+                    <Value>SOLICITUD DE PRESTAMO EMPRESA</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Century Gothic</FontFamily>
@@ -1385,7 +1385,7 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>No. DE REGISTRO FISCAL:</Value>
+                                          <Value>No. DE REGISTRO IVA:</Value>
                                           <Style>
                                             <FontSize>8pt</FontSize>
                                           </Style>
@@ -2659,7 +2659,7 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>PROPIA</Value>
+                                          <Value>PROPIO</Value>
                                           <Style>
                                             <FontSize>8pt</FontSize>
                                           </Style>
@@ -3047,7 +3047,7 @@
             <Top>6.0246cm</Top>
             <Left>0.02865cm</Left>
             <Height>7.28518cm</Height>
-            <Width>20.52642cm</Width>
+            <Width>20.52643cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -4439,7 +4439,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>C. ADMINISTRCION SUPERIOR DEL NEGOCIO APODERADO Y/O REPRESENTANTE LEGAL Y NOMBRE DE DIRECTORES</Value>
+                        <Value>C. ADMINISTRACION SUPERIOR DEL NEGOCIO APODERADO Y/O REPRESENTANTE LEGAL Y NOMBRE DE DIRECTORES</Value>
                         <Style>
                           <FontSize>9pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -4501,7 +4501,7 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>NOMBRE DE LA INSTITUCION BACARIA</Value>
+                                          <Value>NOMBRE DE LA INSTITUCION BANCARIA</Value>
                                           <Style>
                                             <FontSize>8pt</FontSize>
                                           </Style>
@@ -5350,25 +5350,6 @@
           </Rectangle>
           <Rectangle Name="Rectangle32">
             <ReportItems>
-              <Image Name="Image1">
-                <Source>Embedded</Source>
-                <Value>imagen_15_17_04_30</Value>
-                <Sizing>Fit</Sizing>
-                <Top>1.18728in</Top>
-                <Left>0.10651cm</Left>
-                <Height>2.94097cm</Height>
-                <Width>20.39982cm</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <TopBorder>
-                    <Color>Black</Color>
-                    <Style>Solid</Style>
-                    <Width>0.75pt</Width>
-                  </TopBorder>
-                </Style>
-              </Image>
               <Textbox Name="Textbox15">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
@@ -5391,7 +5372,6 @@
                 <rd:DefaultName>Textbox1</rd:DefaultName>
                 <Height>0.6cm</Height>
                 <Width>20.50633cm</Width>
-                <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -6005,13 +5985,466 @@
                 <DataSetName>DSDUMMY</DataSetName>
                 <Top>0.83818cm</Top>
                 <Left>0.07362in</Left>
-                <Height>1.7663cm</Height>
+                <Height>1.76629cm</Height>
                 <Width>20.10612cm</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix18">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>0.7cm</Width>
+                    </TablixColumn>
+                    <TablixColumn>
+                      <Width>19.75089cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.83444cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox292">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>1.-</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox287</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox293">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Me comprometo a invertir el valor de préstamo en el destino indicado en esta solicitud, acepto el derecho del Banco de supervisar la inversión en el momento que lo considere pertinente; así como de practicar el peritaje por mi cuenta en las propiedades que doy en garantía y reconocer los gastos de tramitación de la presente solicitud.</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox289</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.5cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox294">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>2.-</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox290</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox295">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Hago constar que toda la información proporcionada es verdadera y puede ser verificada por el Banco en cualquier momento.</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox291</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.75071cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox296">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>3.-</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox292</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox297">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Autorizo al Primer Banco para que investigue, analice e intercambie mi comportamiento de crédito con las personas naturales y jurídicas que estime pertinente; las que recolectan, registran, procesan y distribuyen datos referentes al comportamiento crediticio de personas naturales y jurídicas.</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox293</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>1pt</PaddingTop>
+                                <PaddingBottom>1pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.45317cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox298">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>4.-</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox294</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox299">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>En caso de ser aprobado el crédito, por medio de la presente comunico a ustedes que he designado y contratado de manera libre y espontánea los servicios </Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox295</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.3158cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox300">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value />
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox296</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle45">
+                              <ReportItems>
+                                <Textbox Name="Textbox301">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>profesionales para que pueda realizar el contrato de crédito, al notario:</Value>
+                                          <Style>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox297</rd:DefaultName>
+                                  <Height>0.11811in</Height>
+                                  <Width>3.1973in</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Top</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox302">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=" "</Value>
+                                          <Style>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox297</rd:DefaultName>
+                                  <Left>3.23897in</Left>
+                                  <Height>0.3cm</Height>
+                                  <Width>4.46064in</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>0.75pt</Width>
+                                    </BottomBorder>
+                                    <VerticalAlign>Top</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details14" />
+                      <TablixMembers>
+                        <TablixMember />
+                        <TablixMember />
+                        <TablixMember />
+                        <TablixMember />
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DSDUMMY</DataSetName>
+                <Top>2.92757cm</Top>
+                <Left>0.02865cm</Left>
+                <Height>2.85412cm</Height>
+                <Width>20.45089cm</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
+                  <TopBorder>
+                    <Color>Black</Color>
+                    <Style>Solid</Style>
+                    <Width>0.75pt</Width>
+                  </TopBorder>
                 </Style>
               </Tablix>
             </ReportItems>
@@ -6021,7 +6454,7 @@
             <KeepTogether>true</KeepTogether>
             <Top>21.59791cm</Top>
             <Left>0cm</Left>
-            <Height>6.06343cm</Height>
+            <Height>5.96301cm</Height>
             <Width>20.50633cm</Width>
             <ZIndex>6</ZIndex>
             <Style>
@@ -6072,9 +6505,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox10</rd:DefaultName>
-                <Top>0.17862in</Top>
+                <Top>0.21186in</Top>
                 <Height>0.45cm</Height>
-                <Width>2.98386in</Width>
+                <Width>2.87091in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -6097,7 +6530,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>FIRMA DEL REPRESENTANTE LEGAL</Value>
+                        <Value>NOMBRE DEL REPRESENTANTE LEGAL</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                         </Style>
@@ -6109,10 +6542,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox10</rd:DefaultName>
-                <Top>0.17862in</Top>
-                <Left>3.31322in</Left>
+                <Top>0.21186in</Top>
+                <Left>3.18583in</Left>
                 <Height>0.45cm</Height>
-                <Width>2.12218in</Width>
+                <Width>2.37in</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -6136,7 +6569,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>MI FIRMA DEL REPRESENTANTE LEGAL</Value>
+                        <Value>FIRMA DEL REPRESENTANTE LEGAL</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                         </Style>
@@ -6148,10 +6581,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox10</rd:DefaultName>
-                <Top>0.17862in</Top>
-                <Left>5.73786in</Left>
+                <Top>0.21186in</Top>
+                <Left>5.80347in</Left>
                 <Height>0.45cm</Height>
-                <Width>2.13173in</Width>
+                <Width>2.16319in</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
@@ -6187,9 +6620,44 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox10</rd:DefaultName>
+                <Top>0.03324in</Top>
                 <Height>0.45cm</Height>
-                <Width>2.98386in</Width>
+                <Width>2.87091in</Width>
                 <ZIndex>3</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox304">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=First(Fields!REPRESEN_NOMBRE.Value, "DSFICHA")</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox10</rd:DefaultName>
+                <Top>0.03324in</Top>
+                <Left>3.18583in</Left>
+                <Height>0.45cm</Height>
+                <Width>2.37in</Width>
+                <ZIndex>4</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -6202,9 +6670,9 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>27.83773cm</Top>
+            <Top>27.99372cm</Top>
             <Left>0.03587cm</Left>
-            <Height>0.9037cm</Height>
+            <Height>0.98812cm</Height>
             <Width>20.44251cm</Width>
             <ZIndex>7</ZIndex>
             <Style>
@@ -6234,7 +6702,7 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox10</rd:DefaultName>
-                <Top>2.675in</Top>
+                <Top>2.67613in</Top>
                 <Left>2.35993in</Left>
                 <Height>0.23622in</Height>
                 <Width>3.3803in</Width>
@@ -9121,11 +9589,45 @@
                   </Border>
                 </Style>
               </Tablix>
+              <Textbox Name="Textbox303">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox10</rd:DefaultName>
+                <Top>6.29153cm</Top>
+                <Left>5.99422cm</Left>
+                <Height>0.4cm</Height>
+                <Width>3.37703in</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>28.96696cm</Top>
+            <Top>29.15823cm</Top>
             <Left>0.06263cm</Left>
-            <Height>7.3945cm</Height>
+            <Height>7.39736cm</Height>
             <Width>20.49244cm</Width>
             <ZIndex>8</ZIndex>
             <Style>
@@ -9159,7 +9661,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>F. USO EXCLUSIVO DEL BANCO</Value>
+                                      <Value>F. USO EXCLUSIVO DEL COMITÉ</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
@@ -9238,7 +9740,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>RESOLUCION DEL COMITE</Value>
+                                      <Value>RESOLUCION DEL COMITÉ</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
@@ -10870,7 +11372,7 @@
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>17.35549in</Height>
+        <Height>17.3555in</Height>
         <Style />
       </Body>
       <Width>20.59cm</Width>

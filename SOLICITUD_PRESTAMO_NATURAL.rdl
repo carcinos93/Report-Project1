@@ -251,6 +251,10 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
           <DataField>CORREO1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="SITIO_WEB">
+          <DataField>SITIO_WEB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="CORREO2">
           <DataField>CORREO2</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -351,17 +355,33 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
           <DataField>NOMBRE_PROFESION</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="NUMERO_EMPLEADOS">
+          <DataField>NUMERO_EMPLEADOS</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="LUGAR_TRABAJO">
           <DataField>LUGAR_TRABAJO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NUMERO_SUCURSALES">
+          <DataField>NUMERO_SUCURSALES</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="DIRECCION_TRABAJO">
           <DataField>DIRECCION_TRABAJO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="CODIGO_GENERO">
+          <DataField>CODIGO_GENERO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="CARNET_RESIDENTE">
           <DataField>CARNET_RESIDENTE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ACREDITADO">
+          <DataField>ACREDITADO</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
         </Field>
         <Field Name="TELEFONO_TRABAJO">
           <DataField>TELEFONO_TRABAJO</DataField>
@@ -385,7 +405,7 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
         </Field>
         <Field Name="ES_EXTRANJERO">
           <DataField>ES_EXTRANJERO</DataField>
-          <rd:TypeName>System.Boolean</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="REPRESEN_MUNICIPIO">
           <DataField>REPRESEN_MUNICIPIO</DataField>
@@ -1197,7 +1217,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>CODEUDOR</Value>
+                                          <Value>AHORROS</Value>
                                           <Style>
                                             <FontSize>7pt</FontSize>
                                           </Style>
@@ -1256,8 +1276,6 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                     </BottomBorder>
                                     <PaddingLeft>2pt</PaddingLeft>
                                     <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
                                   </Style>
                                 </Textbox>
                               </ReportItems>
@@ -1683,7 +1701,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                           </Style>
                                         </TextRun>
                                         <TextRun>
-                                          <Value>=Iif(First(Fields!GENERO.Value, "DSFICHA") = "1", "X", "")</Value>
+                                          <Value>=Iif(First(Fields!CODIGO_GENERO.Value, "DSFICHA") = "1", "X", "")</Value>
                                           <Style>
                                             <FontSize>7pt</FontSize>
                                           </Style>
@@ -1695,7 +1713,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                           </Style>
                                         </TextRun>
                                         <TextRun>
-                                          <Value>=Iif(First(Fields!GENERO.Value, "DSFICHA") = "2", "X", "")</Value>
+                                          <Value>=Iif(First(Fields!CODIGO_GENERO.Value, "DSFICHA") = "2", "X", "")</Value>
                                           <Style>
                                             <FontSize>7pt</FontSize>
                                           </Style>
@@ -1786,7 +1804,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=First(Fields!GENERO.Value, "DSFICHA")</Value>
+                                          <Value>=First(Fields!ESTADO_CIVIL.Value, "DSFICHA")</Value>
                                           <Style>
                                             <FontSize>7pt</FontSize>
                                           </Style>
@@ -3702,7 +3720,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                 </TablixRowHierarchy>
                 <KeepTogether>true</KeepTogether>
                 <DataSetName>DSDUMMY</DataSetName>
-                <Height>7.55002cm</Height>
+                <Height>7.55001cm</Height>
                 <Width>20.51167cm</Width>
                 <Style>
                   <Border>
@@ -5501,7 +5519,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.4cm</Height>
+                  <Height>0.42151cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -5590,6 +5608,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox10</rd:DefaultName>
+                              <Top>0.00847in</Top>
                               <Left>14.68532cm</Left>
                               <Height>0.4cm</Height>
                               <Width>1.19531cm</Width>
@@ -5598,7 +5617,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
-                                <VerticalAlign>Top</VerticalAlign>
+                                <VerticalAlign>Bottom</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                               </Style>
@@ -5665,7 +5684,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
-                                <VerticalAlign>Top</VerticalAlign>
+                                <VerticalAlign>Bottom</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                               </Style>
@@ -5749,7 +5768,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
-                                <VerticalAlign>Top</VerticalAlign>
+                                <VerticalAlign>Bottom</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                               </Style>
@@ -5815,7 +5834,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
-                                <VerticalAlign>Top</VerticalAlign>
+                                <VerticalAlign>Bottom</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                               </Style>
@@ -5898,7 +5917,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
-                                <VerticalAlign>Top</VerticalAlign>
+                                <VerticalAlign>Bottom</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                               </Style>
@@ -5963,7 +5982,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
-                                <VerticalAlign>Top</VerticalAlign>
+                                <VerticalAlign>Bottom</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                               </Style>
@@ -6009,7 +6028,7 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
             <DataSetName>DSDUMMY</DataSetName>
             <Top>16.60252cm</Top>
             <Left>0.04673cm</Left>
-            <Height>4.3714cm</Height>
+            <Height>4.39291cm</Height>
             <Width>20.49923cm</Width>
             <ZIndex>6</ZIndex>
             <Style>
@@ -7688,24 +7707,458 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
           </Rectangle>
           <Rectangle Name="Rectangle32">
             <ReportItems>
-              <Image Name="Image1">
-                <Source>Embedded</Source>
-                <Value>imagen_15_17_04_30</Value>
-                <Sizing>Fit</Sizing>
-                <Left>0.02075cm</Left>
-                <Height>2.94097cm</Height>
-                <Width>20.46827cm</Width>
+              <Tablix Name="Tablix16">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>0.7cm</Width>
+                    </TablixColumn>
+                    <TablixColumn>
+                      <Width>19.75089cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.83444cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox287">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>1.-</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox287</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox289">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Me comprometo a invertir el valor de préstamo en el destino indicado en esta solicitud, acepto el derecho del Banco de supervisar la inversión en el momento que lo considere pertinente; así como de practicar el peritaje por mi cuenta en las propiedades que doy en garantía y reconocer los gastos de tramitación de la presente solicitud.</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox289</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.5cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox290">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>2.-</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox290</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox291">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Hago constar que toda la información proporcionada es verdadera y puede ser verificada por el Banco en cualquier momento.</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox291</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.75071cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox292">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>3.-</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox292</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox293">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Autorizo al Primer Banco para que investigue, analice e intercambie mi comportamiento de crédito con las personas naturales y jurídicas que estime pertinente; las que recolectan, registran, procesan y distribuyen datos referentes al comportamiento crediticio de personas naturales y jurídicas.</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox293</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>1pt</PaddingTop>
+                                <PaddingBottom>1pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.45317cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox294">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>4.-</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox294</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox295">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>En caso de ser aprobado el crédito, por medio de la presente comunico a ustedes que he designado y contratado de manera libre y espontánea los servicios </Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox295</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                    <TablixRow>
+                      <Height>0.3158cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="Textbox296">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value />
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox296</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                        <TablixCell>
+                          <CellContents>
+                            <Rectangle Name="Rectangle40">
+                              <ReportItems>
+                                <Textbox Name="Textbox297">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>profesionales para que pueda realizar el contrato de crédito, al notario:</Value>
+                                          <Style>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox297</rd:DefaultName>
+                                  <Height>0.11811in</Height>
+                                  <Width>3.1973in</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Top</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox298">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=" "</Value>
+                                          <Style>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox297</rd:DefaultName>
+                                  <Left>3.23897in</Left>
+                                  <Height>0.3cm</Height>
+                                  <Width>4.46064in</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>0.75pt</Width>
+                                    </BottomBorder>
+                                    <VerticalAlign>Top</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details12" />
+                      <TablixMembers>
+                        <TablixMember />
+                        <TablixMember />
+                        <TablixMember />
+                        <TablixMember />
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DSDUMMY</DataSetName>
+                <Top>0cm</Top>
+                <Left>0.02798cm</Left>
+                <Height>2.85412cm</Height>
+                <Width>20.45089cm</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
                 </Style>
-              </Image>
+              </Tablix>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>32.21485cm</Top>
             <Left>0.04146cm</Left>
-            <Height>3.07371cm</Height>
+            <Height>2.97096cm</Height>
             <Width>20.50977cm</Width>
             <ZIndex>11</ZIndex>
             <Style>
@@ -7863,9 +8316,9 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>35.42967cm</Top>
+            <Top>35.36219cm</Top>
             <Left>0.04539cm</Left>
-            <Height>0.98391cm</Height>
+            <Height>0.84201cm</Height>
             <Width>20.49923cm</Width>
             <ZIndex>12</ZIndex>
             <Style>
@@ -7895,9 +8348,9 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox10</rd:DefaultName>
-                <Top>1.01in</Top>
-                <Left>2.3324in</Left>
-                <Height>0.23622in</Height>
+                <Top>1.13715in</Top>
+                <Left>2.34513in</Left>
+                <Height>0.18414in</Height>
                 <Width>3.3803in</Width>
                 <Style>
                   <Border>
@@ -8811,11 +9264,45 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
                   </Border>
                 </Style>
               </Tablix>
+              <Textbox Name="Textbox277">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox10</rd:DefaultName>
+                <Top>2.37548cm</Top>
+                <Left>5.95663cm</Left>
+                <Height>0.4cm</Height>
+                <Width>3.37703in</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>36.65646cm</Top>
-            <Left>0.04541cm</Left>
-            <Height>3.1654cm</Height>
+            <Top>36.40527cm</Top>
+            <Left>0.02138cm</Left>
+            <Height>3.35607cm</Height>
             <Width>20.49923cm</Width>
             <ZIndex>13</ZIndex>
             <Style>
@@ -10186,8 +10673,8 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
               </Tablix>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>40.04959cm</Top>
-            <Left>0.02427cm</Left>
+            <Top>39.8319cm</Top>
+            <Left>0.02067cm</Left>
             <Height>5.34125cm</Height>
             <Width>20.55115cm</Width>
             <ZIndex>14</ZIndex>
@@ -12667,17 +13154,17 @@ FROM FA.CLIENTE_PROVEEDOR WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>17.87041in</Height>
+        <Height>17.7847in</Height>
         <Style />
       </Body>
-      <Width>20.59968cm</Width>
+      <Width>20.59cm</Width>
       <Page>
         <PageHeight>27.94cm</PageHeight>
         <PageWidth>21.59cm</PageWidth>
         <LeftMargin>0.5cm</LeftMargin>
         <RightMargin>0.5cm</RightMargin>
-        <TopMargin>0.5cm</TopMargin>
-        <BottomMargin>0.5cm</BottomMargin>
+        <TopMargin>0.4cm</TopMargin>
+        <BottomMargin>0.4cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
