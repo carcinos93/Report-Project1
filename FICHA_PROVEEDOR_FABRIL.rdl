@@ -8395,8 +8395,7 @@ Cuando sea distinto al Propietario:</Value>
                     <Value>=First(Fields!NOMBRE_COMPANIA.Value, "DataSet2")</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
-                      <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>9pt</FontSize>
+                      <FontFamily>Century Gothic</FontFamily>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>
@@ -8410,11 +8409,27 @@ Cuando sea distinto al Propietario:</Value>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>PBX:</Value>
+                    <Value>=First(Fields!DIRECCION.Value, "DataSet2")</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
-                      <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>9pt</FontSize>
+                      <FontFamily>Century Gothic</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <Format>dd/MM/yyyy</Format>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>PBX:  </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Century Gothic</FontFamily>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>
@@ -8424,8 +8439,7 @@ Cuando sea distinto al Propietario:</Value>
                     <Value>=First(Fields!TELEFONO1.Value, "DataSet2")</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
-                      <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>9pt</FontSize>
+                      <FontFamily>Century Gothic</FontFamily>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>
@@ -8442,8 +8456,7 @@ Cuando sea distinto al Propietario:</Value>
                     <Value />
                     <Style>
                       <FontStyle>Normal</FontStyle>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>9pt</FontSize>
+                      <FontFamily>Century Gothic</FontFamily>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>

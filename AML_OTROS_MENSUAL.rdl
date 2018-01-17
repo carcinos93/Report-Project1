@@ -78,6 +78,10 @@
           <DataField>ACTIVIDAD</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="DEPARTAMENTO">
+          <DataField>DEPARTAMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
     </DataSet>
     <DataSet Name="dstrans">
@@ -90,9 +94,12 @@
           <QueryParameter Name="@FECHA_FIN">
             <Value>=Parameters!FECHA_FIN.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="@ESTADO">
+            <Value>=Parameters!ESTADO.Value</Value>
+          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>AML.R_MENSUAL_EFECTIVO</CommandText>
+        <CommandText>AML.R_MENSUAL_OTROS</CommandText>
       </Query>
       <Fields>
         <Field Name="CORRELATIVO">
@@ -2766,6 +2773,31 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
+    <ReportParameter Name="ESTADO">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="T"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ESTADO</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>="T"</Value>
+            <Label>="TODOS"</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>="100"</Value>
+            <Label>="CONFIRMADOS"</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>="0"</Value>
+            <Label>="PENDIENTES"</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
     <ReportParameter Name="FECHA_INICIO">
       <DataType>DateTime</DataType>
       <Prompt>FECHA INICIO</Prompt>

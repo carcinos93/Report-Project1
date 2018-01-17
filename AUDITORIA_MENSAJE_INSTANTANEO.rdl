@@ -74,12 +74,6 @@
           <QueryParameter Name="@FECHA_FIN">
             <Value>=Parameters!FECHA_FIN.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@TIPO_TRANSACCION">
-            <Value>=Parameters!TIPO_TRANSACCION.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@USUARIO">
-            <Value>=Parameters!USUARIO.Value</Value>
-          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>AML.AUDITORIA_MENSAJE_INSTANTANEO</CommandText>
@@ -125,7 +119,27 @@
           <DataField>USUARIO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="CODIGO_TIPO_TRANSACCION">
+          <DataField>CODIGO_TIPO_TRANSACCION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
+      <Filters>
+        <Filter>
+          <FilterExpression>=Fields!CODIGO_TIPO_TRANSACCION.Value</FilterExpression>
+          <Operator>In</Operator>
+          <FilterValues>
+            <FilterValue>=Parameters!TIPO_TRANSACCION.Value</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=Fields!USUARIO.Value</FilterExpression>
+          <Operator>In</Operator>
+          <FilterValues>
+            <FilterValue>=Parameters!USUARIO.Value</FilterValue>
+          </FilterValues>
+        </Filter>
+      </Filters>
     </DataSet>
     <DataSet Name="DSTIPO_TRANSAC">
       <Query>
@@ -359,10 +373,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.36082cm</Width>
+                  <Width>1.67832cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.75217cm</Width>
+                  <Width>3.54592cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.89845cm</Width>
@@ -371,16 +385,16 @@
                   <Width>2.63229cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>8.2463cm</Width>
+                  <Width>12.67845cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.44167cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.68521cm</Width>
+                  <Width>3.44412cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.77208cm</Width>
+                  <Width>2.03666cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>6.01896cm</Width>
@@ -800,6 +814,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -885,7 +900,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!NOTAS.Value</Value>
+                                  <Value>=Code.FormatoNotas(Fields!NOTAS.Value)</Value>
                                   <MarkupType>HTML</MarkupType>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
@@ -1109,7 +1124,7 @@
             <PageName>Reporte de Mensajes</PageName>
             <Top>3.2131cm</Top>
             <Height>1.52472cm</Height>
-            <Width>29.80796cm</Width>
+            <Width>36.37484cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1131,7 +1146,7 @@
         <Height>1.86529in</Height>
         <Style />
       </Body>
-      <Width>29.80796cm</Width>
+      <Width>36.37485cm</Width>
       <Page>
         <PageHeight>27.94cm</PageHeight>
         <PageWidth>21.59cm</PageWidth>
@@ -1168,6 +1183,7 @@
           <LabelField>DESCRIPCION</LabelField>
         </DataSetReference>
       </ValidValues>
+      <MultiValue>true</MultiValue>
     </ReportParameter>
     <ReportParameter Name="USUARIO">
       <DataType>String</DataType>
@@ -1184,6 +1200,7 @@
           <LabelField>DESCRIPCION</LabelField>
         </DataSetReference>
       </ValidValues>
+      <MultiValue>true</MultiValue>
     </ReportParameter>
   </ReportParameters>
   <Code>public function ReplaceFormat(ByVal valor As Object, ByVal mask as String, Byval format as string) as string
@@ -1195,6 +1212,15 @@ public function telefono(ByVal valor As Object) as String
 	   return ""	
 	end if
 	return ReplaceFormat(CStr(valor),"^([0-9]{4})([0-9]{4})$","$1-$2")
+end function
+
+public function FormatoNotas(ByVal mensaje As String) as String
+	if string.IsNullOrEmpty(mensaje) then
+		return ""
+	else
+		return mensaje.replace("\n","&lt;br /&gt;")
+	end if
+
 end function	</Code>
   <Language>es-SV</Language>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>

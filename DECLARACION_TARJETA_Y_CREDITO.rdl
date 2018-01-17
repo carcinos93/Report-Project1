@@ -622,8 +622,31 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>I. DATOS GENERALES DEL CLIENTE (PERSONA NATURAL)  O REPRESENTANTE LEGAL (PERSONA JURIDICA)</Value>
+                        <Value>DATOS GENERALES DEL CLIENTE </Value>
                         <Style>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>(PERSONA NATURAL)</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>  O REPRESENTANTE LEGAL </Value>
+                        <Style>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>(PERSONA JURIDICA)</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                           <Color>White</Color>
                         </Style>
@@ -665,7 +688,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
                 <Top>1.42875cm</Top>
-                <Left>0.40739cm</Left>
+                <Left>0.43782cm</Left>
                 <Height>0.9cm</Height>
                 <Width>9.40641cm</Width>
                 <ZIndex>1</ZIndex>
@@ -699,7 +722,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>1.42875cm</Top>
-                <Left>10.0658cm</Left>
+                <Left>10.09623cm</Left>
                 <Height>0.9cm</Height>
                 <Width>15.70109cm</Width>
                 <ZIndex>2</ZIndex>
@@ -731,7 +754,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
                 <Top>2.65208cm</Top>
-                <Left>0.64183cm</Left>
+                <Left>0.67226cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.9145cm</Width>
                 <ZIndex>3</ZIndex>
@@ -765,7 +788,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>2.65208cm</Top>
-                <Left>1.76799cm</Left>
+                <Left>1.79842cm</Left>
                 <Height>0.9cm</Height>
                 <Width>3.82544cm</Width>
                 <ZIndex>4</ZIndex>
@@ -797,7 +820,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
                 <Top>2.65208cm</Top>
-                <Left>6.22568cm</Left>
+                <Left>6.25611cm</Left>
                 <Height>0.9cm</Height>
                 <Width>0.88605cm</Width>
                 <ZIndex>5</ZIndex>
@@ -831,7 +854,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>2.65208cm</Top>
-                <Left>7.29522cm</Left>
+                <Left>7.32565cm</Left>
                 <Height>0.9cm</Height>
                 <Width>3.74572cm</Width>
                 <ZIndex>6</ZIndex>
@@ -863,7 +886,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
                 <Top>2.65208cm</Top>
-                <Left>11.61011cm</Left>
+                <Left>11.64054cm</Left>
                 <Height>0.9cm</Height>
                 <Width>2.49119cm</Width>
                 <ZIndex>7</ZIndex>
@@ -897,7 +920,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>2.65208cm</Top>
-                <Left>14.20713cm</Left>
+                <Left>14.23756cm</Left>
                 <Height>0.9cm</Height>
                 <Width>4.50806cm</Width>
                 <ZIndex>8</ZIndex>
@@ -929,7 +952,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox5</rd:DefaultName>
                 <Top>2.65208cm</Top>
-                <Left>19.29588cm</Left>
+                <Left>19.32631cm</Left>
                 <Height>0.9cm</Height>
                 <Width>4.39958cm</Width>
                 <ZIndex>9</ZIndex>
@@ -963,7 +986,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>2.65208cm</Top>
-                <Left>23.87185cm</Left>
+                <Left>23.90228cm</Left>
                 <Height>0.9cm</Height>
                 <Width>3.07118cm</Width>
                 <ZIndex>10</ZIndex>
@@ -982,9 +1005,9 @@
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>3.01447cm</Top>
-            <Left>0.04638cm</Left>
+            <Left>0.01595cm</Left>
             <Height>3.84938cm</Height>
-            <Width>28.46578cm</Width>
+            <Width>28.49621cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -3541,7 +3564,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>=First(Fields!DEPARTAMENTO.Value, "DataSet2") &amp; ", " &amp; Format(Now(),"dd 'de' MMMM 'de' yyyy")</Value>
+                        <Value />
                         <MarkupType>HTML</MarkupType>
                         <Style>
                           <FontWeight>Normal</FontWeight>
@@ -5191,7 +5214,7 @@
       <Width>28.55141cm</Width>
       <Page>
         <PageFooter>
-          <Height>1.06858cm</Height>
+          <Height>1.5cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -5203,7 +5226,9 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Base legal: Art. 8 Procedimientos en apertura de Cuentas o Contratos, numeral 2 del Instructivo de la Unidad de Investigación Financiera</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
@@ -5212,8 +5237,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox267</rd:DefaultName>
+              <Top>0cm</Top>
               <Left>7.04747cm</Left>
-              <Height>1.06858cm</Height>
+              <Height>1.5cm</Height>
               <Width>14.45647cm</Width>
               <Style>
                 <Border>
@@ -5244,9 +5270,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.10583cm</Top>
+              <Top>0.07054cm</Top>
               <Left>26.45073cm</Left>
-              <Height>0.6cm</Height>
+              <Height>1.42946cm</Height>
               <Width>1.94144cm</Width>
               <ZIndex>1</ZIndex>
               <Style>

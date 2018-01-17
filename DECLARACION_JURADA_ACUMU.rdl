@@ -1637,7 +1637,7 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>11pt</FontSize>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>
@@ -1651,11 +1651,29 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>PBX:</Value>
+                    <Value>=First(Fields!DIRECCION.Value, "DataSet2")</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>11pt</FontSize>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Format>dd/MM/yyyy</Format>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>PBX:  </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>
@@ -1666,7 +1684,7 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>11pt</FontSize>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>
@@ -1715,7 +1733,7 @@ FROM dbo.RANGOS WHERE MODULO = @MODULO and TABLA = @TABLA AND COLUMNA = @COLUMNA
             </Paragraphs>
             <rd:DefaultName>Textbox48</rd:DefaultName>
             <Left>6.33222cm</Left>
-            <Height>2.87019cm</Height>
+            <Height>3.29352cm</Height>
             <Width>9.51831cm</Width>
             <ZIndex>2</ZIndex>
             <Style>

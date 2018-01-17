@@ -172,6 +172,10 @@
           <DataField>CORREO1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="SITIO_WEB">
+          <DataField>SITIO_WEB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="CORREO2">
           <DataField>CORREO2</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -291,6 +295,10 @@
         <Field Name="ACREDITADO">
           <DataField>ACREDITADO</DataField>
           <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CODIGO_GENERO">
+          <DataField>CODIGO_GENERO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CARNET_RESIDENTE">
           <DataField>CARNET_RESIDENTE</DataField>
@@ -1036,7 +1044,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>16.01892cm</Left>
                                   <Height>0.6cm</Height>
                                   <Width>4.47543cm</Width>
@@ -1136,7 +1143,6 @@
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>3.75541cm</Top>
-            <Left>0cm</Left>
             <Height>1.95259cm</Height>
             <Width>20.55507cm</Width>
             <ZIndex>3</ZIndex>
@@ -1252,7 +1258,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>4.03271cm</Left>
                                   <Height>0.4cm</Height>
                                   <Width>16.28364cm</Width>
@@ -1338,7 +1343,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>4.03271cm</Left>
                                   <Height>0.4cm</Height>
                                   <Width>16.28364cm</Width>
@@ -1493,7 +1497,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>13.3551cm</Left>
                                   <Height>0.4cm</Height>
                                   <Width>6.96125cm</Width>
@@ -1648,7 +1651,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>13.99516cm</Left>
                                   <Height>0.4cm</Height>
                                   <Width>6.23261cm</Width>
@@ -1734,7 +1736,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>2.77026cm</Left>
                                   <Height>0.4cm</Height>
                                   <Width>5.35802cm</Width>
@@ -1803,7 +1804,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>9.97522cm</Left>
                                   <Height>0.4cm</Height>
                                   <Width>4.04505cm</Width>
@@ -1872,7 +1872,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>16.42271cm</Left>
                                   <Height>0.4cm</Height>
                                   <Width>3.89364cm</Width>
@@ -1958,7 +1957,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>6.1058cm</Left>
                                   <Height>0.4cm</Height>
                                   <Width>14.21055cm</Width>
@@ -2269,7 +2267,6 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>5.49328cm</Left>
                                   <Height>0.4cm</Height>
                                   <Width>14.82307cm</Width>
@@ -2572,17 +2569,18 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value />
+                                          <Value>=First(Fields!NUMERO_EMPLEADOS.Value, "DSFICHA")</Value>
                                           <Style>
                                             <FontSize>8pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
-                                      <Style />
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox10</rd:DefaultName>
-                                  <Top>0cm</Top>
                                   <Left>2.77026cm</Left>
                                   <Height>0.4cm</Height>
                                   <Width>17.56179cm</Width>
@@ -3032,7 +3030,6 @@
                 </TablixRowHierarchy>
                 <KeepTogether>true</KeepTogether>
                 <DataSetName>DSDUMMY</DataSetName>
-                <Top>0cm</Top>
                 <Left>0.00581in</Left>
                 <Height>7.28518cm</Height>
                 <Width>20.51167cm</Width>
@@ -6453,7 +6450,6 @@
             </PageBreak>
             <KeepTogether>true</KeepTogether>
             <Top>21.59791cm</Top>
-            <Left>0cm</Left>
             <Height>5.96301cm</Height>
             <Width>20.50633cm</Width>
             <ZIndex>6</ZIndex>
@@ -9627,7 +9623,7 @@
             <KeepTogether>true</KeepTogether>
             <Top>29.15823cm</Top>
             <Left>0.06263cm</Left>
-            <Height>7.39736cm</Height>
+            <Height>7.39737cm</Height>
             <Width>20.49244cm</Width>
             <ZIndex>8</ZIndex>
             <Style>

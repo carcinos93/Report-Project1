@@ -2340,7 +2340,6 @@ SELECT 5
                   </Filter>
                 </Filters>
                 <Top>1.10562cm</Top>
-                <Left>0cm</Left>
                 <Height>1.72042cm</Height>
                 <Width>19.93582cm</Width>
                 <Style>
@@ -2876,7 +2875,6 @@ SELECT 5
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>10.55917cm</Top>
-            <Left>0in</Left>
             <Height>2.31643cm</Height>
             <Width>20.01953cm</Width>
             <ZIndex>7</ZIndex>
@@ -2907,6 +2905,55 @@ SELECT 5
                         </TablixColumn>
                       </TablixColumns>
                       <TablixRows>
+                        <TablixRow>
+                          <Height>1.05235cm</Height>
+                          <TablixCells>
+                            <TablixCell>
+                              <CellContents>
+                                <Textbox Name="Textbox81">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Vehículos (automovil, camioneta, camión, moto, etc)</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox81</rd:DefaultName>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <TopBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </TopBorder>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <ColSpan>4</ColSpan>
+                              </CellContents>
+                            </TablixCell>
+                            <TablixCell />
+                            <TablixCell />
+                            <TablixCell />
+                          </TablixCells>
+                        </TablixRow>
                         <TablixRow>
                           <Height>0.97042cm</Height>
                           <TablixCells>
@@ -3298,6 +3345,9 @@ SELECT 5
                           <KeepWithGroup>After</KeepWithGroup>
                         </TablixMember>
                         <TablixMember>
+                          <KeepWithGroup>After</KeepWithGroup>
+                        </TablixMember>
+                        <TablixMember>
                           <Group Name="Details3" />
                         </TablixMember>
                       </TablixMembers>
@@ -3313,8 +3363,7 @@ SELECT 5
                         </FilterValues>
                       </Filter>
                     </Filters>
-                    <Top>1.08762cm</Top>
-                    <Height>1.67042cm</Height>
+                    <Height>2.72277cm</Height>
                     <Width>11.97425cm</Width>
                     <Style>
                       <Border>
@@ -3322,45 +3371,11 @@ SELECT 5
                       </Border>
                     </Style>
                   </Tablix>
-                  <Textbox Name="Textbox81">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Vehículos (automovil, camioneta, camión, moto, etc)</Value>
-                            <Style>
-                              <FontSize>9pt</FontSize>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style>
-                          <TextAlign>Center</TextAlign>
-                        </Style>
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox81</rd:DefaultName>
-                    <Top>0.03528cm</Top>
-                    <Height>0.87595cm</Height>
-                    <Width>11.97425cm</Width>
-                    <ZIndex>1</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <VerticalAlign>Middle</VerticalAlign>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>0.70001cm</Top>
+                <Top>0.73528cm</Top>
                 <Left>0.07839cm</Left>
-                <Height>2.75804cm</Height>
+                <Height>2.75805cm</Height>
                 <Width>11.97425cm</Width>
                 <Style>
                   <Border>
@@ -3385,56 +3400,65 @@ SELECT 5
               </Rectangle>
               <Rectangle Name="Rectangle30">
                 <ReportItems>
-                  <Textbox Name="Textbox83">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Otros Bienes valorados en más de $2,5000.00 dólares (Por ejemplo Joyas y Obras de Arte)</Value>
-                            <Style>
-                              <FontSize>9pt</FontSize>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox83</rd:DefaultName>
-                    <Height>0.94651cm</Height>
-                    <Width>7.57801cm</Width>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <TopBorder>
-                        <Color>Black</Color>
-                        <Style>Solid</Style>
-                        <Width>0.75pt</Width>
-                      </TopBorder>
-                      <RightBorder>
-                        <Color>Black</Color>
-                        <Style>Solid</Style>
-                        <Width>0.75pt</Width>
-                      </RightBorder>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
                   <Tablix Name="Tablix7">
                     <TablixBody>
                       <TablixColumns>
                         <TablixColumn>
-                          <Width>3.8118cm</Width>
+                          <Width>3.88735cm</Width>
                         </TablixColumn>
                         <TablixColumn>
-                          <Width>3.7662cm</Width>
+                          <Width>3.84175cm</Width>
                         </TablixColumn>
                       </TablixColumns>
                       <TablixRows>
+                        <TablixRow>
+                          <Height>1.05234cm</Height>
+                          <TablixCells>
+                            <TablixCell>
+                              <CellContents>
+                                <Textbox Name="Textbox83">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Otros Bienes valorados en más de $2,5000.00 dólares (Por ejemplo Joyas y Obras de Arte)</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox83</rd:DefaultName>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <TopBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>0.75pt</Width>
+                                    </TopBorder>
+                                    <RightBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>0.75pt</Width>
+                                    </RightBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <ColSpan>2</ColSpan>
+                              </CellContents>
+                            </TablixCell>
+                            <TablixCell />
+                          </TablixCells>
+                        </TablixRow>
                         <TablixRow>
                           <Height>0.97042cm</Height>
                           <TablixCells>
@@ -3641,6 +3665,9 @@ SELECT 5
                           <KeepWithGroup>After</KeepWithGroup>
                         </TablixMember>
                         <TablixMember>
+                          <KeepWithGroup>After</KeepWithGroup>
+                        </TablixMember>
+                        <TablixMember>
                           <Group Name="Details4" />
                         </TablixMember>
                       </TablixMembers>
@@ -3656,11 +3683,9 @@ SELECT 5
                         </FilterValues>
                       </Filter>
                     </Filters>
-                    <Top>1.01707cm</Top>
-                    <Left>0cm</Left>
-                    <Height>1.67042cm</Height>
-                    <Width>7.57801cm</Width>
-                    <ZIndex>1</ZIndex>
+                    <Left>0.07056cm</Left>
+                    <Height>2.72276cm</Height>
+                    <Width>7.7291cm</Width>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -3669,10 +3694,10 @@ SELECT 5
                   </Tablix>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>0.70001cm</Top>
-                <Left>12.38013cm</Left>
+                <Top>0.73529cm</Top>
+                <Left>12.15847cm</Left>
                 <Height>2.75804cm</Height>
-                <Width>7.57801cm</Width>
+                <Width>7.79966cm</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -3740,8 +3765,7 @@ SELECT 5
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>13.07757cm</Top>
-            <Left>0cm</Left>
-            <Height>3.46255cm</Height>
+            <Height>3.49333cm</Height>
             <Width>20.00279cm</Width>
             <ZIndex>8</ZIndex>
             <Style>
@@ -3759,7 +3783,7 @@ SELECT 5
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>VI. Detalle de Bienes inmuebles (casa, departamentos, terrenos, local comercial, oficina, propiedad rural, entre otros)</Value>
+                        <Value>VI. Detalle de productos financieros en otros Bancos (préstamos, tarjetas de créditos, cuentas de Ahorro y depósitos a plazo)</Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
                           <Color>White</Color>
@@ -4328,7 +4352,7 @@ SELECT 5
                 <Top>1.15219cm</Top>
                 <Left>0.01985cm</Left>
                 <Height>1.7cm</Height>
-                <Width>19.86386cm</Width>
+                <Width>19.86385cm</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -4756,6 +4780,7 @@ McYYY4wxxhhjjDHGGGOMMcYYY4wxxhhjjDHGGGOMMcYYY4wxxhhjjDHGGGOMMcYYY4wxxhhjjDHGGGOM
     </EmbeddedImage>
   </EmbeddedImages>
   <Language>es-SV</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>f7e83cf8-270b-4ea6-86b0-c58f40fc99d5</rd:ReportID>
 </Report>

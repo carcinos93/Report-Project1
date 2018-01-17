@@ -135,6 +135,10 @@
           <DataField>REFERENCIA</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="CONCEPTO">
+          <DataField>CONCEPTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="TIPO_MOVIMIENTO">
           <DataField>TIPO_MOVIMIENTO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -155,7 +159,6 @@
             <Value>=First(Fields!LOGO.Value, "DataSet2")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Sizing>FitProportional</Sizing>
-            <Left>0.29117cm</Left>
             <Height>2.39394cm</Height>
             <Width>6.19111cm</Width>
             <Style>
@@ -175,7 +178,7 @@
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>11pt</FontSize>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>
@@ -189,11 +192,29 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>PBX:</Value>
+                    <Value>=First(Fields!DIRECCION.Value, "DataSet2")</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>11pt</FontSize>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Format>dd/MM/yyyy</Format>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>PBX:  </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>
@@ -204,7 +225,7 @@
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>11pt</FontSize>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <Format>dd/MM/yyyy</Format>
                       <TextDecoration>None</TextDecoration>
@@ -264,7 +285,7 @@
             <rd:DefaultName>Textbox48</rd:DefaultName>
             <Left>6.62339cm</Left>
             <Height>2.39394cm</Height>
-            <Width>15.84015cm</Width>
+            <Width>20.93548cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -313,9 +334,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>ExecutionTime</rd:DefaultName>
-            <Left>8.8578in</Left>
+            <Left>10.91939in</Left>
             <Height>0.33333in</Height>
-            <Width>1.78464in</Width>
+            <Width>2.38036in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -331,7 +352,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>15.89011cm</Width>
+                  <Width>22.56042cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.57187cm</Width>
@@ -340,7 +361,7 @@
                   <Width>2.63824cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.87926cm</Width>
+                  <Width>3.24968cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.76115cm</Width>
@@ -382,7 +403,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox1">
+                        <Textbox Name="Textbox9">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -396,7 +417,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <rd:DefaultName>Textbox9</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -511,16 +532,19 @@
                           <TablixBody>
                             <TablixColumns>
                               <TablixColumn>
-                                <Width>3.40521cm</Width>
+                                <Width>3.02685cm</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>1.86717cm</Width>
+                                <Width>2.2611cm</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>2.0081cm</Width>
+                                <Width>2.37058cm</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>8.60963cm</Width>
+                                <Width>7.94023cm</Width>
+                              </TablixColumn>
+                              <TablixColumn>
+                                <Width>6.96166cm</Width>
                               </TablixColumn>
                               <TablixColumn>
                                 <Width>2.57187cm</Width>
@@ -529,7 +553,7 @@
                                 <Width>2.63824cm</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>2.87926cm</Width>
+                                <Width>3.24968cm</Width>
                               </TablixColumn>
                               <TablixColumn>
                                 <Width>2.76115cm</Width>
@@ -658,6 +682,39 @@
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>Textbox34</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Color>LightGrey</Color>
+                                            <Style>Solid</Style>
+                                          </Border>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox5">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>Concepto</Value>
+                                                <Style>
+                                                  <FontSize>9pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style />
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox5</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Color>LightGrey</Color>
@@ -939,6 +996,38 @@
                                   </TablixCell>
                                   <TablixCell>
                                     <CellContents>
+                                      <Textbox Name="CONCEPTO">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>=Fields!CONCEPTO.Value</Value>
+                                                <Style>
+                                                  <FontSize>9pt</FontSize>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style />
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>CONCEPTO</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Color>LightGrey</Color>
+                                            <Style>Solid</Style>
+                                          </Border>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
                                       <Textbox Name="MONTO">
                                         <CanGrow>true</CanGrow>
                                         <KeepTogether>true</KeepTogether>
@@ -1083,6 +1172,7 @@
                               <TablixMember />
                               <TablixMember />
                               <TablixMember />
+                              <TablixMember />
                             </TablixMembers>
                           </TablixColumnHierarchy>
                           <TablixRowHierarchy>
@@ -1096,6 +1186,7 @@
                             </TablixMembers>
                           </TablixRowHierarchy>
                           <DataSetName>dstransac</DataSetName>
+                          <ZIndex>4</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1322,9 +1413,8 @@
             </TablixRowHierarchy>
             <DataSetName>dstransac</DataSetName>
             <Top>3.47141cm</Top>
-            <Left>0.29117cm</Left>
             <Height>2.30271cm</Height>
-            <Width>26.74063cm</Width>
+            <Width>33.78136cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1336,10 +1426,10 @@
         <Height>2.27328in</Height>
         <Style />
       </Body>
-      <Width>27.21512cm</Width>
+      <Width>33.83428cm</Width>
       <Page>
         <PageHeight>30.21512cm</PageHeight>
-        <PageWidth>28.21512cm</PageWidth>
+        <PageWidth>34.83428cm</PageWidth>
         <LeftMargin>0.5cm</LeftMargin>
         <RightMargin>0.5cm</RightMargin>
         <TopMargin>1.5cm</TopMargin>

@@ -80,8 +80,11 @@
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@FECHA">
-            <Value>=Parameters!FECHA.Value</Value>
+          <QueryParameter Name="@FECHA_INICIO">
+            <Value>=Parameters!FECHA_INICIO.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@FECHA_FIN">
+            <Value>=Parameters!FECHA_FIN.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
@@ -1592,10 +1595,6 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="FECHA">
-      <DataType>DateTime</DataType>
-      <Prompt>FECHA</Prompt>
-    </ReportParameter>
     <ReportParameter Name="RESPUESTA">
       <DataType>String</DataType>
       <DefaultValue>
@@ -1603,7 +1602,7 @@
           <Value>="0"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>Respuesta</Prompt>
+      <Prompt>RESPUESTA</Prompt>
       <ValidValues>
         <ParameterValues>
           <ParameterValue>
@@ -1620,6 +1619,14 @@
           </ParameterValue>
         </ParameterValues>
       </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="FECHA_INICIO">
+      <DataType>DateTime</DataType>
+      <Prompt>FECHA INICIO</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FECHA_FIN">
+      <DataType>DateTime</DataType>
+      <Prompt>FECHA FIN</Prompt>
     </ReportParameter>
   </ReportParameters>
   <Code>public function ReplaceFormat(ByVal valor As Object, ByVal mask as String, Byval format as string) as string

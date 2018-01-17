@@ -254,20 +254,47 @@ WHERE CLIENTE.CODIGO_CLIENTE = @CODIGO_CLIENTE</CommandText>
     <DataSet Name="DSLISTA">
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
-        <CommandText>SELECT ISNULL(TIPO_LISTA.DESCRIPCION,'OTRAS LISTAS') AS LISTA, COUNT(*) AS TOTAL
-FROM   LISTA_CAUTELA LEFT OUTER JOIN
-       [AS].TIPO_LISTA ON LISTA_CAUTELA.TIPO_LISTA = [AS].TIPO_LISTA.CODIGO_LISTA
-
-GROUP BY LISTA_CAUTELA.TIPO_LISTA, TIPO_LISTA.DESCRIPCION</CommandText>
+        <CommandText>="DECLARE @CODIGO_CLIENTE VARCHAR(100) = '" + Parameters!CODIGO_CLIENTE.Value + "' " +
+"DECLARE  " +
+ "@SI VARCHAR(10) = (SELECT CODIGO_DECISION FROM [AS].DECISION WHERE NOMBRE_DECISION = 'SI'), " +
+ "@NO VARCHAR(10) = (SELECT CODIGO_DECISION FROM [AS].DECISION WHERE NOMBRE_DECISION = 'NO') " +
+" DECLARE " +
+ "@NOMBRES VARCHAR(100) = (SELECT CONCAT(PRIMER_NOMBRE,' ', SEGUNDO_NOMBRE) FROM FA.CLIENTE WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE), " +
+ "@COMPLEMENTOS VARCHAR(100) = (SELECT CONCAT(APELLIDO1,' ', APELLIDO2, ' ', APELLIDO3) FROM FA.CLIENTE WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE), " +
+ "@DUI VARCHAR(100)  = (SELECT DOCUMENTO_UNICO FROM FA.CLIENTE WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE), " +
+ "@NIT VARCHAR(100)  = (SELECT NUMERO_NIT FROM FA.CLIENTE WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE), " +
+ "@PASAPORTE VARCHAR(100)  = (SELECT PASAPORTE FROM FA.CLIENTE WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE), " +
+ "@ESEMPRESA VARCHAR(100)  = (SELECT CASE ES_EMPRESA WHEN @SI THEN 1 WHEN @NO THEN 0 END FROM FA.CLIENTE WHERE CODIGO_CLIENTE = @CODIGO_CLIENTE) " +
+"EXEC AML.CONSULTA_LISTAS @NOMBRES,@COMPLEMENTOS,@DUI,@NIT,@PASAPORTE,@ESEMPRESA "</CommandText>
       </Query>
       <Fields>
-        <Field Name="TOTAL">
-          <DataField>TOTAL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="NOMBRE">
+          <DataField>NOMBRE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="LISTA">
           <DataField>LISTA</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AFILIACION">
+          <DataField>AFILIACION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TITULO">
+          <DataField>TITULO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NOTAS">
+          <DataField>NOTAS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REPORTADO_POR">
+          <DataField>REPORTADO_POR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PUNTAJE">
+          <DataField>PUNTAJE</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -1051,7 +1078,7 @@ GROUP BY LISTA_CAUTELA.TIPO_LISTA, TIPO_LISTA.DESCRIPCION</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>9.06488cm</Top>
+            <Top>8.74738cm</Top>
             <Left>0.17018cm</Left>
             <Height>0.93486cm</Height>
             <Width>19.84965cm</Width>
@@ -1408,8 +1435,8 @@ GROUP BY LISTA_CAUTELA.TIPO_LISTA, TIPO_LISTA.DESCRIPCION</CommandText>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DSRELACIONES</DataSetName>
-            <Top>10.68599cm</Top>
-            <Left>0.09045cm</Left>
+            <Top>10.10056cm</Top>
+            <Left>0.17018cm</Left>
             <Height>3.73573cm</Height>
             <Width>19.92937cm</Width>
             <ZIndex>7</ZIndex>
@@ -1437,7 +1464,7 @@ GROUP BY LISTA_CAUTELA.TIPO_LISTA, TIPO_LISTA.DESCRIPCION</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>14.95192cm</Top>
+            <Top>14.31692cm</Top>
             <Left>0.17018cm</Left>
             <Height>0.93486cm</Height>
             <Width>19.84965cm</Width>
@@ -1474,7 +1501,7 @@ GROUP BY LISTA_CAUTELA.TIPO_LISTA, TIPO_LISTA.DESCRIPCION</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>16.6589cm</Top>
+            <Top>16.0239cm</Top>
             <Left>0.17018cm</Left>
             <Height>0.93486cm</Height>
             <Width>19.84965cm</Width>
@@ -1511,7 +1538,7 @@ GROUP BY LISTA_CAUTELA.TIPO_LISTA, TIPO_LISTA.DESCRIPCION</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>18.32578cm</Top>
+            <Top>18.00828cm</Top>
             <Left>0.17018cm</Left>
             <Height>0.93486cm</Height>
             <Width>19.84965cm</Width>
@@ -1654,7 +1681,7 @@ GROUP BY LISTA_CAUTELA.TIPO_LISTA, TIPO_LISTA.DESCRIPCION</CommandText>
             </TablixRowHierarchy>
             <KeepTogether>true</KeepTogether>
             <DataSetName>DSDUMMY</DataSetName>
-            <Top>22.68159cm</Top>
+            <Top>20.77659cm</Top>
             <Left>0.09045cm</Left>
             <Height>2.33393cm</Height>
             <Width>19.88951cm</Width>
@@ -1687,7 +1714,7 @@ GROUP BY LISTA_CAUTELA.TIPO_LISTA, TIPO_LISTA.DESCRIPCION</CommandText>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!LISTA.Value &amp; ": " &amp; Format(Fields!TOTAL.Value,"#,0;(#,0)")</Value>
+                                      <Value>=Fields!LISTA.Value</Value>
                                       <Style>
                                         <FontFamily>Century Gothic</FontFamily>
                                       </Style>
@@ -1721,7 +1748,11 @@ GROUP BY LISTA_CAUTELA.TIPO_LISTA, TIPO_LISTA.DESCRIPCION</CommandText>
                 <TablixRowHierarchy>
                   <TablixMembers>
                     <TablixMember>
-                      <Group Name="Details2" />
+                      <Group Name="Details2">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!LISTA.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
                       <TablixMembers>
                         <TablixMember />
                       </TablixMembers>
@@ -1742,9 +1773,9 @@ GROUP BY LISTA_CAUTELA.TIPO_LISTA, TIPO_LISTA.DESCRIPCION</CommandText>
               </Tablix>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>19.65537cm</Top>
+            <Top>19.43703cm</Top>
             <Left>0.09045cm</Left>
-            <Height>2.43207cm</Height>
+            <Height>0.97686cm</Height>
             <Width>19.92937cm</Width>
             <ZIndex>12</ZIndex>
             <Style>
@@ -1754,7 +1785,7 @@ GROUP BY LISTA_CAUTELA.TIPO_LISTA, TIPO_LISTA.DESCRIPCION</CommandText>
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>9.84863in</Height>
+        <Height>9.16469in</Height>
         <Style />
       </Body>
       <Width>20.19cm</Width>
